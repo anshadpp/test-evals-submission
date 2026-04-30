@@ -1,0 +1,13 @@
+[Visit type: telehealth, mental health]
+
+Doctor: Hi Olivia, how are you doing?
+Patient: Honestly, anxious all the time. My chest feels tight, I worry about everything. It's been months. I'm having trouble sleeping.
+Doctor: Any panic attacks?
+Patient: A few. Heart racing, can't breathe, feels like I'm dying.
+Doctor: Any thoughts of harming yourself?
+Patient: No, never.
+Doctor: Your GAD-7 score today was 16, that's severe. Let's start treatment. I'd like to begin sertraline 25 mg once daily for a week, then increase to 50 mg once daily. It can take 4 to 6 weeks to feel the full effect, and the first week or two may be a little jittery.
+Patient: Okay.
+Doctor: I'd also like to refer you for cognitive behavioral therapy. For sleep, try to keep a regular schedule, no screens an hour before bed.
+Patient: Thanks.
+Doctor: Check in with me in 4 weeks to see how you're tolerating the medication. Call sooner if any worsening mood or thoughts of self-harm.

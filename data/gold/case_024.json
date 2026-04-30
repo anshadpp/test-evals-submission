@@ -1,0 +1,18 @@
+{
+  "chief_complaint": "left ankle injury after rolling it playing basketball",
+  "vitals": { "bp": null, "hr": null, "temp_f": null, "spo2": null },
+  "medications": [
+    { "name": "ibuprofen", "dose": "400 mg", "frequency": "every 6 hours as needed", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "grade 2 lateral ankle sprain, left", "icd10": "S93.42" }
+  ],
+  "plan": [
+    "RICE: rest, ice 20 minutes every 2 to 3 hours for first 48 hours, compression with ACE wrap, elevation",
+    "ibuprofen 400 mg every 6 hours as needed for pain and swelling",
+    "weight-bear as tolerated, crutches if needed",
+    "begin ankle range-of-motion exercises in a few days",
+    "return for imaging if not improving in 7 to 10 days"
+  ],
+  "follow_up": { "interval_days": null, "reason": null }
+}

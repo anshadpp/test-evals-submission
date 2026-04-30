@@ -1,0 +1,13 @@
+[Visit type: in-person, contraception counseling]
+[Vitals: BP 116/72, HR 68]
+
+Doctor: Hi Rachel. You're here to talk contraception?
+Patient: Yeah. I've been on the pill for years but I keep forgetting it. I want something I don't have to think about.
+Doctor: Any plans for pregnancy in the next few years?
+Patient: No, not for at least 5.
+Doctor: Long-acting reversible options would be ideal — IUD or implant. The hormonal IUD lasts 5 to 8 years, very effective, often makes periods lighter. The copper IUD is hormone-free, lasts up to 10 years, can make periods heavier. The implant lasts 3 years.
+Patient: I think the hormonal IUD sounds best.
+Doctor: Good choice. Let's plan for placement at our procedure visit. Take ibuprofen 600 mg one hour before the appointment for cramping.
+Patient: Anything else?
+Doctor: Negative pregnancy test the day of insertion. Continue current pill until then. We'll schedule placement in 2 weeks.
+Patient: Thanks.

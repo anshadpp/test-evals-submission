@@ -1,0 +1,10 @@
+[Visit type: in-person, T2DM follow-up]
+[Vitals: BP 134/82, HR 76, Temp 98.2, SpO2 99%]
+
+Doctor: Good morning, Anita. Your A1c came back at 7.8.
+Patient: That's up from last time, isn't it?
+Doctor: It was 7.2 three months ago. How's the metformin? Any GI issues?
+Patient: No issues. I take it with food. But I'll be honest, my eating has been off since the holidays.
+Doctor: Okay. Let's bump metformin from 1000 mg twice daily to its max effective dose, and add empagliflozin 10 mg once daily — it'll help your sugars and your kidneys. Also, given you're at goal weight risk, this often helps modestly with weight.
+Patient: Okay.
+Doctor: Continue your atorvastatin 40 mg at bedtime and lisinopril 10 mg once a day. Watch for genital yeast infection on the new med, plenty of fluids. We'll recheck A1c in 3 months. Get a basic metabolic panel before that visit, and don't forget your annual eye exam.

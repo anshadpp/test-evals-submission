@@ -1,0 +1,10 @@
+[Visit type: in-person counseling]
+[Vitals: BP 138/88, HR 78, Temp 98.4, SpO2 98%]
+
+Doctor: Hi Karen. Let's review where you stand. Your waist circumference is 38 inches, BMI 32, fasting glucose 108, triglycerides 180, HDL 38, BP 138/88. That's metabolic syndrome.
+Patient: I figured.
+Doctor: The good news: you're early. Let's avoid medications today and try 6 months of structured lifestyle change. Goal is to lose 7 to 10% of your body weight.
+Patient: How?
+Doctor: Plate method — half vegetables, quarter lean protein, quarter complex carbs. Cut sugary drinks. Aim for 150 minutes of moderate cardio plus 2 days of strength training each week. I'm referring you to our dietitian.
+Patient: Okay.
+Doctor: We'll repeat your fasting glucose, lipid panel, and A1c in 3 months. If things aren't moving I may add metformin. Come back in 3 months.

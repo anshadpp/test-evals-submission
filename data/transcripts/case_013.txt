@@ -1,0 +1,12 @@
+[Visit type: in-person urgent]
+[Vitals: BP 138/88, HR 102, Temp 100.6, SpO2 98%]
+
+Doctor: Hi Greg, you came in for upper right belly pain?
+Patient: Yes, started after dinner last night. Greasy meal. Pain was intense for about three hours, kind of radiates to my right shoulder blade. Some nausea, no vomiting today. It's calmed down but still tender.
+Doctor: Has this happened before?
+Patient: Twice in the last few months, but never this bad.
+Doctor: Murphy's sign — does it hurt when I press here as you breathe in? Yes. Tender right upper quadrant. With those features, biliary colic versus early cholecystitis is the concern. Let's get an abdominal ultrasound today, CBC, comprehensive metabolic panel, and lipase to rule out pancreatitis.
+Patient: Okay.
+Doctor: For now, low-fat diet, and ibuprofen 600 mg every 6 hours as needed for pain. If the pain becomes constant, you have fevers, or jaundice, go to the ER.
+Patient: Got it.
+Doctor: I'll call you with results, and we'll plan from there — likely a surgery referral if stones are confirmed.

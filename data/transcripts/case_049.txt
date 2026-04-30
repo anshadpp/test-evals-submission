@@ -1,0 +1,11 @@
+[Visit type: in-person urgent]
+
+Doctor: Hi Aaron. Burn from the stove?
+Patient: Yes, splashed boiling water on my forearm yesterday. It blistered last night. Pretty painful.
+Doctor: Let me see. You've got an area roughly 4 by 5 cm on the dorsal forearm, with intact blisters, pink moist base where one has unroofed, brisk capillary refill, sensation intact. This is a partial-thickness, second-degree burn. Less than 1% body surface area.
+Patient: Okay.
+Doctor: We'll clean it with mild soap and water, leave intact blisters intact, debride the loose skin from the unroofed one. I'll cover it with a non-adherent dressing and silver sulfadiazine 1% cream applied twice daily.
+Patient: Pain control?
+Doctor: Ibuprofen 600 mg every 6 hours with food and acetaminophen 500 mg every 6 hours, alternating if needed.
+Patient: How long?
+Doctor: Usually heals in 2 to 3 weeks. Keep it covered, change the dressing daily. Watch for signs of infection — increased pain, redness spreading, drainage, fever — call us. Return for a wound check in 3 days.

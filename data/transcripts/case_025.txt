@@ -1,0 +1,11 @@
+[Visit type: in-person]
+
+Doctor: Hi Maria, heel pain?
+Patient: My right heel hurts every morning when I get out of bed. The first few steps are awful, then it loosens up. Worst after I sit for a while too. It's been six weeks.
+Doctor: Any trauma? Numbness?
+Patient: No.
+Doctor: Tenderness right at the medial calcaneal tubercle, pain reproduced with dorsiflexion of the toes. Classic plantar fasciitis.
+Patient: What helps?
+Doctor: Calf and plantar fascia stretching — I'll print exercises. Wear supportive shoes, no walking barefoot at home. Try over-the-counter heel cushions. Naproxen 220 mg twice a day with food for 10 days for pain. Consider a night splint if mornings stay rough after a few weeks.
+Patient: Anything else?
+Doctor: Most cases improve over 3 to 6 months. If you're not seeing progress in 8 weeks, come back and we'll consider PT referral or a steroid injection.

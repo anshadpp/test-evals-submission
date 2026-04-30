@@ -1,0 +1,21 @@
+{
+  "chief_complaint": "boiling water burn to forearm",
+  "vitals": { "bp": null, "hr": null, "temp_f": null, "spo2": null },
+  "medications": [
+    { "name": "silver sulfadiazine 1% cream", "dose": null, "frequency": "twice daily", "route": "topical" },
+    { "name": "ibuprofen", "dose": "600 mg", "frequency": "every 6 hours with food", "route": "PO" },
+    { "name": "acetaminophen", "dose": "500 mg", "frequency": "every 6 hours", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "partial-thickness second-degree burn of forearm", "icd10": "T22.219A" }
+  ],
+  "plan": [
+    "clean burn with mild soap and water; leave intact blisters intact, debride loose skin",
+    "cover with non-adherent dressing",
+    "silver sulfadiazine 1% cream applied twice daily",
+    "ibuprofen 600 mg every 6 hours with food and acetaminophen 500 mg every 6 hours, alternating if needed",
+    "change dressing daily",
+    "call for signs of infection"
+  ],
+  "follow_up": { "interval_days": 3, "reason": "wound check" }
+}

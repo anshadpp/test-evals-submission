@@ -1,0 +1,11 @@
+[Visit type: telehealth]
+
+Doctor: Hi Sandra, what's been going on with sleep?
+Patient: I can't fall asleep until 2 or 3 am, and even then I wake up multiple times. Been this way for two months. I'm exhausted.
+Doctor: Snoring? Any caffeine, alcohol, screen time?
+Patient: I drink coffee until 4 pm. I scroll my phone in bed.
+Doctor: Let's start with sleep hygiene. No caffeine after noon. No phones in bed — wind-down routine starting an hour before bed. Consistent wake time, even on weekends.
+Patient: Anything to help short term?
+Doctor: I'd rather not start a sleep medication first-line. Try melatonin 3 mg about 30 minutes before bedtime for two weeks while you implement the changes. I'll send you a CBT-I app recommendation — it's the most effective long-term treatment.
+Patient: Okay.
+Doctor: If sleep isn't improving in 4 weeks, we'll reassess and may consider trazodone short term. Message me in 4 weeks.

@@ -1,0 +1,11 @@
+[Visit type: in-person]
+
+Doctor: Hi Eleanor, how can I help?
+Patient: I've been so constipated. I might go once every 4 or 5 days, and when I do it's hard and painful. This has been going on for a couple months.
+Doctor: Any blood in your stool? Weight loss? Family history of colon cancer?
+Patient: No blood, no weight loss. Mom had a polyp once but no cancer.
+Doctor: How much water are you drinking? Fiber intake?
+Patient: Not much, honestly. Maybe two glasses a day. I don't eat a lot of vegetables.
+Doctor: Let's start with lifestyle and a stool softener. I want you to add a fiber supplement — psyllium husk, one tablespoon mixed in water once a day to start, and we can go to twice if needed. Also drink at least 64 ounces of water a day. Start polyethylene glycol 17 grams in 8 ounces of water once daily for the next two weeks to get things moving, then we'll wean.
+Patient: Okay.
+Doctor: Walk daily if you can. Come back in 4 weeks. If you ever see blood, lose weight unintentionally, or have severe pain, come in sooner.

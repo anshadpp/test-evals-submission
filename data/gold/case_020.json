@@ -1,0 +1,17 @@
+{
+  "chief_complaint": "metabolic syndrome counseling",
+  "vitals": { "bp": "138/88", "hr": 78, "temp_f": 98.4, "spo2": 98 },
+  "medications": [],
+  "diagnoses": [
+    { "description": "metabolic syndrome", "icd10": "E88.81" }
+  ],
+  "plan": [
+    "lose 7 to 10% of body weight over 6 months",
+    "plate method: half vegetables, quarter lean protein, quarter complex carbs",
+    "cut sugary drinks",
+    "150 minutes moderate cardio plus 2 days strength training weekly",
+    "dietitian referral",
+    "repeat fasting glucose, lipid panel, and A1c in 3 months"
+  ],
+  "follow_up": { "interval_days": 90, "reason": "metabolic syndrome lifestyle recheck" }
+}

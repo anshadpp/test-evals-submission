@@ -1,0 +1,19 @@
+{
+  "chief_complaint": "right heel pain for six weeks, worse with first steps",
+  "vitals": { "bp": null, "hr": null, "temp_f": null, "spo2": null },
+  "medications": [
+    { "name": "naproxen", "dose": "220 mg", "frequency": "twice a day with food", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "plantar fasciitis", "icd10": "M72.2" }
+  ],
+  "plan": [
+    "calf and plantar fascia stretching exercises",
+    "supportive shoes, no walking barefoot at home",
+    "over-the-counter heel cushions",
+    "naproxen 220 mg twice a day with food for 10 days",
+    "consider night splint if mornings stay rough",
+    "return in 8 weeks if no progress for PT referral or steroid injection"
+  ],
+  "follow_up": { "interval_days": null, "reason": "return in 8 weeks if no progress" }
+}

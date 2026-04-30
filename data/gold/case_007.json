@@ -1,0 +1,19 @@
+{
+  "chief_complaint": "three days of body aches, fever, headache, and dry cough",
+  "vitals": { "bp": "128/84", "hr": 104, "temp_f": 101.8, "spo2": 94 },
+  "medications": [
+    { "name": "oseltamivir", "dose": "75 mg", "frequency": "twice daily", "route": "PO" },
+    { "name": "acetaminophen", "dose": "650 mg", "frequency": "every 6 hours as needed", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "influenza A", "icd10": "J10.1" }
+  ],
+  "plan": [
+    "oseltamivir 75 mg twice daily for 5 days",
+    "acetaminophen 650 mg every 6 hours as needed for fever and aches",
+    "push fluids and rest",
+    "go to ER if SpO2 drops below 92 or breathing worsens",
+    "message in 3 days for check-in"
+  ],
+  "follow_up": { "interval_days": 3, "reason": "message check-in for influenza" }
+}

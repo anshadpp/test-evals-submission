@@ -1,0 +1,19 @@
+{
+  "chief_complaint": "severe sore throat with difficulty swallowing",
+  "vitals": { "bp": null, "hr": null, "temp_f": null, "spo2": null },
+  "medications": [
+    { "name": "penicillin V", "dose": "500 mg", "frequency": "four times a day", "route": "PO" },
+    { "name": "acetaminophen", "dose": "500 mg", "frequency": "every 6 hours as needed", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "suspected streptococcal pharyngitis", "icd10": "J02.0" }
+  ],
+  "plan": [
+    "rapid strep test at the lab today",
+    "start penicillin V 500 mg four times a day for 10 days if positive",
+    "acetaminophen 500 mg every 6 hours as needed for pain",
+    "warm salt water gargles and rest",
+    "message if not improving in 3 days on antibiotics"
+  ],
+  "follow_up": { "interval_days": null, "reason": null }
+}

@@ -1,0 +1,13 @@
+[Visit type: telehealth]
+
+Doctor: Hi Marcus, you tested positive for COVID at home?
+Patient: Yes, two days ago. I have a runny nose, mild cough, low fever yesterday around 99.5, and feel tired but otherwise okay.
+Doctor: Any shortness of breath, chest pain, confusion?
+Patient: No, none of that.
+Doctor: Any high-risk conditions? You're 34 and otherwise healthy from your chart.
+Patient: Right.
+Doctor: For a healthy adult with mild symptoms, antivirals like Paxlovid aren't generally indicated. Supportive care: rest, fluids, acetaminophen 500 mg every 6 hours as needed for aches. Isolate per CDC guidance.
+Patient: When can I go back to work?
+Doctor: When you've been fever-free for 24 hours without medication and symptoms are improving, generally around day 5 with a mask through day 10.
+Patient: Got it.
+Doctor: Call us if you develop shortness of breath or worsening symptoms. No follow-up otherwise.

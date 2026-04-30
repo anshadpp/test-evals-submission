@@ -1,0 +1,22 @@
+{
+  "chief_complaint": "moderate asthma exacerbation in 7-year-old",
+  "vitals": { "bp": null, "hr": 124, "temp_f": 99.0, "spo2": 92 },
+  "medications": [
+    { "name": "albuterol nebulized", "dose": "2.5 mg", "frequency": "in clinic now", "route": "inhaled" },
+    { "name": "ipratropium nebulized", "dose": "0.5 mg", "frequency": "in clinic now", "route": "inhaled" },
+    { "name": "prednisolone", "dose": "20 mg", "frequency": "once daily", "route": "PO" },
+    { "name": "albuterol HFA", "dose": "2 puffs", "frequency": "every 4 hours", "route": "inhaled" },
+    { "name": "fluticasone", "dose": "88 mcg two puffs", "frequency": "twice daily", "route": "inhaled" }
+  ],
+  "diagnoses": [
+    { "description": "moderate asthma exacerbation", "icd10": "J45.901" }
+  ],
+  "plan": [
+    "nebulized albuterol 2.5 mg with ipratropium 0.5 mg in clinic now and reassess",
+    "prednisolone 20 mg by mouth once daily for 5 days",
+    "albuterol HFA 2 puffs every 4 hours through tomorrow then taper",
+    "continue fluticasone 88 mcg two puffs twice daily, set phone alarm",
+    "ER for worsening retractions, inability to speak full sentences, or SpO2 below 90"
+  ],
+  "follow_up": { "interval_days": 3, "reason": "asthma exacerbation recheck" }
+}

@@ -1,0 +1,12 @@
+[Visit type: in-person urgent]
+[Vitals: BP 128/84, HR 104, Temp 101.8, SpO2 94%]
+
+Doctor: Hi Aisha. Tell me what's going on.
+Patient: I've had body aches, fever, headache, and a dry cough for three days. My whole family has it.
+Doctor: Any shortness of breath at rest?
+Patient: A little when I walk around.
+Doctor: SpO2 is 94, which is borderline. Let's swab for flu and COVID. ... Flu A is positive, COVID negative.
+Patient: Of course.
+Doctor: Since you're within 48 hours of symptom onset, I'd like to start oseltamivir 75 mg twice daily for 5 days. For symptom relief, acetaminophen 650 mg every 6 hours as needed. Push fluids and rest.
+Patient: Should I worry about the oxygen?
+Doctor: Recheck at home if you have a pulse ox. If it drops below 92 or you get worse breathing, go to the ER. Otherwise check in by message in 3 days.

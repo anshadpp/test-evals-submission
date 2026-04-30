@@ -1,0 +1,19 @@
+{
+  "chief_complaint": "right upper quadrant abdominal pain after fatty meal",
+  "vitals": { "bp": "138/88", "hr": 102, "temp_f": 100.6, "spo2": 98 },
+  "medications": [
+    { "name": "ibuprofen", "dose": "600 mg", "frequency": "every 6 hours as needed", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "suspected biliary colic versus early cholecystitis" }
+  ],
+  "plan": [
+    "abdominal ultrasound today",
+    "CBC, comprehensive metabolic panel, and lipase",
+    "low-fat diet",
+    "ibuprofen 600 mg every 6 hours as needed for pain",
+    "ER if pain becomes constant, fevers, or jaundice",
+    "likely surgery referral if stones confirmed"
+  ],
+  "follow_up": { "interval_days": null, "reason": "call with results, plan from there" }
+}

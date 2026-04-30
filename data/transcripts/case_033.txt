@@ -1,0 +1,11 @@
+[Visit type: in-person]
+
+Doctor: Hi Mia, what's going on with the rash?
+Patient: I've had this itchy red rash on my forearms and the back of my knees for two weeks. It flares when I'm stressed and when the weather is dry.
+Doctor: Any new soaps, detergents, lotions?
+Patient: I switched to a new body wash about three weeks ago.
+Doctor: Exam shows poorly demarcated erythematous plaques with mild lichenification at flexural areas. This is consistent with atopic dermatitis, possibly worsened by an irritant body wash.
+Patient: What helps?
+Doctor: Switch back to a gentle, fragrance-free wash. Use a thick fragrance-free moisturizer twice a day, especially after showers within 3 minutes. Apply triamcinolone 0.1% ointment to affected areas twice daily for up to 2 weeks. For itch, take cetirizine 10 mg once daily.
+Patient: Okay.
+Doctor: If not improving in 2 weeks or you see signs of skin infection — pus, increased redness, warmth — come back. Otherwise no scheduled follow-up.

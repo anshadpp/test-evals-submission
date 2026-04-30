@@ -1,0 +1,12 @@
+[Visit type: in-person]
+[Vitals at intake: BP 118/76, HR 82, Temp 101.2, SpO2 97%]
+
+Doctor: Good morning, Daniel. What's going on?
+Patient: I've had this pressure behind my eyes and cheeks for like ten days. It started as a cold but now it's just bad pressure and yellow-green stuff coming out my nose.
+Doctor: Any fever?
+Patient: On and off. Today it was 101.
+Doctor: Tooth pain when you lean forward?
+Patient: Yeah, especially in my upper teeth.
+Doctor: Tenderness over your maxillary sinuses, that's where I'm pressing. Yes, those are tender. Given the duration past 10 days with worsening symptoms, this looks like acute bacterial sinusitis. I'm going to start you on amoxicillin-clavulanate 875 mg twice daily for 7 days. Use a saline rinse twice a day, and you can take pseudoephedrine 30 mg every 6 hours for the congestion if it doesn't keep you awake.
+Patient: Got it.
+Doctor: If you're not significantly better in 5 days, call us. Otherwise no follow-up needed.

@@ -1,0 +1,17 @@
+{
+  "chief_complaint": "right ear pain and fever in toddler",
+  "vitals": { "bp": null, "hr": 118, "temp_f": 102.6, "spo2": 99 },
+  "medications": [
+    { "name": "amoxicillin", "dose": "400 mg", "frequency": "twice a day", "route": "PO" },
+    { "name": "children's ibuprofen", "dose": "5 mL", "frequency": "every 6 hours as needed", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "acute otitis media, right ear", "icd10": "H66.91" }
+  ],
+  "plan": [
+    "amoxicillin 400 mg by mouth twice a day for 10 days",
+    "children's ibuprofen 5 mL every 6 hours as needed for pain and fever",
+    "return in 48 to 72 hours if not improving or worsening"
+  ],
+  "follow_up": { "interval_days": null, "reason": "return if not improving in 48 to 72 hours" }
+}

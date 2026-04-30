@@ -1,0 +1,13 @@
+[Visit type: telehealth]
+
+Doctor: Hi Priya, how are you feeling?
+Patient: My throat is killing me. Started yesterday afternoon. I can barely swallow.
+Doctor: Any cough or runny nose?
+Patient: No, none. Just throat. And I think I have a fever, I felt really hot last night.
+Doctor: Any white spots when you look in the mirror?
+Patient: Yeah, my tonsils have white patches.
+Doctor: That plus no cough plus the fever — sounds like strep. I'd like you to stop by the lab today for a rapid strep, and assuming positive I'll call in penicillin V 500 mg four times a day for 10 days.
+Patient: I'm not allergic.
+Doctor: Good. In the meantime, take acetaminophen 500 mg every 6 hours as needed, gargle with warm salt water, and rest. If the rapid is negative we'll reassess.
+Patient: Thanks.
+Doctor: No follow-up scheduled — just message us if you're not better in 3 days on antibiotics.

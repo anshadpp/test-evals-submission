@@ -1,0 +1,18 @@
+{
+  "chief_complaint": "right shoulder pain with overhead activity",
+  "vitals": { "bp": "122/78", "hr": 78, "temp_f": null, "spo2": null },
+  "medications": [
+    { "name": "naproxen", "dose": "500 mg", "frequency": "twice daily with food", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "rotator cuff impingement, supraspinatus tendinopathy", "icd10": "M75.41" }
+  ],
+  "plan": [
+    "naproxen 500 mg twice daily with food for two weeks",
+    "rest from overhead activity",
+    "physical therapy referral for rotator cuff strengthening and posture work",
+    "ice 15 to 20 minutes a few times a day",
+    "consider subacromial corticosteroid injection if not improving in 6 weeks"
+  ],
+  "follow_up": { "interval_days": 42, "reason": "shoulder impingement recheck" }
+}

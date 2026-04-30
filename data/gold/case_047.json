@@ -1,0 +1,19 @@
+{
+  "chief_complaint": "left big toe joint pain, swelling, redness — gout flare",
+  "vitals": { "bp": "142/88", "hr": 92, "temp_f": 99.6, "spo2": null },
+  "medications": [
+    { "name": "indomethacin", "dose": "50 mg", "frequency": "three times a day with food", "route": "PO" },
+    { "name": "allopurinol", "dose": "100 mg", "frequency": "once a day", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "acute gout flare, left first MTP joint", "icd10": "M10.072" }
+  ],
+  "plan": [
+    "indomethacin 50 mg three times a day with food until flare resolves, usually 5 to 7 days",
+    "avoid aspirin",
+    "ice, elevate, and rest the joint",
+    "start allopurinol 100 mg once a day after flare settles, titrate to uric acid under 6",
+    "limit red meat, shellfish, beer; hydrate"
+  ],
+  "follow_up": { "interval_days": 28, "reason": "gout management follow-up" }
+}

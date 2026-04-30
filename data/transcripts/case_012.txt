@@ -1,0 +1,10 @@
+[Visit type: in-person]
+[Vitals: BP 116/72, HR 80, Temp 98.4]
+
+Doctor: Hi Tara. Tell me about your stomach.
+Patient: I've had IBS for years but the last three weeks have been a flare. Bloating, alternating diarrhea and constipation, and these crampy pains that get better after I go.
+Doctor: Anything new in your diet or stress?
+Patient: I started a new job. Lots of takeout and stress.
+Doctor: Classic flare. Let's manage it. I'd like you to try a low-FODMAP diet for 4 to 6 weeks — I'll send you resources. For the cramping, dicyclomine 10 mg three times daily before meals. For the bloating you can use simethicone 125 mg with meals as needed. And let's address the stress — try mindfulness or 20 minutes of walking daily.
+Patient: Okay.
+Doctor: Come back in 6 weeks to see how the diet trial went and whether we need to do further workup.

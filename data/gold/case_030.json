@@ -1,0 +1,18 @@
+{
+  "chief_complaint": "4-year-old well-child visit",
+  "vitals": { "bp": null, "hr": 96, "temp_f": 98.6, "spo2": null },
+  "medications": [
+    { "name": "Tylenol", "dose": "160 mg", "frequency": "as needed for fever or soreness", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "well-child examination", "icd10": "Z00.129" }
+  ],
+  "plan": [
+    "administer DTaP, IPV, MMR, and varicella boosters",
+    "annual flu shot",
+    "limit screens to under one hour a day",
+    "family meals and outdoor play",
+    "brush teeth twice daily and dental visit every 6 months"
+  ],
+  "follow_up": { "interval_days": 365, "reason": "next well-child at age 5" }
+}

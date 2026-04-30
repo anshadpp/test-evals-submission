@@ -1,0 +1,19 @@
+{
+  "chief_complaint": "acute low back pain after lifting",
+  "vitals": { "bp": "124/78", "hr": 72, "temp_f": null, "spo2": null },
+  "medications": [
+    { "name": "ibuprofen", "dose": "600 mg", "frequency": "three times daily with food", "route": "PO" },
+    { "name": "cyclobenzaprine", "dose": "10 mg", "frequency": "at bedtime as needed", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "acute mechanical low back strain", "icd10": "M54.5" }
+  ],
+  "plan": [
+    "ibuprofen 600 mg three times daily with food for 7 to 10 days",
+    "cyclobenzaprine 10 mg at bedtime as needed for muscle spasm",
+    "stay active, avoid bed rest",
+    "use heat",
+    "return if not significantly better in 4 weeks or red flags develop"
+  ],
+  "follow_up": { "interval_days": null, "reason": "return if not improved in 4 weeks or red flags develop" }
+}

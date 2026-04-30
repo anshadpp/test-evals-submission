@@ -1,0 +1,10 @@
+[Visit type: in-person, annual physical]
+[Vitals: BP 122/78, HR 70, Temp 98.4, SpO2 99%]
+
+Doctor: Hi Patricia. Annual physical today, anything specific to discuss?
+Patient: Just routine. I feel pretty good. I do worry about my cholesterol since my dad had a heart attack at 60.
+Doctor: Got it. You're 50, no current medications. Let's do age-appropriate screening: lipid panel, fasting glucose, A1c, comprehensive metabolic panel, CBC, TSH. Schedule your screening mammogram and your first colonoscopy. Pap smear if not done in the last 3 years.
+Patient: It's been 4 years.
+Doctor: We'll do that today. Exam unremarkable. Let's review preventive items: continue your regular exercise, your weight is stable, no smoking, moderate alcohol — keep that under one drink a day. Get your tetanus booster today, it's been over 10 years.
+Patient: Sure.
+Doctor: I'll call with labs. See you next year for your annual unless something comes up.

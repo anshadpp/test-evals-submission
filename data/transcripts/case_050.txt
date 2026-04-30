@@ -1,0 +1,13 @@
+[Visit type: in-person]
+
+Doctor: Hi Naomi. Bike scrape?
+Patient: Yeah. Fell off my bike this morning, slid on my left knee. Big road rash.
+Doctor: Let me see. About 5 by 6 cm abrasion over the left knee with embedded grit, no bleeding now, no laceration deep enough to need stitches, full range of motion, no joint instability.
+Patient: Hurts.
+Doctor: Let's clean it thoroughly. I'm going to irrigate with saline, scrub gently to get the debris out, that's the most important part. Apply petrolatum ointment and a non-stick dressing.
+Patient: Antibiotics?
+Doctor: Not needed for clean abrasions. Tetanus is current per chart from 4 years ago.
+Patient: Care at home?
+Doctor: Wash gently with soap and water once a day, reapply petrolatum ointment and a fresh non-stick dressing. Keep it covered for the first week. Acetaminophen 500 mg every 6 hours as needed.
+Patient: When should I worry?
+Doctor: Increasing redness, warmth, pus, fever — call us. Otherwise no follow-up needed; should heal in 1 to 2 weeks.

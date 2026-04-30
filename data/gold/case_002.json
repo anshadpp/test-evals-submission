@@ -1,0 +1,18 @@
+{
+  "chief_complaint": "facial pressure and purulent nasal discharge for ten days",
+  "vitals": { "bp": "118/76", "hr": 82, "temp_f": 101.2, "spo2": 97 },
+  "medications": [
+    { "name": "amoxicillin-clavulanate", "dose": "875 mg", "frequency": "twice daily", "route": "PO" },
+    { "name": "pseudoephedrine", "dose": "30 mg", "frequency": "every 6 hours", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "acute bacterial sinusitis", "icd10": "J01.90" }
+  ],
+  "plan": [
+    "start amoxicillin-clavulanate 875 mg twice daily for 7 days",
+    "saline nasal rinse twice a day",
+    "pseudoephedrine 30 mg every 6 hours as needed for congestion",
+    "call if not significantly better in 5 days"
+  ],
+  "follow_up": { "interval_days": null, "reason": "call if not improving in 5 days" }
+}

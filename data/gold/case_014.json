@@ -1,0 +1,19 @@
+{
+  "chief_complaint": "rectal bleeding with itching for one week",
+  "vitals": { "bp": null, "hr": null, "temp_f": null, "spo2": null },
+  "medications": [
+    { "name": "hydrocortisone 1% cream", "dose": null, "frequency": "twice daily", "route": "topical" },
+    { "name": "docusate", "dose": "100 mg", "frequency": "twice daily", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "hemorrhoids", "icd10": "K64.9" }
+  ],
+  "plan": [
+    "increase fluids and fiber",
+    "sitz bath twice daily for 10 to 15 minutes",
+    "hydrocortisone 1% cream twice daily for up to a week",
+    "docusate 100 mg twice daily as stool softener",
+    "in-person exam if bleeding persists past 2 weeks, becomes heavier, or dark stools develop"
+  ],
+  "follow_up": { "interval_days": null, "reason": null }
+}

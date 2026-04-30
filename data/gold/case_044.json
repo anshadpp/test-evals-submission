@@ -1,0 +1,21 @@
+{
+  "chief_complaint": "weight management with prediabetes",
+  "vitals": { "bp": "132/84", "hr": 78, "temp_f": 98.4, "spo2": 98 },
+  "medications": [
+    { "name": "semaglutide", "dose": "0.25 mg", "frequency": "once a week", "route": "subcutaneous" }
+  ],
+  "diagnoses": [
+    { "description": "obesity", "icd10": "E66.9" },
+    { "description": "prediabetes", "icd10": "R73.03" }
+  ],
+  "plan": [
+    "start semaglutide 0.25 mg subcutaneous once a week for 4 weeks then titrate",
+    "stop and call for severe abdominal pain",
+    "calorie-reduced, high-protein eating pattern",
+    "150 minutes moderate exercise weekly",
+    "food and activity logs",
+    "dietitian referral",
+    "repeat A1c and metabolic panel in 3 months"
+  ],
+  "follow_up": { "interval_days": 28, "reason": "tolerability check and semaglutide dose increase" }
+}

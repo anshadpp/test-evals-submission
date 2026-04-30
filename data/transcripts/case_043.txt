@@ -1,0 +1,14 @@
+[Visit type: in-person counseling]
+[Vitals: BP 130/82, HR 80]
+
+Doctor: Hi Frank, you said you want to quit smoking?
+Patient: Yeah. Pack a day for 25 years. I tried cold turkey twice and didn't last more than a few days.
+Doctor: That's hard. We have better tools now. Are you motivated to set a quit date in the next 2 weeks?
+Patient: Yes.
+Doctor: I'd recommend varenicline. Start it 1 week before your quit date. Day 1 to 3, varenicline 0.5 mg once daily. Day 4 to 7, 0.5 mg twice daily. Day 8 onward, 1 mg twice daily. Total course is 12 weeks.
+Patient: Side effects?
+Doctor: Nausea is the main one — take with food and a full glass of water. Watch for unusual mood changes.
+Patient: Okay.
+Doctor: I'll also enroll you in our quit-line counseling — it doubles success rates. Pick your quit date. Avoid your usual smoking triggers, plan substitutes — gum, walking, deep breaths.
+Patient: Got it.
+Doctor: Follow up in 4 weeks, sooner if you have side effects.

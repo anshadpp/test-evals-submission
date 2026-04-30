@@ -1,0 +1,10 @@
+[Visit type: in-person]
+[Vitals at intake: BP 124/80, HR 92, Temp 99.8, SpO2 95%]
+
+Doctor: Hello Sam, I hear you've had a cough for three weeks?
+Patient: Yeah. Started after a cold. The runny nose went away but this cough just won't quit. It's mostly dry, sometimes I bring up a little clear stuff.
+Doctor: Any wheezing? Shortness of breath when you walk up stairs?
+Patient: A little wheeze at night. Stairs are okay.
+Doctor: Lungs have some scattered wheezes but no crackles. SpO2 is 95, fine. This sounds like post-viral acute bronchitis with some bronchospasm. Antibiotics aren't indicated here. I'm going to give you an albuterol inhaler — two puffs every 4 to 6 hours as needed for wheeze and cough — and benzonatate 100 mg three times daily for cough suppression.
+Patient: Okay.
+Doctor: Should resolve over the next two weeks. If it lingers past four weeks total or you start having fevers, come back and we'll get a chest X-ray.

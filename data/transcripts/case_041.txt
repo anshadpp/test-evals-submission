@@ -1,0 +1,11 @@
+[Visit type: telehealth]
+
+Doctor: Hi Kevin, headaches again?
+Patient: Yeah, I've been getting these tight, band-like headaches across my forehead almost daily. They build through the workday. No nausea, no light sensitivity, just pressure.
+Doctor: Any visual changes, weakness, fevers, weight loss?
+Patient: No.
+Doctor: How are you sleeping? Stress level?
+Patient: Sleep is mediocre. Stress at work is high. I clench my jaw a lot.
+Doctor: This sounds like chronic tension-type headache. For acute attacks, naproxen 440 mg as needed up to twice a day, max 10 days a month — using analgesics more than that can cause medication-overuse headache. More importantly, let's look at the drivers: stress reduction, posture and ergonomics, regular exercise, hydration, and sleep.
+Patient: Anything for the jaw?
+Doctor: Try a soft diet for a few days, warm compresses, and consider a night guard if you grind. If headaches stay daily despite these changes, we'll consider a preventive like amitriptyline. Message me in 4 weeks with an update.

@@ -1,0 +1,12 @@
+[Visit type: pediatric urgent]
+[Vitals: HR 124, Temp 99.0, SpO2 92%]
+
+Doctor: Hi, how is Sofia breathing today?
+Parent: She's 7. Started wheezing last night and her cough is awful. We've used her albuterol but it's only helping a little.
+Doctor: SpO2 is 92, mild retractions, audible wheeze on auscultation, prolonged expiration. This is a moderate asthma exacerbation.
+Parent: What now?
+Doctor: Let's give her a nebulized albuterol 2.5 mg with ipratropium 0.5 mg in clinic now, then reassess. Also start prednisolone 20 mg by mouth once daily for 5 days.
+Parent: Okay.
+Doctor: At home, albuterol HFA 2 puffs every 4 hours through tomorrow, then taper as she improves. Continue her fluticasone 88 mcg two puffs twice daily — looks like she may have been missing doses.
+Parent: Yes, we got out of routine.
+Doctor: Set a phone alarm. If she gets retractions worse, can't speak in full sentences, or SpO2 drops below 90 at home, ER. Otherwise come back in 2 to 3 days for a recheck.

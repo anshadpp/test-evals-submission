@@ -1,0 +1,18 @@
+{
+  "chief_complaint": "nausea, vomiting, and diarrhea since yesterday",
+  "vitals": { "bp": "110/68", "hr": 96, "temp_f": 100.2, "spo2": 99 },
+  "medications": [
+    { "name": "ondansetron", "dose": "4 mg", "frequency": "every 8 hours as needed", "route": "SL" }
+  ],
+  "diagnoses": [
+    { "description": "acute gastroenteritis", "icd10": "K52.9" }
+  ],
+  "plan": [
+    "ondansetron 4 mg sublingual every 8 hours as needed for nausea",
+    "oral rehydration solution sipped slowly",
+    "BRAT diet as tolerated",
+    "avoid dairy for 48 hours",
+    "go to urgent care if cannot keep fluids down past 12 more hours, bloody stools, or severe pain"
+  ],
+  "follow_up": { "interval_days": null, "reason": "urgent care if symptoms worsen" }
+}

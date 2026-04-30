@@ -1,0 +1,12 @@
+[Visit type: in-person, mental health follow-up]
+[Vitals: BP 118/74, HR 70]
+
+Doctor: Hi Ben, you've been on fluoxetine 20 mg once daily for 8 weeks. How's your mood?
+Patient: Better. PHQ-9 today was 7, down from 19. I still have low days but I'm functioning. I'm back at the gym.
+Doctor: Sleep, appetite, energy?
+Patient: All improved.
+Doctor: Any side effects? Sexual dysfunction is the most common one.
+Patient: A little, but manageable.
+Doctor: We can revisit if it bothers you. Plan: continue fluoxetine 20 mg once daily. Continue weekly therapy. Recommend at least 9 to 12 months of medication once you're well to prevent relapse.
+Patient: Got it.
+Doctor: Follow up in 8 weeks. Call sooner if mood worsens or any thoughts of self-harm.

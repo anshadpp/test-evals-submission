@@ -1,0 +1,12 @@
+[Visit type: in-person]
+[Vitals: BP 110/68, HR 96, Temp 100.2, SpO2 99%]
+
+Doctor: Hi Lily, what's been going on?
+Patient: Nausea, vomiting, and diarrhea since yesterday afternoon. I think I had bad sushi.
+Doctor: How many episodes?
+Patient: Maybe six bouts of diarrhea, three of vomiting. I haven't been able to keep water down well.
+Doctor: Any blood, severe abdominal pain, or recent travel?
+Patient: No blood, mild crampy pain, no travel.
+Doctor: Mucous membranes are slightly dry, abdomen soft with mild diffuse tenderness, no rebound. This is acute viral or food-borne gastroenteritis. We'll treat conservatively. I'm giving you ondansetron 4 mg, dissolve under your tongue every 8 hours as needed for nausea. Use oral rehydration solution — sip slowly. BRAT diet as you tolerate. Avoid dairy for 48 hours.
+Patient: Okay.
+Doctor: If you can't keep fluids down for more than 12 more hours, develop bloody stools, or get severe abdominal pain, head to urgent care for IV fluids.

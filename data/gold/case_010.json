@@ -1,0 +1,17 @@
+{
+  "chief_complaint": "GERD follow-up",
+  "vitals": { "bp": "132/86", "hr": 78, "temp_f": null, "spo2": null },
+  "medications": [
+    { "name": "omeprazole", "dose": "20 mg", "frequency": "once daily", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "gastroesophageal reflux disease", "icd10": "K21.9" }
+  ],
+  "plan": [
+    "continue omeprazole 20 mg once daily 30 minutes before breakfast",
+    "finish dinner at least three hours before bed",
+    "elevate head of bed",
+    "plan to taper off in 8 to 12 weeks if controlled"
+  ],
+  "follow_up": { "interval_days": 90, "reason": "GERD recheck and discuss tapering" }
+}

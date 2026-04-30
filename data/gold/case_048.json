@@ -1,0 +1,18 @@
+{
+  "chief_complaint": "left index finger laceration from kitchen knife",
+  "vitals": { "bp": "124/78", "hr": 86, "temp_f": 98.6, "spo2": 99 },
+  "medications": [
+    { "name": "bacitracin ointment", "dose": "thin layer", "frequency": "twice daily", "route": "topical" }
+  ],
+  "diagnoses": [
+    { "description": "laceration of left index finger", "icd10": "S61.219A" }
+  ],
+  "plan": [
+    "clean and irrigate wound, close with 4-0 nylon simple interrupted sutures",
+    "keep clean and dry for 24 hours then wash gently with soap and water",
+    "apply thin layer of bacitracin ointment twice daily and re-cover",
+    "no soaking until sutures come out",
+    "watch for redness, warmth, pus, streaking, fever and call if any"
+  ],
+  "follow_up": { "interval_days": 10, "reason": "suture removal" }
+}

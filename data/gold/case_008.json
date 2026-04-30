@@ -1,0 +1,17 @@
+{
+  "chief_complaint": "positive COVID test with mild symptoms",
+  "vitals": { "bp": null, "hr": null, "temp_f": null, "spo2": null },
+  "medications": [
+    { "name": "acetaminophen", "dose": "500 mg", "frequency": "every 6 hours as needed", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "COVID-19", "icd10": "U07.1" }
+  ],
+  "plan": [
+    "supportive care with rest and fluids",
+    "acetaminophen 500 mg every 6 hours as needed for aches",
+    "isolate per CDC guidance",
+    "call if shortness of breath or worsening symptoms develop"
+  ],
+  "follow_up": { "interval_days": null, "reason": null }
+}

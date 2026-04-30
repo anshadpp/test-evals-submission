@@ -1,0 +1,12 @@
+[Visit type: in-person urgent]
+[Vitals: BP 124/78, HR 86, Temp 98.6, SpO2 99%]
+
+Doctor: Hi Hannah, that's a nasty cut. What happened?
+Patient: I was slicing tomatoes and the knife slipped. About an hour ago.
+Doctor: Let me look. You've got a 3 cm laceration on the volar aspect of your left index finger, clean edges, no involvement of tendon, full sensation, full range of motion, no foreign body. Bleeding is controlled with pressure.
+Patient: Stitches?
+Doctor: Yes, simple interrupted sutures. I'll clean and irrigate it, then close with 4-0 nylon. Tetanus is up to date per your chart.
+Patient: Okay.
+Doctor: After: keep it clean and dry for 24 hours, then you can wash gently with soap and water. Apply a thin layer of bacitracin ointment twice daily and re-cover. No soaking — no dishes, baths, swimming — until sutures come out.
+Patient: When's that?
+Doctor: Come back in 10 days for suture removal. Watch for redness, warmth, pus, streaking, fever — call us right away if any of those.

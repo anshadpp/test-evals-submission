@@ -1,0 +1,12 @@
+[Visit type: in-person, CHF check-in]
+[Vitals: BP 118/74, HR 72, Temp 98.0, SpO2 96%]
+
+Doctor: Hi Walter, how have you been?
+Patient: Pretty stable. I've been doing my daily weights. Up about 2 pounds this week.
+Doctor: Any swelling or shortness of breath at night?
+Patient: A little ankle swelling, no shortness of breath.
+Doctor: Lungs are clear, mild bilateral pedal edema. Let's bump your furosemide from 20 mg to 40 mg once daily for the next week, then go back to 20 if the weight comes off.
+Patient: Okay.
+Doctor: Continue carvedilol 12.5 mg twice daily, sacubitril-valsartan 49/51 mg twice daily, and spironolactone 25 mg once daily. Stick to less than 2 grams sodium and 2 liters fluid a day. Daily morning weights — call if you gain more than 3 pounds in a day or 5 in a week.
+Patient: Will do.
+Doctor: Get a basic metabolic panel in 2 weeks to check potassium and kidney function. Follow up in 6 weeks.

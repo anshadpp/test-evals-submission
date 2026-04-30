@@ -1,0 +1,13 @@
+[Visit type: in-person]
+
+Doctor: Hi Diego. How long have you been dealing with the acne?
+Patient: A couple years. Mostly my forehead and jawline. I've tried benzoyl peroxide wash. Helps a little.
+Doctor: Any cysts or scarring?
+Patient: A few painful bumps under the skin sometimes. I think one left a small scar.
+Doctor: Exam: comedonal and inflammatory papules, occasional nodules, mostly on the forehead, cheeks, and jawline. Moderate inflammatory acne.
+Patient: What's next?
+Doctor: Continue benzoyl peroxide 5% wash in the shower. Add adapalene 0.1% gel — pea-sized amount applied to the entire face once nightly. And let's start doxycycline 100 mg once a day for 12 weeks to settle the inflammation.
+Patient: Sun precautions?
+Doctor: Yes, doxycycline can cause photosensitivity. Use sunscreen daily. Take it with a full glass of water and don't lie down for 30 minutes after.
+Patient: Okay.
+Doctor: Come back in 12 weeks. If we see good response we'll taper the doxycycline.

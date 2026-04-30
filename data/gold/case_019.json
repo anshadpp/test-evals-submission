@@ -1,0 +1,17 @@
+{
+  "chief_complaint": "atrial fibrillation follow-up",
+  "vitals": { "bp": null, "hr": null, "temp_f": null, "spo2": null },
+  "medications": [
+    { "name": "apixaban", "dose": "5 mg", "frequency": "twice daily", "route": "PO" },
+    { "name": "metoprolol succinate", "dose": "50 mg", "frequency": "once daily", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "atrial fibrillation", "icd10": "I48.91" }
+  ],
+  "plan": [
+    "continue apixaban 5 mg twice daily",
+    "continue metoprolol succinate 50 mg once daily",
+    "basic metabolic panel and CBC in 2 months"
+  ],
+  "follow_up": { "interval_days": 180, "reason": "AFib management" }
+}

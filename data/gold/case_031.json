@@ -1,0 +1,17 @@
+{
+  "chief_complaint": "fever in 2-year-old",
+  "vitals": { "bp": null, "hr": 132, "temp_f": 103.4, "spo2": 98 },
+  "medications": [
+    { "name": "children's ibuprofen", "dose": "5 mL", "frequency": "every 6 hours", "route": "PO" },
+    { "name": "children's acetaminophen", "dose": "5 mL", "frequency": "every 4 to 6 hours", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "viral syndrome with fever", "icd10": "B34.9" }
+  ],
+  "plan": [
+    "alternate children's ibuprofen 5 mL every 6 hours and children's acetaminophen 5 mL every 4 to 6 hours",
+    "push fluids — popsicles, diluted juice, electrolyte drinks",
+    "ER if lethargy, refusal to drink, stiff neck, persistent vomiting, non-blanching rash, or fever lasting more than 5 days"
+  ],
+  "follow_up": { "interval_days": null, "reason": null }
+}

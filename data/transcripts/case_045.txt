@@ -1,0 +1,14 @@
+[Visit type: in-person, hypothyroid follow-up]
+[Vitals: BP 118/74, HR 64]
+
+Doctor: Hi Sara. Your TSH today came back at 6.8. It's still slightly elevated despite levothyroxine 75 mcg.
+Patient: I've been a little tired and a bit cold. I take it every morning.
+Doctor: With food or coffee?
+Patient: I take it with my coffee, yeah.
+Doctor: That's likely reducing absorption. Take it on an empty stomach, with water only, at least 30 to 60 minutes before food, coffee, or other meds.
+Patient: Got it.
+Doctor: Let's also bump the dose. Increase levothyroxine to 88 mcg once daily on an empty stomach. Recheck TSH in 6 to 8 weeks.
+Patient: Okay.
+Doctor: Continue your other meds as before. If you develop palpitations, jitteriness, or trouble sleeping, call us — could mean the dose is too high.
+Patient: Will do.
+Doctor: Follow up in 8 weeks with the lab.

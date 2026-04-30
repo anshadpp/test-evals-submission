@@ -1,0 +1,11 @@
+[Visit type: telehealth follow-up]
+
+Doctor: Hi Hannah, you're calling about your seasonal allergies?
+Patient: Yeah. Every spring my eyes itch, I sneeze constantly, my nose runs. It's been two weeks of misery. Loratadine isn't doing much this year.
+Doctor: Any ear pain, fever, or thick discolored mucus?
+Patient: No, it's all clear and watery.
+Doctor: Classic allergic rhinitis. Let's step you up. Stop the loratadine. I want you to start fluticasone nasal spray, two sprays in each nostril once daily, and add cetirizine 10 mg at bedtime. Give it two weeks of consistent use to see the full effect.
+Patient: Okay. Anything for the eyes?
+Doctor: Try ketotifen ophthalmic drops, one drop in each eye twice daily as needed.
+Patient: Got it.
+Doctor: If you're still struggling in three weeks, message me and we'll talk about allergy testing or referral. No formal follow-up needed otherwise.

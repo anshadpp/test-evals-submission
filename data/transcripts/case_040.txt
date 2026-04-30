@@ -1,0 +1,16 @@
+[Visit type: in-person urgent]
+[Vitals: BP 134/84, HR 78]
+
+Doctor: Hi George, dizziness?
+Patient: For three days. When I roll over in bed or look up, the room spins for about 30 seconds. Then it stops.
+Doctor: Hearing loss, ringing, fullness in the ear?
+Patient: No, none.
+Doctor: Headache, weakness, slurred speech?
+Patient: No.
+Doctor: I'm going to do a Dix-Hallpike maneuver — turning your head to the right and lying you back. ... I see upbeating, torsional nystagmus, brief, fatigable. That's classic for benign paroxysmal positional vertigo, right ear.
+Patient: What now?
+Doctor: I'll do an Epley maneuver right now in the office to reposition the otoconia. ... How does that feel?
+Patient: Better, actually.
+Doctor: Good. At home, sleep with your head slightly elevated for the next 48 hours, avoid sleeping on your right side. For nausea, meclizine 25 mg every 6 hours as needed but try to use it sparingly — moving around helps recovery.
+Patient: Okay.
+Doctor: Most resolve within a week or two. Come back if not better in 2 weeks or if any new symptoms.

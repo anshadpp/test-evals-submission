@@ -1,0 +1,12 @@
+[Visit type: in-person]
+[Vitals: BP 124/78, HR 76]
+
+Doctor: Hi Asha, headaches?
+Patient: I get migraines maybe twice a month. Throbbing one side, light bothers me, I get nauseous. Last 6 to 8 hours. Ibuprofen barely touches them.
+Doctor: Any aura?
+Patient: Sometimes shimmering lights for 20 minutes before.
+Doctor: Any vasculopathy risk factors? You're 28, no smoking or stroke history per your chart.
+Patient: Right.
+Doctor: Let's give you a triptan. Sumatriptan 50 mg by mouth at the first sign of migraine, may repeat in 2 hours if needed, max 100 mg in 24 hours. Avoid if you ever develop chest pain or new neurological symptoms with the headache.
+Patient: Got it.
+Doctor: Track triggers — sleep, food, stress, dehydration. If you start having more than 4 migraines a month we'll talk daily preventive therapy. Follow up in 8 weeks.

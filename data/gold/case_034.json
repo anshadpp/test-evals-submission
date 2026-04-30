@@ -1,0 +1,20 @@
+{
+  "chief_complaint": "moderate inflammatory acne for two years",
+  "vitals": { "bp": null, "hr": null, "temp_f": null, "spo2": null },
+  "medications": [
+    { "name": "benzoyl peroxide 5% wash", "dose": null, "frequency": "in the shower", "route": "topical" },
+    { "name": "adapalene 0.1% gel", "dose": "pea-sized amount", "frequency": "once nightly", "route": "topical" },
+    { "name": "doxycycline", "dose": "100 mg", "frequency": "once a day", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "moderate inflammatory acne vulgaris", "icd10": "L70.0" }
+  ],
+  "plan": [
+    "continue benzoyl peroxide 5% wash in the shower",
+    "adapalene 0.1% gel pea-sized amount applied to entire face once nightly",
+    "doxycycline 100 mg once a day for 12 weeks",
+    "daily sunscreen for photosensitivity",
+    "take doxycycline with full glass of water, do not lie down for 30 minutes after"
+  ],
+  "follow_up": { "interval_days": 84, "reason": "acne treatment response check" }
+}

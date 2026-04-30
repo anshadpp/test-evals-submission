@@ -1,0 +1,14 @@
+[Visit type: pediatric well-child, 4-year-old]
+[Vitals: HR 96, Temp 98.6]
+
+Doctor: Hi, how is Amelia doing?
+Patient (parent): Great. Eating, sleeping, playing. Started preschool last month and loves it.
+Doctor: Any concerns with speech, behavior, toileting?
+Parent: None. She uses full sentences, plays well with others.
+Doctor: Height and weight tracking 50th percentile, growth curve looking good. Exam unremarkable. Eyes, ears, heart, lungs, abdomen all normal. Vision and hearing screen passed today.
+Parent: Vaccines today?
+Doctor: She's due for DTaP, IPV, MMR, and varicella boosters today. We'll do an annual flu shot too — that's four total, two in each thigh. Tylenol 160 mg by mouth as needed for fever or soreness afterward.
+Parent: Okay.
+Doctor: Limit screens to under one hour a day, family meals when possible, lots of outdoor play. Brushing teeth twice daily, dental visit every 6 months.
+Parent: Got it.
+Doctor: Next well-child at age 5. Call if any concerns sooner.

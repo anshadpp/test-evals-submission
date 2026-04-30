@@ -1,0 +1,22 @@
+{
+  "chief_complaint": "type 2 diabetes follow-up with rising A1c",
+  "vitals": { "bp": "134/82", "hr": 76, "temp_f": 98.2, "spo2": 99 },
+  "medications": [
+    { "name": "metformin", "dose": "1000 mg", "frequency": "twice daily", "route": "PO" },
+    { "name": "empagliflozin", "dose": "10 mg", "frequency": "once daily", "route": "PO" },
+    { "name": "atorvastatin", "dose": "40 mg", "frequency": "at bedtime", "route": "PO" },
+    { "name": "lisinopril", "dose": "10 mg", "frequency": "once a day", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "type 2 diabetes mellitus", "icd10": "E11.9" }
+  ],
+  "plan": [
+    "continue metformin 1000 mg twice daily",
+    "add empagliflozin 10 mg once daily",
+    "continue atorvastatin 40 mg at bedtime",
+    "continue lisinopril 10 mg once a day",
+    "basic metabolic panel before next visit",
+    "annual eye exam"
+  ],
+  "follow_up": { "interval_days": 90, "reason": "A1c recheck" }
+}

@@ -1,0 +1,16 @@
+[Visit type: in-person urgent]
+[Vitals: BP 142/88, HR 92, Temp 99.6]
+
+Doctor: Hi Vincent, foot pain?
+Patient: Woke up at 3 am with my left big toe joint on fire. Red, swollen, can't bear weight on it. I've had this once before, two years ago.
+Doctor: Any recent dietary triggers — alcohol, red meat, shellfish?
+Patient: Steak dinner and a few beers two nights ago.
+Doctor: Exam: first MTP joint of the left foot — exquisitely tender, erythematous, warm, swollen. Classic gout flare.
+Patient: Confirmed?
+Doctor: Clinically, yes. Last labs showed uric acid 8.4. We could tap the joint to confirm crystals but the picture is classic.
+Patient: Treatment?
+Doctor: Indomethacin 50 mg three times a day with food until the flare resolves, usually 5 to 7 days. Avoid aspirin. Ice the joint, elevate, rest.
+Patient: Long-term?
+Doctor: With two flares now, let's start daily allopurinol 100 mg once a day after the flare settles, and titrate up. Goal uric acid under 6.
+Patient: Diet too?
+Doctor: Limit red meat, shellfish, beer. Hydrate. Follow up in 4 weeks.

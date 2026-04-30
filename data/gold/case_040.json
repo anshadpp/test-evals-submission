@@ -1,0 +1,18 @@
+{
+  "chief_complaint": "positional dizziness for three days",
+  "vitals": { "bp": "134/84", "hr": 78, "temp_f": null, "spo2": null },
+  "medications": [
+    { "name": "meclizine", "dose": "25 mg", "frequency": "every 6 hours as needed", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "benign paroxysmal positional vertigo, right ear", "icd10": "H81.11" }
+  ],
+  "plan": [
+    "Epley maneuver performed in office",
+    "sleep with head slightly elevated for 48 hours",
+    "avoid sleeping on the right side",
+    "meclizine 25 mg every 6 hours as needed for nausea, used sparingly",
+    "return if not better in 2 weeks or new symptoms"
+  ],
+  "follow_up": { "interval_days": null, "reason": "return if not better in 2 weeks or new symptoms" }
+}

@@ -1,0 +1,11 @@
+[Visit type: telehealth]
+
+Doctor: Hi Tomas. Your vitamin D level came back at 18 ng/mL. That's deficient.
+Patient: I figured. I work indoors and I don't drink milk.
+Doctor: Any bone pain, muscle weakness?
+Patient: Some vague achiness, mostly fine.
+Doctor: Let's do a higher-dose loading regimen. Vitamin D3 50,000 IU once a week for 8 weeks, then drop to a maintenance dose of 2000 IU daily.
+Patient: With food?
+Doctor: With a meal that contains fat — better absorption. Also try to get 15 to 20 minutes of midday sunlight a few times a week, and consider fortified foods.
+Patient: Got it.
+Doctor: We'll recheck the level in 3 months. No formal in-person visit needed unless you have new symptoms.

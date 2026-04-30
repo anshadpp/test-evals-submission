@@ -1,0 +1,12 @@
+[Visit type: in-person, pediatric mom-and-child]
+[Vitals: HR 118, Temp 102.6, SpO2 99%]
+
+Doctor: Hi, what's been going on with Mateo?
+Patient (mom): He's been pulling at his right ear since yesterday and was up most of the night crying. He had a runny nose last week.
+Doctor: Any drainage from the ear?
+Patient: No.
+Doctor: Let me look. Right tympanic membrane is bulging and red, no perforation. Left ear is fine. He's got a clear acute otitis media on the right.
+Patient: Does he need antibiotics?
+Doctor: At his age and with that fever of 102.6, yes. Amoxicillin 400 mg by mouth twice a day for 10 days. Also give him children's ibuprofen, weight-based dosing — 5 mL every 6 hours as needed for pain and fever.
+Patient: Okay.
+Doctor: If he's not better in 48 to 72 hours or it gets worse, bring him back. Otherwise no follow-up needed.

@@ -1,0 +1,11 @@
+[Visit type: in-person]
+
+Doctor: Hi Ruth. Knee pain?
+Patient: My right knee aches when I climb stairs and stiff in the morning for about 15 minutes. It's been getting worse over the last year. I'm 64.
+Doctor: Any locking, giving way, or recent injury?
+Patient: No.
+Doctor: Crepitus on flexion, mild bony enlargement at the medial joint line, no effusion. X-ray from last month showed medial joint space narrowing and osteophytes. This is osteoarthritis of the right knee.
+Patient: What can we do?
+Doctor: First-line is acetaminophen 1000 mg three times daily as needed and topical diclofenac 1% gel applied to the knee four times a day. Quadriceps strengthening — I'll refer you to physical therapy. If you're not getting relief in 6 weeks, we can talk about an intra-articular steroid injection.
+Patient: Okay.
+Doctor: Low-impact exercise — swimming, stationary bike. Weight loss if possible — even 5 to 10 pounds helps. Follow up in 6 weeks.

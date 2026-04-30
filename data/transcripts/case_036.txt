@@ -1,0 +1,14 @@
+[Visit type: in-person]
+[Vitals: BP 110/70, HR 88, Temp 99.4]
+
+Doctor: Hi Emma. What brings you in?
+Patient: Burning when I pee, going more often, urgency. Started two days ago. No fever, no back pain.
+Doctor: Any vaginal discharge or pelvic pain?
+Patient: No.
+Doctor: Sexually active?
+Patient: Yes, monogamous.
+Doctor: Urine dip in the office: positive nitrites and leukocyte esterase. Classic uncomplicated UTI.
+Patient: I had one last year too.
+Doctor: We'll send a culture but go ahead and start treatment. Nitrofurantoin 100 mg twice daily for 5 days. Drink plenty of water. You can also use phenazopyridine 200 mg three times a day with meals for up to 2 days for the burning — just know it turns urine orange.
+Patient: Okay.
+Doctor: If you develop flank pain, fever above 101, or you're not better in 48 hours, call us. Otherwise no follow-up.

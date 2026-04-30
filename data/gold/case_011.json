@@ -1,0 +1,19 @@
+{
+  "chief_complaint": "chronic constipation for a couple months",
+  "vitals": { "bp": null, "hr": null, "temp_f": null, "spo2": null },
+  "medications": [
+    { "name": "psyllium husk", "dose": "one tablespoon", "frequency": "once a day", "route": "PO" },
+    { "name": "polyethylene glycol", "dose": "17 grams", "frequency": "once daily", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "chronic constipation", "icd10": "K59.00" }
+  ],
+  "plan": [
+    "psyllium husk one tablespoon mixed in water once a day, increase to twice if needed",
+    "drink at least 64 ounces of water a day",
+    "polyethylene glycol 17 grams in 8 ounces of water once daily for two weeks",
+    "daily walking",
+    "return sooner for blood, weight loss, or severe pain"
+  ],
+  "follow_up": { "interval_days": 28, "reason": "constipation recheck" }
+}

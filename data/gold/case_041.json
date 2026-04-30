@@ -1,0 +1,20 @@
+{
+  "chief_complaint": "near-daily band-like tension headaches",
+  "vitals": { "bp": null, "hr": null, "temp_f": null, "spo2": null },
+  "medications": [
+    { "name": "naproxen", "dose": "440 mg", "frequency": "as needed up to twice a day, max 10 days a month", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "chronic tension-type headache", "icd10": "G44.209" }
+  ],
+  "plan": [
+    "naproxen 440 mg as needed up to twice a day, max 10 days a month",
+    "stress reduction",
+    "posture and ergonomic adjustments",
+    "regular exercise, hydration, and sleep",
+    "soft diet, warm compresses, consider night guard for jaw clenching",
+    "consider preventive amitriptyline if headaches remain daily",
+    "message in 4 weeks with update"
+  ],
+  "follow_up": { "interval_days": 28, "reason": "tension headache reassessment" }
+}

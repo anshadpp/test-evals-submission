@@ -1,0 +1,9 @@
+[Visit type: telehealth]
+
+Doctor: Hi Diane, what brings you to telehealth?
+Patient: Hemorrhoids. Bright red blood on the toilet paper for the last week, some itching and discomfort, no severe pain.
+Doctor: Any change in bowel habits, weight loss, dark stools, family history of colon cancer?
+Patient: I've been a little constipated. No weight loss, no dark stools, no family history.
+Doctor: At your age — 38 — and with classic external hemorrhoid symptoms after constipation, this is likely hemorrhoids. Increase fluids, fiber, and try a sitz bath twice daily for 10 to 15 minutes. Use hydrocortisone 1% cream applied to the area twice daily for up to a week. Also start docusate 100 mg twice daily as a stool softener.
+Patient: Okay.
+Doctor: If bleeding doesn't resolve in 2 weeks, becomes heavier, or you develop dark stools, come in for an exam. Otherwise no follow-up needed.

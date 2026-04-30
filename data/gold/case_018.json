@@ -1,0 +1,23 @@
+{
+  "chief_complaint": "congestive heart failure check-in",
+  "vitals": { "bp": "118/74", "hr": 72, "temp_f": 98.0, "spo2": 96 },
+  "medications": [
+    { "name": "furosemide", "dose": "40 mg", "frequency": "once daily", "route": "PO" },
+    { "name": "carvedilol", "dose": "12.5 mg", "frequency": "twice daily", "route": "PO" },
+    { "name": "sacubitril-valsartan", "dose": "49/51 mg", "frequency": "twice daily", "route": "PO" },
+    { "name": "spironolactone", "dose": "25 mg", "frequency": "once daily", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "congestive heart failure", "icd10": "I50.9" }
+  ],
+  "plan": [
+    "increase furosemide to 40 mg once daily for one week then back to 20 mg if weight drops",
+    "continue carvedilol 12.5 mg twice daily",
+    "continue sacubitril-valsartan 49/51 mg twice daily",
+    "continue spironolactone 25 mg once daily",
+    "less than 2 grams sodium and 2 liters fluid daily",
+    "daily morning weights, call if more than 3 pounds in a day or 5 in a week",
+    "basic metabolic panel in 2 weeks"
+  ],
+  "follow_up": { "interval_days": 42, "reason": "CHF follow-up" }
+}

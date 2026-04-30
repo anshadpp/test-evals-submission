@@ -1,0 +1,17 @@
+{
+  "chief_complaint": "persistent cough for three weeks after a cold",
+  "vitals": { "bp": "124/80", "hr": 92, "temp_f": 99.8, "spo2": 95 },
+  "medications": [
+    { "name": "albuterol", "dose": "two puffs", "frequency": "every 4 to 6 hours as needed", "route": "inhaled" },
+    { "name": "benzonatate", "dose": "100 mg", "frequency": "three times daily", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "post-viral acute bronchitis", "icd10": "J20.9" }
+  ],
+  "plan": [
+    "albuterol inhaler two puffs every 4 to 6 hours as needed",
+    "benzonatate 100 mg three times daily for cough suppression",
+    "return for chest X-ray if cough persists past four weeks or fevers develop"
+  ],
+  "follow_up": { "interval_days": null, "reason": "return if cough persists past four weeks or fevers develop" }
+}

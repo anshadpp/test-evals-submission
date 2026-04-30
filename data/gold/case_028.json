@@ -1,0 +1,19 @@
+{
+  "chief_complaint": "insomnia for two months",
+  "vitals": { "bp": null, "hr": null, "temp_f": null, "spo2": null },
+  "medications": [
+    { "name": "melatonin", "dose": "3 mg", "frequency": "30 minutes before bedtime", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "insomnia", "icd10": "G47.00" }
+  ],
+  "plan": [
+    "no caffeine after noon",
+    "no phones in bed; wind-down routine an hour before bed",
+    "consistent wake time including weekends",
+    "melatonin 3 mg 30 minutes before bedtime for two weeks",
+    "CBT-I app recommendation",
+    "message in 4 weeks if not improving"
+  ],
+  "follow_up": { "interval_days": 28, "reason": "insomnia reassessment" }
+}

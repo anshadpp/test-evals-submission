@@ -1,0 +1,19 @@
+{
+  "chief_complaint": "right calf redness, warmth, and swelling for two days",
+  "vitals": { "bp": "130/82", "hr": 96, "temp_f": 100.8, "spo2": 98 },
+  "medications": [
+    { "name": "cephalexin", "dose": "500 mg", "frequency": "four times a day", "route": "PO" },
+    { "name": "acetaminophen", "dose": "650 mg", "frequency": "every 6 hours as needed", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "cellulitis of right lower leg", "icd10": "L03.115" }
+  ],
+  "plan": [
+    "cephalexin 500 mg four times a day for 7 days",
+    "mark borders of erythema and monitor",
+    "ER if expansion beyond line, worse fever, vomiting, or streaking",
+    "elevate leg when possible",
+    "acetaminophen 650 mg every 6 hours as needed for pain and fever"
+  ],
+  "follow_up": { "interval_days": 3, "reason": "cellulitis recheck" }
+}

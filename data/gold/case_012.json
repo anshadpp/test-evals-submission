@@ -1,0 +1,18 @@
+{
+  "chief_complaint": "IBS flare with bloating, alternating bowel habits, and crampy pain",
+  "vitals": { "bp": "116/72", "hr": 80, "temp_f": 98.4, "spo2": null },
+  "medications": [
+    { "name": "dicyclomine", "dose": "10 mg", "frequency": "three times daily before meals", "route": "PO" },
+    { "name": "simethicone", "dose": "125 mg", "frequency": "with meals as needed", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "irritable bowel syndrome, mixed type", "icd10": "K58.0" }
+  ],
+  "plan": [
+    "low-FODMAP diet trial for 4 to 6 weeks",
+    "dicyclomine 10 mg three times daily before meals for cramping",
+    "simethicone 125 mg with meals as needed for bloating",
+    "stress management with mindfulness or 20 minutes of walking daily"
+  ],
+  "follow_up": { "interval_days": 42, "reason": "IBS diet trial recheck" }
+}

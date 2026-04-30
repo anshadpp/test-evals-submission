@@ -1,0 +1,14 @@
+[Visit type: in-person]
+[Vitals: BP 152/96, HR 84]
+
+Doctor: Hi Howard, your blood pressure today is 152 over 96. That's still elevated.
+Patient: I've been taking the amlodipine.
+Doctor: Yes, 5 mg once daily, right? Any swelling in your ankles?
+Patient: A little, especially at the end of the day.
+Doctor: Okay. Let's add a low-dose ARB. Start losartan 25 mg once daily. We'll keep amlodipine the same for now.
+Patient: Will I need to stop my naproxen for my back?
+Doctor: Yes, NSAIDs can raise BP. Try acetaminophen instead — 650 mg up to four times a day as needed.
+Patient: Okay.
+Doctor: Cut back on salt — under 2 grams a day — and aim for 30 minutes of walking five days a week. Get a home BP cuff if you don't have one and log readings twice a day.
+Patient: Will do.
+Doctor: Come back in 4 weeks for a recheck. We'll get a basic metabolic panel beforehand to check kidney function on the losartan.

@@ -1,0 +1,17 @@
+{
+  "chief_complaint": "hyperlipidemia management",
+  "vitals": { "bp": null, "hr": null, "temp_f": null, "spo2": null },
+  "medications": [
+    { "name": "atorvastatin", "dose": "20 mg", "frequency": "once a day at bedtime", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "hyperlipidemia", "icd10": "E78.5" }
+  ],
+  "plan": [
+    "start atorvastatin 20 mg once a day at bedtime",
+    "Mediterranean-style diet with fewer refined carbs",
+    "150 minutes of moderate exercise weekly",
+    "recheck lipid panel and ALT in 3 months"
+  ],
+  "follow_up": { "interval_days": 90, "reason": "lipid and ALT recheck" }
+}

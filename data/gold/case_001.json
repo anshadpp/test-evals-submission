@@ -1,0 +1,16 @@
+{
+  "chief_complaint": "sore throat and nasal congestion for four days",
+  "vitals": { "bp": "122/78", "hr": 88, "temp_f": 100.4, "spo2": 98 },
+  "medications": [
+    { "name": "ibuprofen", "dose": "400 mg", "frequency": "every 6 hours as needed", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "viral upper respiratory infection", "icd10": "J06.9" }
+  ],
+  "plan": [
+    "supportive care with fluids and saline nasal spray",
+    "ibuprofen 400 mg every 6 hours as needed for pain and fever",
+    "call if not improving in 7 days or fever above 102"
+  ],
+  "follow_up": { "interval_days": null, "reason": "return only if symptoms worsen" }
+}

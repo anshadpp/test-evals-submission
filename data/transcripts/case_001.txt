@@ -1,0 +1,14 @@
+[Visit type: in-person sick visit]
+[Vitals taken at intake: BP 122/78, HR 88, Temp 100.4, SpO2 98%]
+
+Doctor: Hi Jenna, what brings you in today?
+Patient: I've had a sore throat for about four days, and now my nose is completely stuffed up. I feel awful.
+Doctor: Any cough?
+Patient: A little dry one at night.
+Doctor: Fever?
+Patient: I felt warm yesterday. The thermometer here said 100.4.
+Doctor: Let me take a look. Throat is red but no exudate, ears are clear, lungs sound fine. Rapid strep is negative. This looks like a viral upper respiratory infection.
+Patient: Can I get an antibiotic just in case?
+Doctor: Antibiotics won't help a virus, and they'd just give you side effects. Let's do supportive care. Take ibuprofen 400 mg every 6 hours as needed for the throat pain and fever, plenty of fluids, and saline nasal spray. If you're not improving in 7 days, or you spike a fever above 102, give us a call.
+Patient: Okay, that makes sense.
+Doctor: No need for a follow-up unless symptoms worsen.

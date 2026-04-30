@@ -1,0 +1,16 @@
+{
+  "chief_complaint": "migraines twice a month with aura, poorly controlled",
+  "vitals": { "bp": "124/78", "hr": 76, "temp_f": null, "spo2": null },
+  "medications": [
+    { "name": "sumatriptan", "dose": "50 mg", "frequency": "at first sign of migraine, may repeat in 2 hours, max 100 mg in 24 hours", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "migraine with aura", "icd10": "G43.109" }
+  ],
+  "plan": [
+    "sumatriptan 50 mg at first sign of migraine, may repeat in 2 hours, max 100 mg in 24 hours",
+    "track triggers including sleep, food, stress, dehydration",
+    "consider daily preventive therapy if more than 4 migraines a month"
+  ],
+  "follow_up": { "interval_days": 56, "reason": "migraine follow-up" }
+}

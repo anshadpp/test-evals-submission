@@ -1,0 +1,12 @@
+[Visit type: in-person urgent]
+[Vitals: BP 130/82, HR 96, Temp 100.8, SpO2 98%]
+
+Doctor: Hi Patricia, what's going on with your leg?
+Patient: My right calf has been red and warm and swollen for two days. I scraped it gardening last week. The redness is spreading.
+Doctor: Any fever, chills?
+Patient: Felt feverish yesterday and today.
+Doctor: Right calf with about 8 cm of erythema, warmth, mild edema, no fluctuance, no streaking. There's a small abrasion at the center. This is cellulitis.
+Patient: Is it serious?
+Doctor: It's caught early. Outpatient antibiotics should do. Cephalexin 500 mg four times a day for 7 days. Mark the borders of the redness with a pen and watch — if it expands beyond the line, or you get worse fever, vomiting, streaking, come to the ER.
+Patient: Got it.
+Doctor: Elevate the leg when you can. Acetaminophen 650 mg every 6 hours as needed for pain and fever. Come back in 3 days for a recheck.

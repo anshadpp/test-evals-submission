@@ -1,0 +1,19 @@
+{
+  "chief_complaint": "itchy red rash on forearms and back of knees for two weeks",
+  "vitals": { "bp": null, "hr": null, "temp_f": null, "spo2": null },
+  "medications": [
+    { "name": "triamcinolone 0.1% ointment", "dose": null, "frequency": "twice daily", "route": "topical" },
+    { "name": "cetirizine", "dose": "10 mg", "frequency": "once daily", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "atopic dermatitis", "icd10": "L20.9" }
+  ],
+  "plan": [
+    "switch to gentle, fragrance-free body wash",
+    "apply thick fragrance-free moisturizer twice a day, especially within 3 minutes after showers",
+    "triamcinolone 0.1% ointment to affected areas twice daily for up to 2 weeks",
+    "cetirizine 10 mg once daily for itch",
+    "return if not improving in 2 weeks or signs of skin infection"
+  ],
+  "follow_up": { "interval_days": null, "reason": null }
+}

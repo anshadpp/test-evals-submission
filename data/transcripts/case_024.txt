@@ -1,0 +1,11 @@
+[Visit type: in-person urgent]
+
+Doctor: Hi Jordan, ankle injury?
+Patient: I rolled my left ankle playing basketball yesterday. Heard a pop. It swelled up immediately.
+Doctor: Could you walk afterwards?
+Patient: Limped on it but yes, I could put weight on it.
+Doctor: Tenderness over the lateral malleolus, swelling, no bony tenderness over the posterior edge of the malleolus or fifth metatarsal base. Per Ottawa rules, no X-ray needed. This is a grade 2 lateral ankle sprain.
+Patient: What now?
+Doctor: RICE — rest, ice 20 minutes every 2 to 3 hours for the first 48 hours, compression with an ACE wrap, and elevation. Ibuprofen 400 mg every 6 hours as needed for pain and swelling. Use crutches if needed but try to weight-bear as tolerated.
+Patient: When can I go back to basketball?
+Doctor: Probably 2 to 4 weeks. Start ankle range-of-motion exercises in a few days. If pain or swelling isn't improving in 7 to 10 days, come back and we'll image. Otherwise no follow-up.

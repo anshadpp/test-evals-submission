@@ -1,0 +1,11 @@
+[Visit type: telehealth, AFib follow-up]
+
+Doctor: Hi Bernard. How have things been on the apixaban?
+Patient: Good. No bleeding, no bruising beyond the usual. Heart rate has felt steady.
+Doctor: Any palpitations, chest pain, lightheadedness?
+Patient: None.
+Doctor: Great. Continue apixaban 5 mg twice daily and metoprolol succinate 50 mg once daily. Your last EKG showed controlled AFib at rate around 70.
+Patient: When do I need labs again?
+Doctor: A basic metabolic panel and CBC every 6 months. Last was 4 months ago, so let's plan another in 2 months.
+Patient: Sounds good.
+Doctor: Follow up with me in 6 months for AFib management. Sooner if anything changes.

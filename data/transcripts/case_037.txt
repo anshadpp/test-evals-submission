@@ -1,0 +1,11 @@
+[Visit type: telehealth]
+
+Doctor: Hi Lina, you're calling about painful periods?
+Patient: Yes. Severe cramps the first two days every cycle. I miss work sometimes. It's been like this since high school.
+Doctor: Any heavy bleeding, bleeding between periods, pain with intercourse?
+Patient: Heavy first day but not crazy. No bleeding between periods. No pain with intercourse.
+Doctor: With no concerning features, this fits primary dysmenorrhea. Have you tried NSAIDs?
+Patient: Just regular Tylenol.
+Doctor: NSAIDs are more effective. Start ibuprofen 600 mg every 6 hours with food, beginning a day before your period starts and continuing for the first 2 to 3 days. If that's not enough, we can talk about combined oral contraceptives.
+Patient: Okay, let me try the ibuprofen first.
+Doctor: Heat pad helps. Regular exercise can help too. Message me after two cycles to let me know how it's going.

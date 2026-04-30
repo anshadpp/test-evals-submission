@@ -1,0 +1,19 @@
+{
+  "chief_complaint": "ADHD follow-up with afternoon symptom return",
+  "vitals": { "bp": "124/80", "hr": 84, "temp_f": null, "spo2": null },
+  "medications": [
+    { "name": "methylphenidate ER", "dose": "20 mg", "frequency": "in the morning", "route": "PO" },
+    { "name": "methylphenidate immediate-release", "dose": "10 mg", "frequency": "around 1 pm", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "attention deficit hyperactivity disorder", "icd10": "F90.9" }
+  ],
+  "plan": [
+    "continue methylphenidate ER 20 mg in the morning",
+    "add methylphenidate immediate-release 10 mg around 1 pm, not later than 2 pm",
+    "monitor blood pressure and heart rate",
+    "continue therapy and workplace strategies",
+    "call if chest pain or palpitations"
+  ],
+  "follow_up": { "interval_days": 56, "reason": "ADHD medication follow-up" }
+}

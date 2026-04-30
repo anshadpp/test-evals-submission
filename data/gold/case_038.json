@@ -1,0 +1,17 @@
+{
+  "chief_complaint": "contraception counseling for long-acting method",
+  "vitals": { "bp": "116/72", "hr": 68, "temp_f": null, "spo2": null },
+  "medications": [
+    { "name": "ibuprofen", "dose": "600 mg", "frequency": "one hour before appointment", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "encounter for contraception counseling", "icd10": "Z30.09" }
+  ],
+  "plan": [
+    "schedule hormonal IUD placement in 2 weeks",
+    "ibuprofen 600 mg one hour before the appointment",
+    "negative pregnancy test the day of insertion",
+    "continue current pill until placement"
+  ],
+  "follow_up": { "interval_days": 14, "reason": "IUD placement procedure visit" }
+}

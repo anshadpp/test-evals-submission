@@ -1,0 +1,12 @@
+[Visit type: in-person, ADHD follow-up]
+[Vitals: BP 124/80, HR 84]
+
+Doctor: Hi Caleb. How's the methylphenidate working?
+Patient: The 20 mg ER in the morning gets me through about 6 hours, then it crashes hard. Afternoons at work are tough.
+Doctor: Any cardiac side effects, decreased appetite, sleep issues?
+Patient: Some appetite suppression at lunch but I still eat dinner. Sleep is fine.
+Doctor: Let's add a short-acting booster. Continue methylphenidate ER 20 mg in the morning, and add immediate-release methylphenidate 10 mg around 1 pm.
+Patient: Will that affect sleep?
+Doctor: That timing should clear by bedtime. Don't take it later than 2 pm.
+Patient: Okay.
+Doctor: Same monitoring — blood pressure, heart rate. Continue therapy and the workplace strategies. Come back in 8 weeks. Call if any chest pain or palpitations.

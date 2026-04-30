@@ -1,0 +1,12 @@
+[Visit type: in-person]
+[Vitals: BP 122/78, HR 78]
+
+Doctor: Hi Naomi, what's going on with the shoulder?
+Patient: Right shoulder, pain when I reach overhead or behind my back. It hurts at night when I sleep on it. Started a couple weeks after I started a painting project at home.
+Doctor: Any numbness or weakness in the arm?
+Patient: No.
+Doctor: Painful arc between 60 and 120 degrees of abduction, positive Hawkins-Kennedy and Neer signs, no significant weakness. This is rotator cuff impingement, likely supraspinatus tendinopathy.
+Patient: What now?
+Doctor: Naproxen 500 mg twice daily with food for two weeks. Rest from overhead activity. I'll refer you to physical therapy for rotator cuff strengthening and posture work.
+Patient: Should I ice it?
+Doctor: Yes, ice 15 to 20 minutes a few times a day. If you're not improving in 6 weeks of PT, we'll consider a subacromial corticosteroid injection. Follow up in 6 weeks.

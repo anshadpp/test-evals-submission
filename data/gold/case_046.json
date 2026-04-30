@@ -1,0 +1,20 @@
+{
+  "chief_complaint": "vitamin D deficiency",
+  "vitals": { "bp": null, "hr": null, "temp_f": null, "spo2": null },
+  "medications": [
+    { "name": "vitamin D3", "dose": "50,000 IU", "frequency": "once a week for 8 weeks", "route": "PO" },
+    { "name": "vitamin D3 maintenance", "dose": "2000 IU", "frequency": "daily", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "vitamin D deficiency", "icd10": "E55.9" }
+  ],
+  "plan": [
+    "vitamin D3 50,000 IU once a week for 8 weeks",
+    "maintenance vitamin D3 2000 IU daily after loading",
+    "take with a meal containing fat",
+    "15 to 20 minutes of midday sunlight a few times a week",
+    "fortified foods",
+    "recheck vitamin D level in 3 months"
+  ],
+  "follow_up": { "interval_days": 90, "reason": "recheck vitamin D level" }
+}

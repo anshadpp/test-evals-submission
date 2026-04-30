@@ -1,0 +1,18 @@
+{
+  "chief_complaint": "constant anxiety with panic attacks",
+  "vitals": { "bp": null, "hr": null, "temp_f": null, "spo2": null },
+  "medications": [
+    { "name": "sertraline", "dose": "25 mg", "frequency": "once daily for one week then 50 mg once daily", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "generalized anxiety disorder", "icd10": "F41.1" },
+    { "description": "panic attacks" }
+  ],
+  "plan": [
+    "start sertraline 25 mg once daily, increase to 50 mg once daily after one week",
+    "referral for cognitive behavioral therapy",
+    "regular sleep schedule, no screens an hour before bed",
+    "call sooner if worsening mood or thoughts of self-harm"
+  ],
+  "follow_up": { "interval_days": 28, "reason": "check tolerance and response to sertraline" }
+}

@@ -1,0 +1,12 @@
+[Visit type: pediatric urgent]
+[Vitals: HR 132, Temp 103.4, SpO2 98%]
+
+Doctor: Hi, what's going on with Liam?
+Parent: He's 2. Fever started last night, around 103 today. He's fussy but still drinking, no vomiting, no rash.
+Doctor: Any cough, runny nose, ear pulling?
+Parent: A little runny nose. Nothing else.
+Doctor: Exam: ears clear, throat mildly red, no exudate, lungs clear, hydration looks okay, no rash, no nuchal rigidity. This looks like a viral syndrome with fever.
+Parent: Anything I should give him?
+Doctor: Alternate ibuprofen and acetaminophen if he's uncomfortable. Children's ibuprofen 5 mL every 6 hours, children's acetaminophen 5 mL every 4 to 6 hours, not at the same time. Push fluids — popsicles, diluted juice, electrolyte drinks.
+Parent: When should I worry?
+Doctor: If he gets lethargic, won't drink, develops a stiff neck, persistent vomiting, a rash that doesn't blanch, or the fever lasts more than 5 days, head to the ER. Otherwise no scheduled follow-up — call if you have concerns.

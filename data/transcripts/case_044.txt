@@ -1,0 +1,12 @@
+[Visit type: in-person, weight management]
+[Vitals: BP 132/84, HR 78, Temp 98.4, SpO2 98%]
+
+Doctor: Hi Linda. You've been working on weight management — how are things?
+Patient: I've gained 10 pounds in the last 18 months. BMI is 33 now. I've tried diets but they don't stick.
+Doctor: Comorbidities — your A1c is 5.9, prediabetes range. BP is borderline today.
+Patient: I know.
+Doctor: With your BMI and prediabetes, you'd qualify for a GLP-1 agonist. I'd like to start semaglutide 0.25 mg subcutaneously once a week for 4 weeks, then we'll titrate up. Common side effects: nausea, mild GI upset, especially in the first weeks. Stop it and call us if you ever have severe abdominal pain.
+Patient: Okay.
+Doctor: Combine it with a calorie-reduced, high-protein eating pattern, 150 minutes of moderate exercise weekly, and food/activity logs. Dietitian referral.
+Patient: Got it.
+Doctor: Recheck in 4 weeks for tolerability and dose increase. We'll repeat A1c and metabolic panel in 3 months.

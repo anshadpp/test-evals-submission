@@ -1,0 +1,20 @@
+{
+  "chief_complaint": "seasonal allergies with itchy eyes, sneezing, runny nose",
+  "vitals": { "bp": null, "hr": null, "temp_f": null, "spo2": null },
+  "medications": [
+    { "name": "fluticasone nasal spray", "dose": "two sprays each nostril", "frequency": "once daily", "route": "intranasal" },
+    { "name": "cetirizine", "dose": "10 mg", "frequency": "at bedtime", "route": "PO" },
+    { "name": "ketotifen ophthalmic drops", "dose": "one drop each eye", "frequency": "twice daily as needed", "route": "topical" }
+  ],
+  "diagnoses": [
+    { "description": "allergic rhinitis", "icd10": "J30.9" }
+  ],
+  "plan": [
+    "stop loratadine",
+    "start fluticasone nasal spray two sprays each nostril once daily",
+    "add cetirizine 10 mg at bedtime",
+    "ketotifen ophthalmic drops one drop each eye twice daily as needed",
+    "message in three weeks if not improved to discuss allergy testing or referral"
+  ],
+  "follow_up": { "interval_days": null, "reason": "message if not improved in three weeks" }
+}

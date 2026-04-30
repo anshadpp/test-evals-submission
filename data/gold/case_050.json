@@ -1,0 +1,20 @@
+{
+  "chief_complaint": "left knee abrasion from bike fall",
+  "vitals": { "bp": null, "hr": null, "temp_f": null, "spo2": null },
+  "medications": [
+    { "name": "petrolatum ointment", "dose": null, "frequency": "with each dressing change", "route": "topical" },
+    { "name": "acetaminophen", "dose": "500 mg", "frequency": "every 6 hours as needed", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "abrasion of left knee", "icd10": "S80.212A" }
+  ],
+  "plan": [
+    "irrigate wound with saline and scrub to remove debris",
+    "apply petrolatum ointment and non-stick dressing",
+    "wash gently with soap and water once a day, reapply ointment and fresh dressing",
+    "keep covered for first week",
+    "acetaminophen 500 mg every 6 hours as needed",
+    "call for increasing redness, warmth, pus, or fever"
+  ],
+  "follow_up": { "interval_days": null, "reason": null }
+}

@@ -1,0 +1,12 @@
+[Visit type: in-person]
+[Vitals: BP 124/78, HR 72]
+
+Doctor: Hi Tom, low back pain again?
+Patient: Yeah. I lifted a couch on Saturday. Felt a pop. Pain across my low back, no radiation down the leg, no numbness or tingling.
+Doctor: Bowel and bladder normal? No saddle area numbness?
+Patient: Normal.
+Doctor: Good. Exam: paraspinal tenderness, no neuro deficits, straight leg raise negative bilaterally. This is acute mechanical low back strain.
+Patient: Do I need an MRI?
+Doctor: Not in the first 6 weeks unless red flags develop. Ibuprofen 600 mg three times daily with food for 7 to 10 days, and cyclobenzaprine 10 mg at bedtime as needed for muscle spasm — only if pain interferes with sleep, it can make you drowsy.
+Patient: Should I rest?
+Doctor: Stay active. Walk regularly, avoid bed rest. Heat can help. If not significantly better in 4 weeks or you develop leg weakness, numbness, or bowel/bladder changes, come back.

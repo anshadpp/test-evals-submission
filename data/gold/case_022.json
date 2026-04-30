@@ -1,0 +1,20 @@
+{
+  "chief_complaint": "right knee pain with stiffness, worsening over a year",
+  "vitals": { "bp": null, "hr": null, "temp_f": null, "spo2": null },
+  "medications": [
+    { "name": "acetaminophen", "dose": "1000 mg", "frequency": "three times daily as needed", "route": "PO" },
+    { "name": "diclofenac 1% gel", "dose": null, "frequency": "four times a day", "route": "topical" }
+  ],
+  "diagnoses": [
+    { "description": "osteoarthritis of the right knee", "icd10": "M17.11" }
+  ],
+  "plan": [
+    "acetaminophen 1000 mg three times daily as needed",
+    "topical diclofenac 1% gel four times a day",
+    "physical therapy referral for quadriceps strengthening",
+    "low-impact exercise such as swimming and stationary bike",
+    "weight loss",
+    "consider intra-articular steroid injection if no relief in 6 weeks"
+  ],
+  "follow_up": { "interval_days": 42, "reason": "knee OA recheck" }
+}

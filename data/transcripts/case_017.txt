@@ -1,0 +1,11 @@
+[Visit type: in-person, lipid follow-up]
+
+Doctor: Hi Cynthia. Your lipid panel: total cholesterol 248, LDL 168, HDL 52, triglycerides 140.
+Patient: That LDL is high.
+Doctor: Yes. With your 10-year ASCVD risk and family history of early heart disease, I think a moderate-intensity statin makes sense. Let's start atorvastatin 20 mg once a day at bedtime.
+Patient: Any side effects to watch for?
+Doctor: Muscle aches, rare liver enzyme issues. If you have unexplained widespread muscle pain or dark urine, stop and call us. Otherwise it's well tolerated.
+Patient: Okay.
+Doctor: Continue Mediterranean-style diet, fewer refined carbs, and 150 minutes of moderate exercise weekly. We'll recheck a lipid panel and ALT in 3 months.
+Patient: Got it.
+Doctor: Follow up in 3 months. If LDL is below 100 we'll keep going.

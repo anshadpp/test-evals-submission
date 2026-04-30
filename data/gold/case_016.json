@@ -1,0 +1,23 @@
+{
+  "chief_complaint": "hypertension follow-up with elevated blood pressure",
+  "vitals": { "bp": "152/96", "hr": 84, "temp_f": null, "spo2": null },
+  "medications": [
+    { "name": "amlodipine", "dose": "5 mg", "frequency": "once daily", "route": "PO" },
+    { "name": "losartan", "dose": "25 mg", "frequency": "once daily", "route": "PO" },
+    { "name": "acetaminophen", "dose": "650 mg", "frequency": "up to four times a day as needed", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "uncontrolled essential hypertension", "icd10": "I10" }
+  ],
+  "plan": [
+    "continue amlodipine 5 mg once daily",
+    "add losartan 25 mg once daily",
+    "stop naproxen",
+    "use acetaminophen 650 mg up to four times a day for back pain",
+    "low-salt diet under 2 grams a day",
+    "30 minutes of walking five days a week",
+    "home BP log twice a day",
+    "basic metabolic panel before next visit"
+  ],
+  "follow_up": { "interval_days": 28, "reason": "blood pressure recheck" }
+}

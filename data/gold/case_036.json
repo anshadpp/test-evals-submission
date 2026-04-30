@@ -1,0 +1,19 @@
+{
+  "chief_complaint": "dysuria, urinary frequency, and urgency for two days",
+  "vitals": { "bp": "110/70", "hr": 88, "temp_f": 99.4, "spo2": null },
+  "medications": [
+    { "name": "nitrofurantoin", "dose": "100 mg", "frequency": "twice daily", "route": "PO" },
+    { "name": "phenazopyridine", "dose": "200 mg", "frequency": "three times a day with meals", "route": "PO" }
+  ],
+  "diagnoses": [
+    { "description": "uncomplicated urinary tract infection", "icd10": "N39.0" }
+  ],
+  "plan": [
+    "send urine culture",
+    "nitrofurantoin 100 mg twice daily for 5 days",
+    "phenazopyridine 200 mg three times a day with meals for up to 2 days for burning",
+    "drink plenty of water",
+    "call if flank pain, fever above 101, or not better in 48 hours"
+  ],
+  "follow_up": { "interval_days": null, "reason": null }
+}
