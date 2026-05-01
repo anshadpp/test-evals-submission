@@ -1,0 +1,158 @@
+{
+  "case_id": "case_045",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "follow-up for hypothyroidism with elevated TSH",
+      "vitals": {
+        "bp": "118/74",
+        "hr": 64,
+        "temp_f": null,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "levothyroxine",
+          "dose": "88 mcg",
+          "frequency": "once daily on empty stomach with water, 30 to 60 minutes before food, coffee, or other medications",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "hypothyroidism with elevated TSH",
+          "icd10": "E03.9"
+        }
+      ],
+      "plan": [
+        "increase levothyroxine to 88 mcg once daily",
+        "take levothyroxine on empty stomach with water only, 30 to 60 minutes before food, coffee, or other medications",
+        "recheck TSH in 6 to 8 weeks",
+        "call if palpitations, jitteriness, or trouble sleeping develop"
+      ],
+      "follow_up": {
+        "interval_days": 56,
+        "reason": "TSH recheck and levothyroxine dose adjustment follow-up"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "follow-up for hypothyroidism with elevated TSH",
+          "vitals": {
+            "bp": "118/74",
+            "hr": 64,
+            "temp_f": null,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "levothyroxine",
+              "dose": "88 mcg",
+              "frequency": "once daily on empty stomach with water, 30 to 60 minutes before food, coffee, or other medications",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "hypothyroidism with elevated TSH",
+              "icd10": "E03.9"
+            }
+          ],
+          "plan": [
+            "increase levothyroxine to 88 mcg once daily",
+            "take levothyroxine on empty stomach with water only, 30 to 60 minutes before food, coffee, or other medications",
+            "recheck TSH in 6 to 8 weeks",
+            "call if palpitations, jitteriness, or trouble sleeping develop"
+          ],
+          "follow_up": {
+            "interval_days": 56,
+            "reason": "TSH recheck and levothyroxine dose adjustment follow-up"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 684,
+          "output_tokens": 399,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4672
+        },
+        "duration_ms": 10226
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 684,
+      "output_tokens": 399,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4672
+    },
+    "total_duration_ms": 10226,
+    "cost_usd": 0.0031462,
+    "prompt_hash": "636a8518c08c5b9b",
+    "strategy": "cot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_045",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.75,
+        "detail": {
+          "token_set_sim": 0.75
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 0,
+        "detail": {
+          "precision": 0,
+          "recall": 0,
+          "matches": 0,
+          "icd10_correct": 0,
+          "icd10_attempts": 0
+        }
+      },
+      "plan": {
+        "score": 0.75,
+        "detail": {
+          "precision": 0.75,
+          "recall": 0.75,
+          "matches": 3
+        }
+      },
+      "follow_up": {
+        "score": 0.6666666666666666,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.3333333333333333
+        }
+      }
+    },
+    "overall": 0.6944444444444445,
+    "schema_invalid": false,
+    "hallucinations": [
+      "diagnoses: \"hypothyroidism with elevated TSH\" not grounded in transcript"
+    ]
+  }
+}

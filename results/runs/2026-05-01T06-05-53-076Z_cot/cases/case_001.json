@@ -1,0 +1,170 @@
+{
+  "case_id": "case_001",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "sore throat for four days with nasal congestion",
+      "vitals": {
+        "bp": "122/78",
+        "hr": 88,
+        "temp_f": 100.4,
+        "spo2": 98
+      },
+      "medications": [
+        {
+          "name": "ibuprofen",
+          "dose": "400 mg",
+          "frequency": "every 6 hours as needed",
+          "route": "PO"
+        },
+        {
+          "name": "saline nasal spray",
+          "dose": null,
+          "frequency": null,
+          "route": "topical"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "viral upper respiratory infection",
+          "icd10": "J06.9"
+        }
+      ],
+      "plan": [
+        "ibuprofen 400 mg every 6 hours as needed for throat pain and fever",
+        "increase fluid intake",
+        "saline nasal spray for nasal congestion",
+        "call if not improving in 7 days or if fever rises above 102 degrees Fahrenheit"
+      ],
+      "follow_up": {
+        "interval_days": null,
+        "reason": "as needed if symptoms worsen or fever exceeds 102 degrees"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "sore throat for four days with nasal congestion",
+          "vitals": {
+            "bp": "122/78",
+            "hr": 88,
+            "temp_f": 100.4,
+            "spo2": 98
+          },
+          "medications": [
+            {
+              "name": "ibuprofen",
+              "dose": "400 mg",
+              "frequency": "every 6 hours as needed",
+              "route": "PO"
+            },
+            {
+              "name": "saline nasal spray",
+              "dose": null,
+              "frequency": null,
+              "route": "topical"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "viral upper respiratory infection",
+              "icd10": "J06.9"
+            }
+          ],
+          "plan": [
+            "ibuprofen 400 mg every 6 hours as needed for throat pain and fever",
+            "increase fluid intake",
+            "saline nasal spray for nasal congestion",
+            "call if not improving in 7 days or if fever rises above 102 degrees Fahrenheit"
+          ],
+          "follow_up": {
+            "interval_days": null,
+            "reason": "as needed if symptoms worsen or fever exceeds 102 degrees"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 722,
+          "output_tokens": 402,
+          "cache_creation_input_tokens": 4672,
+          "cache_read_input_tokens": 0
+        },
+        "duration_ms": 2764
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 722,
+      "output_tokens": 402,
+      "cache_creation_input_tokens": 4672,
+      "cache_read_input_tokens": 0
+    },
+    "total_duration_ms": 2764,
+    "cost_usd": 0.008572,
+    "prompt_hash": "636a8518c08c5b9b",
+    "strategy": "cot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_001",
+    "per_field": {
+      "chief_complaint": {
+        "score": 1,
+        "detail": {
+          "token_set_sim": 1
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 0.6666666666666666,
+        "detail": {
+          "precision": 0.5,
+          "recall": 1,
+          "matches": 1,
+          "unmatched_pred": [
+            1
+          ],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "icd10_correct": 1,
+          "icd10_attempts": 1
+        }
+      },
+      "plan": {
+        "score": 0.5714285714285715,
+        "detail": {
+          "precision": 0.5,
+          "recall": 0.6666666666666666,
+          "matches": 2
+        }
+      },
+      "follow_up": {
+        "score": 0.6875,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.375
+        }
+      }
+    },
+    "overall": 0.8209325396825397,
+    "schema_invalid": false,
+    "hallucinations": []
+  }
+}

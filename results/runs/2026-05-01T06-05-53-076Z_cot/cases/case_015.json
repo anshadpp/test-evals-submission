@@ -1,0 +1,222 @@
+{
+  "case_id": "case_015",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "follow-up for type 2 diabetes, A1c elevated at 7.8",
+      "vitals": {
+        "bp": "134/82",
+        "hr": 76,
+        "temp_f": 98.2,
+        "spo2": 99
+      },
+      "medications": [
+        {
+          "name": "metformin",
+          "dose": "1500 mg",
+          "frequency": "twice daily",
+          "route": "PO"
+        },
+        {
+          "name": "empagliflozin",
+          "dose": "10 mg",
+          "frequency": "once daily",
+          "route": "PO"
+        },
+        {
+          "name": "atorvastatin",
+          "dose": "40 mg",
+          "frequency": "at bedtime",
+          "route": "PO"
+        },
+        {
+          "name": "lisinopril",
+          "dose": "10 mg",
+          "frequency": "once daily",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "type 2 diabetes mellitus, suboptimal control on metformin, on intensified therapy",
+          "icd10": "E11.9"
+        },
+        {
+          "description": "hyperlipidemia, on atorvastatin",
+          "icd10": "E78.5"
+        },
+        {
+          "description": "hypertension, on lisinopril",
+          "icd10": "I10"
+        }
+      ],
+      "plan": [
+        "increase metformin to 1500 mg twice daily (maximum effective dose)",
+        "start empagliflozin 10 mg once daily for glycemic control and renal protection",
+        "continue atorvastatin 40 mg at bedtime",
+        "continue lisinopril 10 mg once daily",
+        "counsel on signs of genital yeast infection (potential side effect of SGLT2 inhibitor)",
+        "ensure adequate hydration",
+        "obtain basic metabolic panel before next visit",
+        "schedule annual eye exam",
+        "recheck A1c in 3 months"
+      ],
+      "follow_up": {
+        "interval_days": 90,
+        "reason": "A1c recheck and assessment of response to intensified therapy"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "follow-up for type 2 diabetes, A1c elevated at 7.8",
+          "vitals": {
+            "bp": "134/82",
+            "hr": 76,
+            "temp_f": 98.2,
+            "spo2": 99
+          },
+          "medications": [
+            {
+              "name": "metformin",
+              "dose": "1500 mg",
+              "frequency": "twice daily",
+              "route": "PO"
+            },
+            {
+              "name": "empagliflozin",
+              "dose": "10 mg",
+              "frequency": "once daily",
+              "route": "PO"
+            },
+            {
+              "name": "atorvastatin",
+              "dose": "40 mg",
+              "frequency": "at bedtime",
+              "route": "PO"
+            },
+            {
+              "name": "lisinopril",
+              "dose": "10 mg",
+              "frequency": "once daily",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "type 2 diabetes mellitus, suboptimal control on metformin, on intensified therapy",
+              "icd10": "E11.9"
+            },
+            {
+              "description": "hyperlipidemia, on atorvastatin",
+              "icd10": "E78.5"
+            },
+            {
+              "description": "hypertension, on lisinopril",
+              "icd10": "I10"
+            }
+          ],
+          "plan": [
+            "increase metformin to 1500 mg twice daily (maximum effective dose)",
+            "start empagliflozin 10 mg once daily for glycemic control and renal protection",
+            "continue atorvastatin 40 mg at bedtime",
+            "continue lisinopril 10 mg once daily",
+            "counsel on signs of genital yeast infection (potential side effect of SGLT2 inhibitor)",
+            "ensure adequate hydration",
+            "obtain basic metabolic panel before next visit",
+            "schedule annual eye exam",
+            "recheck A1c in 3 months"
+          ],
+          "follow_up": {
+            "interval_days": 90,
+            "reason": "A1c recheck and assessment of response to intensified therapy"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 714,
+          "output_tokens": 665,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4672
+        },
+        "duration_ms": 4381
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 714,
+      "output_tokens": 665,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4672
+    },
+    "total_duration_ms": 4381,
+    "cost_usd": 0.0045062,
+    "prompt_hash": "636a8518c08c5b9b",
+    "strategy": "cot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_015",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.7142857142857143,
+        "detail": {
+          "token_set_sim": 0.7142857142857143
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 4,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 0,
+        "detail": {
+          "precision": 0,
+          "recall": 0,
+          "matches": 0,
+          "icd10_correct": 0,
+          "icd10_attempts": 0
+        }
+      },
+      "plan": {
+        "score": 0.5333333333333333,
+        "detail": {
+          "precision": 0.4444444444444444,
+          "recall": 0.6666666666666666,
+          "matches": 4
+        }
+      },
+      "follow_up": {
+        "score": 0.6666666666666666,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.3333333333333333
+        }
+      }
+    },
+    "overall": 0.6523809523809524,
+    "schema_invalid": false,
+    "hallucinations": [
+      "diagnoses: \"type 2 diabetes mellitus, suboptimal control on metformin, on intensified therapy\" not grounded in transcript",
+      "diagnoses: \"hyperlipidemia, on atorvastatin\" not grounded in transcript",
+      "diagnoses: \"hypertension, on lisinopril\" not grounded in transcript"
+    ]
+  }
+}

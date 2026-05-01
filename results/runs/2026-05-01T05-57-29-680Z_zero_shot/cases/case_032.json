@@ -1,0 +1,222 @@
+{
+  "case_id": "case_032",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "wheezing and cough for one day in 7-year-old with asthma",
+      "vitals": {
+        "bp": null,
+        "hr": 124,
+        "temp_f": 99,
+        "spo2": 92
+      },
+      "medications": [
+        {
+          "name": "albuterol",
+          "dose": "2.5 mg",
+          "frequency": "nebulized treatment in clinic",
+          "route": "inhaled"
+        },
+        {
+          "name": "ipratropium",
+          "dose": "0.5 mg",
+          "frequency": "with albuterol nebulized treatment in clinic",
+          "route": "inhaled"
+        },
+        {
+          "name": "prednisolone",
+          "dose": "20 mg",
+          "frequency": "once daily for 5 days",
+          "route": "PO"
+        },
+        {
+          "name": "albuterol HFA inhaler",
+          "dose": "2 puffs",
+          "frequency": "every 4 hours through tomorrow, then taper as improves",
+          "route": "inhaled"
+        },
+        {
+          "name": "fluticasone",
+          "dose": "88 mcg",
+          "frequency": "two puffs twice daily",
+          "route": "inhaled"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "moderate asthma exacerbation",
+          "icd10": "J45.901"
+        }
+      ],
+      "plan": [
+        "nebulized albuterol 2.5 mg with ipratropium 0.5 mg in clinic now",
+        "prednisolone 20 mg by mouth once daily for 5 days",
+        "albuterol HFA inhaler 2 puffs every 4 hours through tomorrow, then taper as improves",
+        "continue fluticasone 88 mcg two puffs twice daily",
+        "set phone alarm reminder for fluticasone doses",
+        "go to ER if retractions worsen, cannot speak in full sentences, or SpO2 drops below 90 percent at home",
+        "return for recheck in 2 to 3 days"
+      ],
+      "follow_up": {
+        "interval_days": 3,
+        "reason": "asthma exacerbation recheck"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "wheezing and cough for one day in 7-year-old with asthma",
+          "vitals": {
+            "bp": null,
+            "hr": 124,
+            "temp_f": 99,
+            "spo2": 92
+          },
+          "medications": [
+            {
+              "name": "albuterol",
+              "dose": "2.5 mg",
+              "frequency": "nebulized treatment in clinic",
+              "route": "inhaled"
+            },
+            {
+              "name": "ipratropium",
+              "dose": "0.5 mg",
+              "frequency": "with albuterol nebulized treatment in clinic",
+              "route": "inhaled"
+            },
+            {
+              "name": "prednisolone",
+              "dose": "20 mg",
+              "frequency": "once daily for 5 days",
+              "route": "PO"
+            },
+            {
+              "name": "albuterol HFA inhaler",
+              "dose": "2 puffs",
+              "frequency": "every 4 hours through tomorrow, then taper as improves",
+              "route": "inhaled"
+            },
+            {
+              "name": "fluticasone",
+              "dose": "88 mcg",
+              "frequency": "two puffs twice daily",
+              "route": "inhaled"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "moderate asthma exacerbation",
+              "icd10": "J45.901"
+            }
+          ],
+          "plan": [
+            "nebulized albuterol 2.5 mg with ipratropium 0.5 mg in clinic now",
+            "prednisolone 20 mg by mouth once daily for 5 days",
+            "albuterol HFA inhaler 2 puffs every 4 hours through tomorrow, then taper as improves",
+            "continue fluticasone 88 mcg two puffs twice daily",
+            "set phone alarm reminder for fluticasone doses",
+            "go to ER if retractions worsen, cannot speak in full sentences, or SpO2 drops below 90 percent at home",
+            "return for recheck in 2 to 3 days"
+          ],
+          "follow_up": {
+            "interval_days": 3,
+            "reason": "asthma exacerbation recheck"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 747,
+          "output_tokens": 686,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4562
+        },
+        "duration_ms": 4688
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 747,
+      "output_tokens": 686,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4562
+    },
+    "total_duration_ms": 4688,
+    "cost_usd": 0.0046332000000000005,
+    "prompt_hash": "2bbf076d4e67dde8",
+    "strategy": "zero_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_032",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.3333333333333333,
+        "detail": {
+          "token_set_sim": 0.3333333333333333
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 0.20000000000000004,
+        "detail": {
+          "precision": 0.2,
+          "recall": 0.2,
+          "matches": 1,
+          "unmatched_pred": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "unmatched_gold": [
+            0,
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "diagnoses": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "icd10_correct": 1,
+          "icd10_attempts": 1
+        }
+      },
+      "plan": {
+        "score": 0.6666666666666666,
+        "detail": {
+          "precision": 0.5714285714285714,
+          "recall": 0.8,
+          "matches": 4
+        }
+      },
+      "follow_up": {
+        "score": 1,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 1
+        }
+      }
+    },
+    "overall": 0.6999999999999998,
+    "schema_invalid": false,
+    "hallucinations": [
+      "medications: \"albuterol HFA inhaler\" not grounded in transcript"
+    ]
+  }
+}

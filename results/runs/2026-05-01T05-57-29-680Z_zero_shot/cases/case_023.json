@@ -1,0 +1,158 @@
+{
+  "case_id": "case_023",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "right shoulder pain with overhead reaching, 2 weeks duration",
+      "vitals": {
+        "bp": "122/78",
+        "hr": 78,
+        "temp_f": null,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "naproxen",
+          "dose": "500 mg",
+          "frequency": "twice daily for two weeks",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "rotator cuff impingement, likely supraspinatus tendinopathy",
+          "icd10": "M75.811"
+        }
+      ],
+      "plan": [
+        "naproxen 500 mg twice daily with food for two weeks",
+        "rest from overhead activity",
+        "referral to physical therapy for rotator cuff strengthening and posture work",
+        "ice shoulder 15 to 20 minutes a few times a day",
+        "consider subacromial corticosteroid injection if not improving after 6 weeks of physical therapy"
+      ],
+      "follow_up": {
+        "interval_days": 42,
+        "reason": "follow-up for rotator cuff impingement after 6 weeks of physical therapy"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "right shoulder pain with overhead reaching, 2 weeks duration",
+          "vitals": {
+            "bp": "122/78",
+            "hr": 78,
+            "temp_f": null,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "naproxen",
+              "dose": "500 mg",
+              "frequency": "twice daily for two weeks",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "rotator cuff impingement, likely supraspinatus tendinopathy",
+              "icd10": "M75.811"
+            }
+          ],
+          "plan": [
+            "naproxen 500 mg twice daily with food for two weeks",
+            "rest from overhead activity",
+            "referral to physical therapy for rotator cuff strengthening and posture work",
+            "ice shoulder 15 to 20 minutes a few times a day",
+            "consider subacromial corticosteroid injection if not improving after 6 weeks of physical therapy"
+          ],
+          "follow_up": {
+            "interval_days": 42,
+            "reason": "follow-up for rotator cuff impingement after 6 weeks of physical therapy"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 690,
+          "output_tokens": 397,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4562
+        },
+        "duration_ms": 2998
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 690,
+      "output_tokens": 397,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4562
+    },
+    "total_duration_ms": 2998,
+    "cost_usd": 0.0031311999999999998,
+    "prompt_hash": "2bbf076d4e67dde8",
+    "strategy": "zero_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_023",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.5,
+        "detail": {
+          "token_set_sim": 0.5
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "icd10_correct": 0,
+          "icd10_attempts": 1
+        }
+      },
+      "plan": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 5
+        }
+      },
+      "follow_up": {
+        "score": 0.5555555555555556,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.1111111111111111
+        }
+      }
+    },
+    "overall": 0.8425925925925926,
+    "schema_invalid": false,
+    "hallucinations": []
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "case_id": "case_049",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "burn from boiling water to forearm with blistering",
+      "vitals": {
+        "bp": null,
+        "hr": null,
+        "temp_f": null,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "silver sulfadiazine",
+          "dose": "1%",
+          "frequency": "twice daily",
+          "route": "topical"
+        },
+        {
+          "name": "ibuprofen",
+          "dose": "600 mg",
+          "frequency": "every 6 hours with food",
+          "route": "PO"
+        },
+        {
+          "name": "acetaminophen",
+          "dose": "500 mg",
+          "frequency": "every 6 hours, alternating with ibuprofen as needed",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "partial-thickness second-degree burn, dorsal forearm, less than 1% BSA",
+          "icd10": "T22.21"
+        }
+      ],
+      "plan": [
+        "clean burn with mild soap and water",
+        "leave intact blisters undisturbed",
+        "debride loose skin from unroofed blister",
+        "apply non-adherent dressing",
+        "apply silver sulfadiazine 1% cream twice daily",
+        "ibuprofen 600 mg every 6 hours with food and acetaminophen 500 mg every 6 hours alternating as needed for pain",
+        "keep burn covered and change dressing daily",
+        "call if signs of infection develop: increased pain, spreading redness, drainage, or fever",
+        "return for wound check in 3 days"
+      ],
+      "follow_up": {
+        "interval_days": 3,
+        "reason": "wound check"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "burn from boiling water to forearm with blistering",
+          "vitals": {
+            "bp": null,
+            "hr": null,
+            "temp_f": null,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "silver sulfadiazine",
+              "dose": "1%",
+              "frequency": "twice daily",
+              "route": "topical"
+            },
+            {
+              "name": "ibuprofen",
+              "dose": "600 mg",
+              "frequency": "every 6 hours with food",
+              "route": "PO"
+            },
+            {
+              "name": "acetaminophen",
+              "dose": "500 mg",
+              "frequency": "every 6 hours, alternating with ibuprofen as needed",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "partial-thickness second-degree burn, dorsal forearm, less than 1% BSA",
+              "icd10": "T22.21"
+            }
+          ],
+          "plan": [
+            "clean burn with mild soap and water",
+            "leave intact blisters undisturbed",
+            "debride loose skin from unroofed blister",
+            "apply non-adherent dressing",
+            "apply silver sulfadiazine 1% cream twice daily",
+            "ibuprofen 600 mg every 6 hours with food and acetaminophen 500 mg every 6 hours alternating as needed for pain",
+            "keep burn covered and change dressing daily",
+            "call if signs of infection develop: increased pain, spreading redness, drainage, or fever",
+            "return for wound check in 3 days"
+          ],
+          "follow_up": {
+            "interval_days": 3,
+            "reason": "wound check"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 724,
+          "output_tokens": 530,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4562
+        },
+        "duration_ms": 16529
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 724,
+      "output_tokens": 530,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4562
+    },
+    "total_duration_ms": 16529,
+    "cost_usd": 0.0038302,
+    "prompt_hash": "2bbf076d4e67dde8",
+    "strategy": "zero_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_049",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.6666666666666666,
+        "detail": {
+          "token_set_sim": 0.6666666666666666
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 0.6666666666666666,
+        "detail": {
+          "precision": 0.6666666666666666,
+          "recall": 0.6666666666666666,
+          "matches": 2,
+          "unmatched_pred": [
+            0
+          ],
+          "unmatched_gold": [
+            0
+          ]
+        }
+      },
+      "diagnoses": {
+        "score": 0,
+        "detail": {
+          "precision": 0,
+          "recall": 0,
+          "matches": 0,
+          "icd10_correct": 0,
+          "icd10_attempts": 0
+        }
+      },
+      "plan": {
+        "score": 0.4,
+        "detail": {
+          "precision": 0.3333333333333333,
+          "recall": 0.5,
+          "matches": 3
+        }
+      },
+      "follow_up": {
+        "score": 1,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 1
+        }
+      }
+    },
+    "overall": 0.6222222222222221,
+    "schema_invalid": false,
+    "hallucinations": [
+      "diagnoses: \"partial-thickness second-degree burn, dorsal forearm, less than 1% BSA\" not grounded in transcript"
+    ]
+  }
+}

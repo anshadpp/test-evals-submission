@@ -1,0 +1,158 @@
+{
+  "case_id": "case_039",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "migraines occurring twice monthly with visual aura",
+      "vitals": {
+        "bp": "124/78",
+        "hr": 76,
+        "temp_f": null,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "sumatriptan",
+          "dose": "50 mg",
+          "frequency": "at first sign of migraine, may repeat in 2 hours if needed, maximum 100 mg in 24 hours",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "migraine with aura",
+          "icd10": "G43.119"
+        }
+      ],
+      "plan": [
+        "sumatriptan 50 mg by mouth at first sign of migraine, may repeat in 2 hours if needed, maximum 100 mg in 24 hours",
+        "track migraine triggers including sleep, food, stress, and dehydration",
+        "avoid sumatriptan if chest pain or new neurological symptoms develop with headache",
+        "consider daily preventive therapy if migraines increase to more than 4 per month"
+      ],
+      "follow_up": {
+        "interval_days": 56,
+        "reason": "migraine management follow-up"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "migraines occurring twice monthly with visual aura",
+          "vitals": {
+            "bp": "124/78",
+            "hr": 76,
+            "temp_f": null,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "sumatriptan",
+              "dose": "50 mg",
+              "frequency": "at first sign of migraine, may repeat in 2 hours if needed, maximum 100 mg in 24 hours",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "migraine with aura",
+              "icd10": "G43.119"
+            }
+          ],
+          "plan": [
+            "sumatriptan 50 mg by mouth at first sign of migraine, may repeat in 2 hours if needed, maximum 100 mg in 24 hours",
+            "track migraine triggers including sleep, food, stress, and dehydration",
+            "avoid sumatriptan if chest pain or new neurological symptoms develop with headache",
+            "consider daily preventive therapy if migraines increase to more than 4 per month"
+          ],
+          "follow_up": {
+            "interval_days": 56,
+            "reason": "migraine management follow-up"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 682,
+          "output_tokens": 403,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4672
+        },
+        "duration_ms": 16782
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 682,
+      "output_tokens": 403,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4672
+    },
+    "total_duration_ms": 16782,
+    "cost_usd": 0.0031642,
+    "prompt_hash": "636a8518c08c5b9b",
+    "strategy": "cot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_039",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.5,
+        "detail": {
+          "token_set_sim": 0.5
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "icd10_correct": 0,
+          "icd10_attempts": 1
+        }
+      },
+      "plan": {
+        "score": 0.8571428571428571,
+        "detail": {
+          "precision": 0.75,
+          "recall": 1,
+          "matches": 3
+        }
+      },
+      "follow_up": {
+        "score": 0.8333333333333333,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.6666666666666666
+        }
+      }
+    },
+    "overall": 0.865079365079365,
+    "schema_invalid": false,
+    "hallucinations": [
+      "diagnoses: \"migraine with aura\" not grounded in transcript"
+    ]
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "case_id": "case_036",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "burning on urination, frequency, and urgency for two days",
+      "vitals": {
+        "bp": "110/70",
+        "hr": 88,
+        "temp_f": 99.4,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "nitrofurantoin",
+          "dose": "100 mg",
+          "frequency": "twice daily for 5 days",
+          "route": "PO"
+        },
+        {
+          "name": "phenazopyridine",
+          "dose": "200 mg",
+          "frequency": "three times daily with meals for up to 2 days",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "uncomplicated urinary tract infection",
+          "icd10": "N39.0"
+        }
+      ],
+      "plan": [
+        "nitrofurantoin 100 mg twice daily for 5 days",
+        "phenazopyridine 200 mg three times daily with meals for up to 2 days for dysuria relief",
+        "drink plenty of water",
+        "urine culture sent",
+        "call if flank pain develops, fever above 101 degrees, or no improvement in 48 hours"
+      ],
+      "follow_up": {
+        "interval_days": null,
+        "reason": "as needed if symptoms worsen or do not improve in 48 hours"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "burning on urination, frequency, and urgency for two days",
+          "vitals": {
+            "bp": "110/70",
+            "hr": 88,
+            "temp_f": 99.4,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "nitrofurantoin",
+              "dose": "100 mg",
+              "frequency": "twice daily for 5 days",
+              "route": "PO"
+            },
+            {
+              "name": "phenazopyridine",
+              "dose": "200 mg",
+              "frequency": "three times daily with meals for up to 2 days",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "uncomplicated urinary tract infection",
+              "icd10": "N39.0"
+            }
+          ],
+          "plan": [
+            "nitrofurantoin 100 mg twice daily for 5 days",
+            "phenazopyridine 200 mg three times daily with meals for up to 2 days for dysuria relief",
+            "drink plenty of water",
+            "urine culture sent",
+            "call if flank pain develops, fever above 101 degrees, or no improvement in 48 hours"
+          ],
+          "follow_up": {
+            "interval_days": null,
+            "reason": "as needed if symptoms worsen or do not improve in 48 hours"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 688,
+          "output_tokens": 444,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4562
+        },
+        "duration_ms": 18107
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 688,
+      "output_tokens": 444,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4562
+    },
+    "total_duration_ms": 18107,
+    "cost_usd": 0.0033642,
+    "prompt_hash": "2bbf076d4e67dde8",
+    "strategy": "zero_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_036",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.6666666666666666,
+        "detail": {
+          "token_set_sim": 0.6666666666666666
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 2,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "icd10_correct": 1,
+          "icd10_attempts": 1
+        }
+      },
+      "plan": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 5
+        }
+      },
+      "follow_up": {
+        "score": 0.5,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0
+        }
+      }
+    },
+    "overall": 0.861111111111111,
+    "schema_invalid": false,
+    "hallucinations": [
+      "diagnoses: \"uncomplicated urinary tract infection\" not grounded in transcript"
+    ]
+  }
+}

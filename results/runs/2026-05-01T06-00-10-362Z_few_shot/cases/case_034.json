@@ -1,0 +1,188 @@
+{
+  "case_id": "case_034",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "acne for a couple years, mostly forehead and jawline",
+      "vitals": {
+        "bp": null,
+        "hr": null,
+        "temp_f": null,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "benzoyl peroxide",
+          "dose": "5%",
+          "frequency": "daily in shower",
+          "route": "topical"
+        },
+        {
+          "name": "adapalene",
+          "dose": "0.1%",
+          "frequency": "once nightly, pea-sized amount",
+          "route": "topical"
+        },
+        {
+          "name": "doxycycline",
+          "dose": "100 mg",
+          "frequency": "once daily for 12 weeks",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "moderate inflammatory acne",
+          "icd10": "L70.0"
+        }
+      ],
+      "plan": [
+        "continue benzoyl peroxide 5% wash daily in shower",
+        "add adapalene 0.1% gel, pea-sized amount to entire face once nightly",
+        "start doxycycline 100 mg once daily for 12 weeks",
+        "use sunscreen daily due to photosensitivity risk from doxycycline",
+        "take doxycycline with full glass of water and do not lie down for 30 minutes after taking"
+      ],
+      "follow_up": {
+        "interval_days": 84,
+        "reason": "assess response to acne treatment and consider tapering doxycycline"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "acne for a couple years, mostly forehead and jawline",
+          "vitals": {
+            "bp": null,
+            "hr": null,
+            "temp_f": null,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "benzoyl peroxide",
+              "dose": "5%",
+              "frequency": "daily in shower",
+              "route": "topical"
+            },
+            {
+              "name": "adapalene",
+              "dose": "0.1%",
+              "frequency": "once nightly, pea-sized amount",
+              "route": "topical"
+            },
+            {
+              "name": "doxycycline",
+              "dose": "100 mg",
+              "frequency": "once daily for 12 weeks",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "moderate inflammatory acne",
+              "icd10": "L70.0"
+            }
+          ],
+          "plan": [
+            "continue benzoyl peroxide 5% wash daily in shower",
+            "add adapalene 0.1% gel, pea-sized amount to entire face once nightly",
+            "start doxycycline 100 mg once daily for 12 weeks",
+            "use sunscreen daily due to photosensitivity risk from doxycycline",
+            "take doxycycline with full glass of water and do not lie down for 30 minutes after taking"
+          ],
+          "follow_up": {
+            "interval_days": 84,
+            "reason": "assess response to acne treatment and consider tapering doxycycline"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 707,
+          "output_tokens": 499,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 5290
+        },
+        "duration_ms": 3093
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 707,
+      "output_tokens": 499,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 5290
+    },
+    "total_duration_ms": 3093,
+    "cost_usd": 0.003731,
+    "prompt_hash": "f9d95cb0ac0c15ff",
+    "strategy": "few_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_034",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.3333333333333333,
+        "detail": {
+          "token_set_sim": 0.3333333333333333
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 0.3333333333333333,
+        "detail": {
+          "precision": 0.3333333333333333,
+          "recall": 0.3333333333333333,
+          "matches": 1,
+          "unmatched_pred": [
+            0,
+            1
+          ],
+          "unmatched_gold": [
+            0,
+            1
+          ]
+        }
+      },
+      "diagnoses": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "icd10_correct": 1,
+          "icd10_attempts": 1
+        }
+      },
+      "plan": {
+        "score": 0.8000000000000002,
+        "detail": {
+          "precision": 0.8,
+          "recall": 0.8,
+          "matches": 4
+        }
+      },
+      "follow_up": {
+        "score": 0.7142857142857143,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.42857142857142855
+        }
+      }
+    },
+    "overall": 0.6968253968253969,
+    "schema_invalid": false,
+    "hallucinations": []
+  }
+}

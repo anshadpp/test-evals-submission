@@ -1,0 +1,173 @@
+{
+  "case_id": "case_029",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "ADHD follow-up, inadequate duration of action on extended-release methylphenidate",
+      "vitals": {
+        "bp": "124/80",
+        "hr": 84,
+        "temp_f": null,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "methylphenidate ER",
+          "dose": "20 mg",
+          "frequency": "once daily in the morning",
+          "route": "PO"
+        },
+        {
+          "name": "methylphenidate immediate-release",
+          "dose": "10 mg",
+          "frequency": "around 1 pm, do not take later than 2 pm",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "attention deficit hyperactivity disorder, on therapy",
+          "icd10": "F90.9"
+        }
+      ],
+      "plan": [
+        "continue methylphenidate ER 20 mg once daily in the morning",
+        "add methylphenidate immediate-release 10 mg around 1 pm, not after 2 pm",
+        "continue monitoring blood pressure and heart rate",
+        "continue workplace strategies",
+        "call if chest pain or palpitations develop"
+      ],
+      "follow_up": {
+        "interval_days": 56,
+        "reason": "ADHD medication response and monitoring"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "ADHD follow-up, inadequate duration of action on extended-release methylphenidate",
+          "vitals": {
+            "bp": "124/80",
+            "hr": 84,
+            "temp_f": null,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "methylphenidate ER",
+              "dose": "20 mg",
+              "frequency": "once daily in the morning",
+              "route": "PO"
+            },
+            {
+              "name": "methylphenidate immediate-release",
+              "dose": "10 mg",
+              "frequency": "around 1 pm, do not take later than 2 pm",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "attention deficit hyperactivity disorder, on therapy",
+              "icd10": "F90.9"
+            }
+          ],
+          "plan": [
+            "continue methylphenidate ER 20 mg once daily in the morning",
+            "add methylphenidate immediate-release 10 mg around 1 pm, not after 2 pm",
+            "continue monitoring blood pressure and heart rate",
+            "continue workplace strategies",
+            "call if chest pain or palpitations develop"
+          ],
+          "follow_up": {
+            "interval_days": 56,
+            "reason": "ADHD medication response and monitoring"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 660,
+          "output_tokens": 435,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4672
+        },
+        "duration_ms": 3061
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 660,
+      "output_tokens": 435,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4672
+    },
+    "total_duration_ms": 3061,
+    "cost_usd": 0.0033022,
+    "prompt_hash": "636a8518c08c5b9b",
+    "strategy": "cot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_029",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.2857142857142857,
+        "detail": {
+          "token_set_sim": 0.2857142857142857
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 2,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "icd10_correct": 1,
+          "icd10_attempts": 1
+        }
+      },
+      "plan": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 5
+        }
+      },
+      "follow_up": {
+        "score": 0.75,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.5
+        }
+      }
+    },
+    "overall": 0.8392857142857143,
+    "schema_invalid": false,
+    "hallucinations": [
+      "medications: \"methylphenidate immediate-release\" not grounded in transcript",
+      "diagnoses: \"attention deficit hyperactivity disorder, on therapy\" not grounded in transcript"
+    ]
+  }
+}

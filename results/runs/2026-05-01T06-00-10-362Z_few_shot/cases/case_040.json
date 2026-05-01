@@ -1,0 +1,158 @@
+{
+  "case_id": "case_040",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "dizziness for three days with vertigo on positional changes",
+      "vitals": {
+        "bp": "134/84",
+        "hr": 78,
+        "temp_f": null,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "meclizine",
+          "dose": "25 mg",
+          "frequency": "every 6 hours as needed",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "benign paroxysmal positional vertigo, right ear",
+          "icd10": "H81.11"
+        }
+      ],
+      "plan": [
+        "Epley maneuver performed in office",
+        "sleep with head slightly elevated for 48 hours",
+        "avoid sleeping on right side",
+        "meclizine 25 mg every 6 hours as needed for nausea, use sparingly",
+        "movement encouraged to facilitate recovery"
+      ],
+      "follow_up": {
+        "interval_days": 14,
+        "reason": "return if not better in 2 weeks or if new symptoms develop"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "dizziness for three days with vertigo on positional changes",
+          "vitals": {
+            "bp": "134/84",
+            "hr": 78,
+            "temp_f": null,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "meclizine",
+              "dose": "25 mg",
+              "frequency": "every 6 hours as needed",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "benign paroxysmal positional vertigo, right ear",
+              "icd10": "H81.11"
+            }
+          ],
+          "plan": [
+            "Epley maneuver performed in office",
+            "sleep with head slightly elevated for 48 hours",
+            "avoid sleeping on right side",
+            "meclizine 25 mg every 6 hours as needed for nausea, use sparingly",
+            "movement encouraged to facilitate recovery"
+          ],
+          "follow_up": {
+            "interval_days": 14,
+            "reason": "return if not better in 2 weeks or if new symptoms develop"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 743,
+          "output_tokens": 371,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 5290
+        },
+        "duration_ms": 9636
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 743,
+      "output_tokens": 371,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 5290
+    },
+    "total_duration_ms": 9636,
+    "cost_usd": 0.003127,
+    "prompt_hash": "f9d95cb0ac0c15ff",
+    "strategy": "few_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_040",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.6666666666666666,
+        "detail": {
+          "token_set_sim": 0.6666666666666666
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "icd10_correct": 1,
+          "icd10_attempts": 1
+        }
+      },
+      "plan": {
+        "score": 0.8000000000000002,
+        "detail": {
+          "precision": 0.8,
+          "recall": 0.8,
+          "matches": 4
+        }
+      },
+      "follow_up": {
+        "score": 0.4444444444444444,
+        "detail": {
+          "interval_match": false,
+          "reason_sim": 0.8888888888888888
+        }
+      }
+    },
+    "overall": 0.8185185185185185,
+    "schema_invalid": false,
+    "hallucinations": []
+  }
+}

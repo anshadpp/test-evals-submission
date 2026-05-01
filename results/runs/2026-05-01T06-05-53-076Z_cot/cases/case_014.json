@@ -1,0 +1,176 @@
+{
+  "case_id": "case_014",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "bright red blood on toilet paper for one week with itching and discomfort, suspected hemorrhoids",
+      "vitals": {
+        "bp": null,
+        "hr": null,
+        "temp_f": null,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "hydrocortisone 1% cream",
+          "dose": "1%",
+          "frequency": "twice daily for up to a week",
+          "route": "topical"
+        },
+        {
+          "name": "docusate",
+          "dose": "100 mg",
+          "frequency": "twice daily",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "external hemorrhoids with constipation",
+          "icd10": "I84.3"
+        }
+      ],
+      "plan": [
+        "increase fluids and dietary fiber",
+        "sitz bath twice daily for 10 to 15 minutes",
+        "apply hydrocortisone 1% cream topically twice daily for up to one week",
+        "start docusate 100 mg twice daily as stool softener",
+        "return for exam if bleeding does not resolve in 2 weeks, becomes heavier, or dark stools develop"
+      ],
+      "follow_up": {
+        "interval_days": null,
+        "reason": "if bleeding persists beyond 2 weeks, worsens, or dark stools develop"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "bright red blood on toilet paper for one week with itching and discomfort, suspected hemorrhoids",
+          "vitals": {
+            "bp": null,
+            "hr": null,
+            "temp_f": null,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "hydrocortisone 1% cream",
+              "dose": "1%",
+              "frequency": "twice daily for up to a week",
+              "route": "topical"
+            },
+            {
+              "name": "docusate",
+              "dose": "100 mg",
+              "frequency": "twice daily",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "external hemorrhoids with constipation",
+              "icd10": "I84.3"
+            }
+          ],
+          "plan": [
+            "increase fluids and dietary fiber",
+            "sitz bath twice daily for 10 to 15 minutes",
+            "apply hydrocortisone 1% cream topically twice daily for up to one week",
+            "start docusate 100 mg twice daily as stool softener",
+            "return for exam if bleeding does not resolve in 2 weeks, becomes heavier, or dark stools develop"
+          ],
+          "follow_up": {
+            "interval_days": null,
+            "reason": "if bleeding persists beyond 2 weeks, worsens, or dark stools develop"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 666,
+          "output_tokens": 445,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4672
+        },
+        "duration_ms": 3151
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 666,
+      "output_tokens": 445,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4672
+    },
+    "total_duration_ms": 3151,
+    "cost_usd": 0.0033582,
+    "prompt_hash": "636a8518c08c5b9b",
+    "strategy": "cot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_014",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.2727272727272727,
+        "detail": {
+          "token_set_sim": 0.2727272727272727
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 0.5,
+        "detail": {
+          "precision": 0.5,
+          "recall": 0.5,
+          "matches": 1,
+          "unmatched_pred": [
+            0
+          ],
+          "unmatched_gold": [
+            0
+          ]
+        }
+      },
+      "diagnoses": {
+        "score": 0,
+        "detail": {
+          "precision": 0,
+          "recall": 0,
+          "matches": 0,
+          "icd10_correct": 0,
+          "icd10_attempts": 0
+        }
+      },
+      "plan": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 5
+        }
+      },
+      "follow_up": {
+        "score": 0.5,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0
+        }
+      }
+    },
+    "overall": 0.5454545454545454,
+    "schema_invalid": false,
+    "hallucinations": [
+      "diagnoses: \"external hemorrhoids with constipation\" not grounded in transcript"
+    ]
+  }
+}

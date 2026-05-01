@@ -1,0 +1,172 @@
+{
+  "case_id": "case_021",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "acute low back pain after lifting couch",
+      "vitals": {
+        "bp": "124/78",
+        "hr": 72,
+        "temp_f": null,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "ibuprofen",
+          "dose": "600 mg",
+          "frequency": "three times daily with food for 7 to 10 days",
+          "route": "PO"
+        },
+        {
+          "name": "cyclobenzaprine",
+          "dose": "10 mg",
+          "frequency": "at bedtime as needed for muscle spasm if pain interferes with sleep",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "acute mechanical low back strain",
+          "icd10": "M54.5"
+        }
+      ],
+      "plan": [
+        "ibuprofen 600 mg three times daily with food for 7 to 10 days",
+        "cyclobenzaprine 10 mg at bedtime as needed for muscle spasm if pain interferes with sleep",
+        "stay active, walk regularly, avoid bed rest",
+        "apply heat as needed",
+        "no imaging in first 6 weeks unless red flags develop",
+        "return if not significantly better in 4 weeks or if develop leg weakness, numbness, or bowel/bladder changes"
+      ],
+      "follow_up": {
+        "interval_days": null,
+        "reason": "return if not significantly better in 4 weeks or if develop leg weakness, numbness, or bowel/bladder changes"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "acute low back pain after lifting couch",
+          "vitals": {
+            "bp": "124/78",
+            "hr": 72,
+            "temp_f": null,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "ibuprofen",
+              "dose": "600 mg",
+              "frequency": "three times daily with food for 7 to 10 days",
+              "route": "PO"
+            },
+            {
+              "name": "cyclobenzaprine",
+              "dose": "10 mg",
+              "frequency": "at bedtime as needed for muscle spasm if pain interferes with sleep",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "acute mechanical low back strain",
+              "icd10": "M54.5"
+            }
+          ],
+          "plan": [
+            "ibuprofen 600 mg three times daily with food for 7 to 10 days",
+            "cyclobenzaprine 10 mg at bedtime as needed for muscle spasm if pain interferes with sleep",
+            "stay active, walk regularly, avoid bed rest",
+            "apply heat as needed",
+            "no imaging in first 6 weeks unless red flags develop",
+            "return if not significantly better in 4 weeks or if develop leg weakness, numbness, or bowel/bladder changes"
+          ],
+          "follow_up": {
+            "interval_days": null,
+            "reason": "return if not significantly better in 4 weeks or if develop leg weakness, numbness, or bowel/bladder changes"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 694,
+          "output_tokens": 484,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 5290
+        },
+        "duration_ms": 2636
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 694,
+      "output_tokens": 484,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 5290
+    },
+    "total_duration_ms": 2636,
+    "cost_usd": 0.0036429999999999995,
+    "prompt_hash": "f9d95cb0ac0c15ff",
+    "strategy": "few_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_021",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.8571428571428571,
+        "detail": {
+          "token_set_sim": 0.8571428571428571
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 2,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "icd10_correct": 1,
+          "icd10_attempts": 1
+        }
+      },
+      "plan": {
+        "score": 0.7272727272727272,
+        "detail": {
+          "precision": 0.6666666666666666,
+          "recall": 0.8,
+          "matches": 4
+        }
+      },
+      "follow_up": {
+        "score": 0.7307692307692308,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.46153846153846156
+        }
+      }
+    },
+    "overall": 0.8858641358641358,
+    "schema_invalid": false,
+    "hallucinations": []
+  }
+}

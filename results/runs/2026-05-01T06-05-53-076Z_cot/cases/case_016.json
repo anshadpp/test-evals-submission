@@ -1,0 +1,202 @@
+{
+  "case_id": "case_016",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "elevated blood pressure follow-up",
+      "vitals": {
+        "bp": "152/96",
+        "hr": 84,
+        "temp_f": null,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "amlodipine",
+          "dose": "5 mg",
+          "frequency": "once daily",
+          "route": "PO"
+        },
+        {
+          "name": "losartan",
+          "dose": "25 mg",
+          "frequency": "once daily",
+          "route": "PO"
+        },
+        {
+          "name": "naproxen",
+          "dose": null,
+          "frequency": null,
+          "route": "PO"
+        },
+        {
+          "name": "acetaminophen",
+          "dose": "650 mg",
+          "frequency": "up to four times a day as needed",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "elevated blood pressure",
+          "icd10": "I10"
+        }
+      ],
+      "plan": [
+        "continue amlodipine 5 mg once daily",
+        "start losartan 25 mg once daily",
+        "stop naproxen and replace with acetaminophen 650 mg up to four times daily as needed",
+        "reduce sodium intake to under 2 grams per day",
+        "aim for 30 minutes of walking five days per week",
+        "obtain home blood pressure cuff and log readings twice daily",
+        "get basic metabolic panel before follow-up visit to check kidney function on losartan"
+      ],
+      "follow_up": {
+        "interval_days": 28,
+        "reason": "blood pressure recheck on new losartan therapy and review basic metabolic panel"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "elevated blood pressure follow-up",
+          "vitals": {
+            "bp": "152/96",
+            "hr": 84,
+            "temp_f": null,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "amlodipine",
+              "dose": "5 mg",
+              "frequency": "once daily",
+              "route": "PO"
+            },
+            {
+              "name": "losartan",
+              "dose": "25 mg",
+              "frequency": "once daily",
+              "route": "PO"
+            },
+            {
+              "name": "naproxen",
+              "dose": null,
+              "frequency": null,
+              "route": "PO"
+            },
+            {
+              "name": "acetaminophen",
+              "dose": "650 mg",
+              "frequency": "up to four times a day as needed",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "elevated blood pressure",
+              "icd10": "I10"
+            }
+          ],
+          "plan": [
+            "continue amlodipine 5 mg once daily",
+            "start losartan 25 mg once daily",
+            "stop naproxen and replace with acetaminophen 650 mg up to four times daily as needed",
+            "reduce sodium intake to under 2 grams per day",
+            "aim for 30 minutes of walking five days per week",
+            "obtain home blood pressure cuff and log readings twice daily",
+            "get basic metabolic panel before follow-up visit to check kidney function on losartan"
+          ],
+          "follow_up": {
+            "interval_days": 28,
+            "reason": "blood pressure recheck on new losartan therapy and review basic metabolic panel"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 708,
+          "output_tokens": 539,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4672
+        },
+        "duration_ms": 3490
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 708,
+      "output_tokens": 539,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4672
+    },
+    "total_duration_ms": 3490,
+    "cost_usd": 0.0038702,
+    "prompt_hash": "636a8518c08c5b9b",
+    "strategy": "cot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_016",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.8,
+        "detail": {
+          "token_set_sim": 0.8
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 0.8571428571428571,
+        "detail": {
+          "precision": 0.75,
+          "recall": 1,
+          "matches": 3,
+          "unmatched_pred": [
+            2
+          ],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 0,
+        "detail": {
+          "precision": 0,
+          "recall": 0,
+          "matches": 0,
+          "icd10_correct": 0,
+          "icd10_attempts": 0
+        }
+      },
+      "plan": {
+        "score": 0.39999999999999997,
+        "detail": {
+          "precision": 0.42857142857142855,
+          "recall": 0.375,
+          "matches": 3
+        }
+      },
+      "follow_up": {
+        "score": 0.65,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.3
+        }
+      }
+    },
+    "overall": 0.6178571428571428,
+    "schema_invalid": false,
+    "hallucinations": [
+      "diagnoses: \"elevated blood pressure\" not grounded in transcript"
+    ]
+  }
+}

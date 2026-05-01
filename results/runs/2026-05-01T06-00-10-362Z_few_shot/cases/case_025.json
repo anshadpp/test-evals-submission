@@ -1,0 +1,158 @@
+{
+  "case_id": "case_025",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "right heel pain for six weeks, worse in mornings",
+      "vitals": {
+        "bp": null,
+        "hr": null,
+        "temp_f": null,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "naproxen",
+          "dose": "220 mg",
+          "frequency": "twice a day with food for 10 days",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "plantar fasciitis, right heel",
+          "icd10": "M72.041"
+        }
+      ],
+      "plan": [
+        "calf and plantar fascia stretching exercises",
+        "wear supportive shoes, no barefoot walking at home",
+        "over-the-counter heel cushions",
+        "naproxen 220 mg twice a day with food for 10 days",
+        "consider night splint if symptoms persist after a few weeks"
+      ],
+      "follow_up": {
+        "interval_days": 56,
+        "reason": "reassess for progress; if not improving, consider physical therapy referral or steroid injection"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "right heel pain for six weeks, worse in mornings",
+          "vitals": {
+            "bp": null,
+            "hr": null,
+            "temp_f": null,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "naproxen",
+              "dose": "220 mg",
+              "frequency": "twice a day with food for 10 days",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "plantar fasciitis, right heel",
+              "icd10": "M72.041"
+            }
+          ],
+          "plan": [
+            "calf and plantar fascia stretching exercises",
+            "wear supportive shoes, no barefoot walking at home",
+            "over-the-counter heel cushions",
+            "naproxen 220 mg twice a day with food for 10 days",
+            "consider night splint if symptoms persist after a few weeks"
+          ],
+          "follow_up": {
+            "interval_days": 56,
+            "reason": "reassess for progress; if not improving, consider physical therapy referral or steroid injection"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 675,
+          "output_tokens": 373,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 5290
+        },
+        "duration_ms": 2472
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 675,
+      "output_tokens": 373,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 5290
+    },
+    "total_duration_ms": 2472,
+    "cost_usd": 0.0030689999999999997,
+    "prompt_hash": "f9d95cb0ac0c15ff",
+    "strategy": "few_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_025",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.75,
+        "detail": {
+          "token_set_sim": 0.75
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 0,
+        "detail": {
+          "precision": 0,
+          "recall": 0,
+          "matches": 0,
+          "icd10_correct": 0,
+          "icd10_attempts": 0
+        }
+      },
+      "plan": {
+        "score": 0.7272727272727272,
+        "detail": {
+          "precision": 0.8,
+          "recall": 0.6666666666666666,
+          "matches": 4
+        }
+      },
+      "follow_up": {
+        "score": 0.09090909090909091,
+        "detail": {
+          "interval_match": false,
+          "reason_sim": 0.18181818181818182
+        }
+      }
+    },
+    "overall": 0.5946969696969696,
+    "schema_invalid": false,
+    "hallucinations": []
+  }
+}

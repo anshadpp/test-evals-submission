@@ -1,0 +1,164 @@
+{
+  "case_id": "case_030",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "well-child visit, 4-year-old",
+      "vitals": {
+        "bp": null,
+        "hr": 96,
+        "temp_f": 98.6,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "acetaminophen",
+          "dose": "160 mg",
+          "frequency": "as needed for fever or soreness",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [],
+      "plan": [
+        "administer DTaP booster vaccine, two in each thigh",
+        "administer IPV booster vaccine",
+        "administer MMR booster vaccine",
+        "administer varicella booster vaccine",
+        "administer annual influenza vaccine",
+        "acetaminophen 160 mg by mouth as needed for post-vaccination fever or soreness",
+        "limit screen time to under one hour per day",
+        "encourage family meals and outdoor play",
+        "brush teeth twice daily",
+        "dental visit every 6 months"
+      ],
+      "follow_up": {
+        "interval_days": 365,
+        "reason": "next well-child visit at age 5"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "well-child visit, 4-year-old",
+          "vitals": {
+            "bp": null,
+            "hr": 96,
+            "temp_f": 98.6,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "acetaminophen",
+              "dose": "160 mg",
+              "frequency": "as needed for fever or soreness",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [],
+          "plan": [
+            "administer DTaP booster vaccine, two in each thigh",
+            "administer IPV booster vaccine",
+            "administer MMR booster vaccine",
+            "administer varicella booster vaccine",
+            "administer annual influenza vaccine",
+            "acetaminophen 160 mg by mouth as needed for post-vaccination fever or soreness",
+            "limit screen time to under one hour per day",
+            "encourage family meals and outdoor play",
+            "brush teeth twice daily",
+            "dental visit every 6 months"
+          ],
+          "follow_up": {
+            "interval_days": 365,
+            "reason": "next well-child visit at age 5"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 707,
+          "output_tokens": 379,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4672
+        },
+        "duration_ms": 2843
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 707,
+      "output_tokens": 379,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4672
+    },
+    "total_duration_ms": 2843,
+    "cost_usd": 0.0030692000000000002,
+    "prompt_hash": "636a8518c08c5b9b",
+    "strategy": "cot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_030",
+    "per_field": {
+      "chief_complaint": {
+        "score": 1,
+        "detail": {
+          "token_set_sim": 1
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 0,
+        "detail": {
+          "precision": 0,
+          "recall": 0,
+          "matches": 0,
+          "unmatched_pred": [
+            0
+          ],
+          "unmatched_gold": [
+            0
+          ]
+        }
+      },
+      "diagnoses": {
+        "score": 0,
+        "detail": {
+          "precision": 1,
+          "recall": 0,
+          "matches": 0,
+          "icd10_correct": 0,
+          "icd10_attempts": 0
+        }
+      },
+      "plan": {
+        "score": 0.26666666666666666,
+        "detail": {
+          "precision": 0.2,
+          "recall": 0.4,
+          "matches": 2
+        }
+      },
+      "follow_up": {
+        "score": 0.9,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.8
+        }
+      }
+    },
+    "overall": 0.5277777777777778,
+    "schema_invalid": false,
+    "hallucinations": [
+      "medications: \"acetaminophen\" not grounded in transcript"
+    ]
+  }
+}

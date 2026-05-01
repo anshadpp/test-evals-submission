@@ -1,0 +1,176 @@
+{
+  "case_id": "case_047",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "left big toe joint pain, swelling, erythema (suspected gout flare)",
+      "vitals": {
+        "bp": "142/88",
+        "hr": 92,
+        "temp_f": 99.6,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "indomethacin",
+          "dose": "50 mg",
+          "frequency": "three times daily with food until flare resolves (5–7 days)",
+          "route": "PO"
+        },
+        {
+          "name": "allopurinol",
+          "dose": "100 mg",
+          "frequency": "once daily, to start after flare settles and titrate up",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "acute gout flare, left first metatarsophalangeal joint",
+          "icd10": "M10.071"
+        }
+      ],
+      "plan": [
+        "indomethacin 50 mg three times daily with food for 5–7 days until flare resolves",
+        "avoid aspirin",
+        "ice the left first MTP joint, elevate, rest",
+        "start allopurinol 100 mg once daily after flare settles; titrate up to goal",
+        "maintain uric acid target under 6 mg/dL",
+        "dietary modification: limit red meat, shellfish, beer",
+        "increase hydration"
+      ],
+      "follow_up": {
+        "interval_days": 28,
+        "reason": "follow-up for gout flare resolution and uric acid management"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "left big toe joint pain, swelling, erythema (suspected gout flare)",
+          "vitals": {
+            "bp": "142/88",
+            "hr": 92,
+            "temp_f": 99.6,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "indomethacin",
+              "dose": "50 mg",
+              "frequency": "three times daily with food until flare resolves (5–7 days)",
+              "route": "PO"
+            },
+            {
+              "name": "allopurinol",
+              "dose": "100 mg",
+              "frequency": "once daily, to start after flare settles and titrate up",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "acute gout flare, left first metatarsophalangeal joint",
+              "icd10": "M10.071"
+            }
+          ],
+          "plan": [
+            "indomethacin 50 mg three times daily with food for 5–7 days until flare resolves",
+            "avoid aspirin",
+            "ice the left first MTP joint, elevate, rest",
+            "start allopurinol 100 mg once daily after flare settles; titrate up to goal",
+            "maintain uric acid target under 6 mg/dL",
+            "dietary modification: limit red meat, shellfish, beer",
+            "increase hydration"
+          ],
+          "follow_up": {
+            "interval_days": 28,
+            "reason": "follow-up for gout flare resolution and uric acid management"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 756,
+          "output_tokens": 497,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4562
+        },
+        "duration_ms": 3535
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 756,
+      "output_tokens": 497,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4562
+    },
+    "total_duration_ms": 3535,
+    "cost_usd": 0.0036972,
+    "prompt_hash": "2bbf076d4e67dde8",
+    "strategy": "zero_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_047",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.8,
+        "detail": {
+          "token_set_sim": 0.8
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 2,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "icd10_correct": 0,
+          "icd10_attempts": 1
+        }
+      },
+      "plan": {
+        "score": 0.6666666666666666,
+        "detail": {
+          "precision": 0.5714285714285714,
+          "recall": 0.8,
+          "matches": 4
+        }
+      },
+      "follow_up": {
+        "score": 0.7142857142857143,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.42857142857142855
+        }
+      }
+    },
+    "overall": 0.8634920634920635,
+    "schema_invalid": false,
+    "hallucinations": [
+      "diagnoses: \"acute gout flare, left first metatarsophalangeal joint\" not grounded in transcript"
+    ]
+  }
+}

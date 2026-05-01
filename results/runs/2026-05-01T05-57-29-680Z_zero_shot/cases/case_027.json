@@ -1,0 +1,158 @@
+{
+  "case_id": "case_027",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "follow-up for depression on fluoxetine",
+      "vitals": {
+        "bp": "118/74",
+        "hr": 70,
+        "temp_f": null,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "fluoxetine",
+          "dose": "20 mg",
+          "frequency": "once daily",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "depression, responding to treatment",
+          "icd10": "F32.9"
+        }
+      ],
+      "plan": [
+        "continue fluoxetine 20 mg once daily",
+        "continue weekly therapy",
+        "continue medication for at least 9 to 12 months to prevent relapse",
+        "call if mood worsens or any thoughts of self-harm"
+      ],
+      "follow_up": {
+        "interval_days": 56,
+        "reason": "depression follow-up; call sooner if mood worsens or thoughts of self-harm"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "follow-up for depression on fluoxetine",
+          "vitals": {
+            "bp": "118/74",
+            "hr": 70,
+            "temp_f": null,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "fluoxetine",
+              "dose": "20 mg",
+              "frequency": "once daily",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "depression, responding to treatment",
+              "icd10": "F32.9"
+            }
+          ],
+          "plan": [
+            "continue fluoxetine 20 mg once daily",
+            "continue weekly therapy",
+            "continue medication for at least 9 to 12 months to prevent relapse",
+            "call if mood worsens or any thoughts of self-harm"
+          ],
+          "follow_up": {
+            "interval_days": 56,
+            "reason": "depression follow-up; call sooner if mood worsens or thoughts of self-harm"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 649,
+          "output_tokens": 348,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4562
+        },
+        "duration_ms": 2506
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 649,
+      "output_tokens": 348,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4562
+    },
+    "total_duration_ms": 2506,
+    "cost_usd": 0.0028452,
+    "prompt_hash": "2bbf076d4e67dde8",
+    "strategy": "zero_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_027",
+    "per_field": {
+      "chief_complaint": {
+        "score": 1,
+        "detail": {
+          "token_set_sim": 1
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 0,
+        "detail": {
+          "precision": 0,
+          "recall": 0,
+          "matches": 0,
+          "icd10_correct": 0,
+          "icd10_attempts": 0
+        }
+      },
+      "plan": {
+        "score": 0.75,
+        "detail": {
+          "precision": 0.75,
+          "recall": 0.75,
+          "matches": 3
+        }
+      },
+      "follow_up": {
+        "score": 0.6111111111111112,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.2222222222222222
+        }
+      }
+    },
+    "overall": 0.7268518518518517,
+    "schema_invalid": false,
+    "hallucinations": [
+      "diagnoses: \"depression, responding to treatment\" not grounded in transcript"
+    ]
+  }
+}

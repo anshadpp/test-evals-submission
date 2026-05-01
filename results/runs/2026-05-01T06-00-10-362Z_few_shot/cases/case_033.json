@@ -1,0 +1,174 @@
+{
+  "case_id": "case_033",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "itchy red rash on forearms and back of knees for two weeks",
+      "vitals": {
+        "bp": null,
+        "hr": null,
+        "temp_f": null,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "triamcinolone",
+          "dose": "0.1%",
+          "frequency": "twice daily for up to 2 weeks",
+          "route": "topical"
+        },
+        {
+          "name": "cetirizine",
+          "dose": "10 mg",
+          "frequency": "once daily",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "atopic dermatitis",
+          "icd10": "L20.9"
+        }
+      ],
+      "plan": [
+        "switch back to gentle, fragrance-free body wash",
+        "apply thick fragrance-free moisturizer twice daily, especially within 3 minutes after showers",
+        "apply triamcinolone 0.1% ointment to affected areas twice daily for up to 2 weeks",
+        "cetirizine 10 mg once daily for itching",
+        "return if not improving in 2 weeks or signs of skin infection develop (pus, increased redness, warmth)"
+      ],
+      "follow_up": {
+        "interval_days": null,
+        "reason": "return if not improving in 2 weeks or if signs of skin infection develop"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "itchy red rash on forearms and back of knees for two weeks",
+          "vitals": {
+            "bp": null,
+            "hr": null,
+            "temp_f": null,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "triamcinolone",
+              "dose": "0.1%",
+              "frequency": "twice daily for up to 2 weeks",
+              "route": "topical"
+            },
+            {
+              "name": "cetirizine",
+              "dose": "10 mg",
+              "frequency": "once daily",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "atopic dermatitis",
+              "icd10": "L20.9"
+            }
+          ],
+          "plan": [
+            "switch back to gentle, fragrance-free body wash",
+            "apply thick fragrance-free moisturizer twice daily, especially within 3 minutes after showers",
+            "apply triamcinolone 0.1% ointment to affected areas twice daily for up to 2 weeks",
+            "cetirizine 10 mg once daily for itching",
+            "return if not improving in 2 weeks or signs of skin infection develop (pus, increased redness, warmth)"
+          ],
+          "follow_up": {
+            "interval_days": null,
+            "reason": "return if not improving in 2 weeks or if signs of skin infection develop"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 700,
+          "output_tokens": 456,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 5290
+        },
+        "duration_ms": 3339
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 700,
+      "output_tokens": 456,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 5290
+    },
+    "total_duration_ms": 3339,
+    "cost_usd": 0.003509,
+    "prompt_hash": "f9d95cb0ac0c15ff",
+    "strategy": "few_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_033",
+    "per_field": {
+      "chief_complaint": {
+        "score": 1,
+        "detail": {
+          "token_set_sim": 1
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 0.5,
+        "detail": {
+          "precision": 0.5,
+          "recall": 0.5,
+          "matches": 1,
+          "unmatched_pred": [
+            0
+          ],
+          "unmatched_gold": [
+            0
+          ]
+        }
+      },
+      "diagnoses": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "icd10_correct": 1,
+          "icd10_attempts": 1
+        }
+      },
+      "plan": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 5
+        }
+      },
+      "follow_up": {
+        "score": 0.5,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0
+        }
+      }
+    },
+    "overall": 0.8333333333333334,
+    "schema_invalid": false,
+    "hallucinations": []
+  }
+}

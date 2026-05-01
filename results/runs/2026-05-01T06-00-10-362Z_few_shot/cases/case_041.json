@@ -1,0 +1,170 @@
+{
+  "case_id": "case_041",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "chronic tension-type headaches, almost daily",
+      "vitals": {
+        "bp": null,
+        "hr": null,
+        "temp_f": null,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "naproxen",
+          "dose": "440 mg",
+          "frequency": "as needed up to twice daily, maximum 10 days per month",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "chronic tension-type headache",
+          "icd10": "G44.201"
+        }
+      ],
+      "plan": [
+        "naproxen 440 mg as needed up to twice daily for acute attacks, maximum 10 days per month",
+        "stress reduction strategies",
+        "optimize posture and ergonomics at work",
+        "regular exercise",
+        "maintain hydration",
+        "improve sleep",
+        "soft diet for a few days for jaw tension",
+        "warm compresses for jaw clenching",
+        "consider night guard if teeth grinding confirmed",
+        "consider amitriptyline for prevention if headaches persist daily despite lifestyle modifications",
+        "message doctor with update in 4 weeks"
+      ],
+      "follow_up": {
+        "interval_days": 28,
+        "reason": "follow-up on tension headache management with update on symptom response to lifestyle modifications"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "chronic tension-type headaches, almost daily",
+          "vitals": {
+            "bp": null,
+            "hr": null,
+            "temp_f": null,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "naproxen",
+              "dose": "440 mg",
+              "frequency": "as needed up to twice daily, maximum 10 days per month",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "chronic tension-type headache",
+              "icd10": "G44.201"
+            }
+          ],
+          "plan": [
+            "naproxen 440 mg as needed up to twice daily for acute attacks, maximum 10 days per month",
+            "stress reduction strategies",
+            "optimize posture and ergonomics at work",
+            "regular exercise",
+            "maintain hydration",
+            "improve sleep",
+            "soft diet for a few days for jaw tension",
+            "warm compresses for jaw clenching",
+            "consider night guard if teeth grinding confirmed",
+            "consider amitriptyline for prevention if headaches persist daily despite lifestyle modifications",
+            "message doctor with update in 4 weeks"
+          ],
+          "follow_up": {
+            "interval_days": 28,
+            "reason": "follow-up on tension headache management with update on symptom response to lifestyle modifications"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 695,
+          "output_tokens": 364,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 5290
+        },
+        "duration_ms": 9785
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 695,
+      "output_tokens": 364,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 5290
+    },
+    "total_duration_ms": 9785,
+    "cost_usd": 0.003044,
+    "prompt_hash": "f9d95cb0ac0c15ff",
+    "strategy": "few_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_041",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.2,
+        "detail": {
+          "token_set_sim": 0.2
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "icd10_correct": 0,
+          "icd10_attempts": 1
+        }
+      },
+      "plan": {
+        "score": 0.33333333333333326,
+        "detail": {
+          "precision": 0.2727272727272727,
+          "recall": 0.42857142857142855,
+          "matches": 3
+        }
+      },
+      "follow_up": {
+        "score": 0.6111111111111112,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.2222222222222222
+        }
+      }
+    },
+    "overall": 0.6907407407407407,
+    "schema_invalid": false,
+    "hallucinations": []
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "run_id": "2026-05-01T06-05-53-076Z_cot",
+  "strategy": "cot",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_hash": "636a8518c08c5b9b",
+  "started_at": "2026-05-01T06:05:53.078Z",
+  "finished_at": "2026-05-01T06:06:58.740Z",
+  "total_cases": 50,
+  "completed_cases": 50,
+  "schema_failure_rate": 0,
+  "hallucination_rate": 0.66,
+  "per_field_avg": {
+    "chief_complaint": 0.6056993006993008,
+    "vitals": 1,
+    "medications": 0.8522857142857141,
+    "diagnoses": 0.51,
+    "plan": 0.7100148283089457,
+    "follow_up": 0.6530986970545795
+  },
+  "overall_avg": 0.7218497567247567,
+  "total_tokens": {
+    "input_tokens": 34786,
+    "output_tokens": 22142,
+    "cache_creation_input_tokens": 23360,
+    "cache_read_input_tokens": 210240
+  },
+  "total_cost_usd": 0.19572,
+  "wall_time_ms": 65660
+}

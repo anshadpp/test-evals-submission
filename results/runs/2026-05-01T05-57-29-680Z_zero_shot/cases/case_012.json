@@ -1,0 +1,170 @@
+{
+  "case_id": "case_012",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "IBS flare with bloating, alternating diarrhea and constipation, and cramping for three weeks",
+      "vitals": {
+        "bp": "116/72",
+        "hr": 80,
+        "temp_f": 98.4,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "dicyclomine",
+          "dose": "10 mg",
+          "frequency": "three times daily before meals",
+          "route": "PO"
+        },
+        {
+          "name": "simethicone",
+          "dose": "125 mg",
+          "frequency": "with meals as needed",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "irritable bowel syndrome, acute flare",
+          "icd10": "K58.9"
+        }
+      ],
+      "plan": [
+        "low-FODMAP diet trial for 4 to 6 weeks",
+        "dicyclomine 10 mg three times daily before meals for cramping",
+        "simethicone 125 mg with meals as needed for bloating",
+        "stress management with mindfulness or 20 minutes of walking daily"
+      ],
+      "follow_up": {
+        "interval_days": 42,
+        "reason": "follow-up on low-FODMAP diet trial and assess need for further workup"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "IBS flare with bloating, alternating diarrhea and constipation, and cramping for three weeks",
+          "vitals": {
+            "bp": "116/72",
+            "hr": 80,
+            "temp_f": 98.4,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "dicyclomine",
+              "dose": "10 mg",
+              "frequency": "three times daily before meals",
+              "route": "PO"
+            },
+            {
+              "name": "simethicone",
+              "dose": "125 mg",
+              "frequency": "with meals as needed",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "irritable bowel syndrome, acute flare",
+              "icd10": "K58.9"
+            }
+          ],
+          "plan": [
+            "low-FODMAP diet trial for 4 to 6 weeks",
+            "dicyclomine 10 mg three times daily before meals for cramping",
+            "simethicone 125 mg with meals as needed for bloating",
+            "stress management with mindfulness or 20 minutes of walking daily"
+          ],
+          "follow_up": {
+            "interval_days": 42,
+            "reason": "follow-up on low-FODMAP diet trial and assess need for further workup"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 679,
+          "output_tokens": 435,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4562
+        },
+        "duration_ms": 3187
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 679,
+      "output_tokens": 435,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4562
+    },
+    "total_duration_ms": 3187,
+    "cost_usd": 0.0033101999999999997,
+    "prompt_hash": "2bbf076d4e67dde8",
+    "strategy": "zero_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_012",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.4444444444444444,
+        "detail": {
+          "token_set_sim": 0.4444444444444444
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 2,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "icd10_correct": 0,
+          "icd10_attempts": 1
+        }
+      },
+      "plan": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 4
+        }
+      },
+      "follow_up": {
+        "score": 0.625,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.25
+        }
+      }
+    },
+    "overall": 0.8449074074074074,
+    "schema_invalid": false,
+    "hallucinations": [
+      "diagnoses: \"irritable bowel syndrome, acute flare\" not grounded in transcript"
+    ]
+  }
+}

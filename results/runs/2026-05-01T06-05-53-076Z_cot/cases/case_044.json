@@ -1,0 +1,170 @@
+{
+  "case_id": "case_044",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "weight management and prediabetes",
+      "vitals": {
+        "bp": "132/84",
+        "hr": 78,
+        "temp_f": 98.4,
+        "spo2": 98
+      },
+      "medications": [
+        {
+          "name": "semaglutide",
+          "dose": "0.25 mg",
+          "frequency": "once weekly for 4 weeks, then titrate up",
+          "route": "subcutaneous"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "overweight, BMI 33",
+          "icd10": "E66.9"
+        },
+        {
+          "description": "prediabetes, A1c 5.9"
+        }
+      ],
+      "plan": [
+        "start semaglutide 0.25 mg subcutaneously once weekly for 4 weeks, then titrate",
+        "counsel on common side effects: nausea and mild GI upset in first weeks",
+        "stop semaglutide and call if severe abdominal pain",
+        "calorie-reduced, high-protein diet",
+        "150 minutes moderate exercise weekly",
+        "keep food and activity logs",
+        "refer to dietitian"
+      ],
+      "follow_up": {
+        "interval_days": 28,
+        "reason": "check tolerability and determine dose increase; repeat A1c and metabolic panel in 3 months"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "weight management and prediabetes",
+          "vitals": {
+            "bp": "132/84",
+            "hr": 78,
+            "temp_f": 98.4,
+            "spo2": 98
+          },
+          "medications": [
+            {
+              "name": "semaglutide",
+              "dose": "0.25 mg",
+              "frequency": "once weekly for 4 weeks, then titrate up",
+              "route": "subcutaneous"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "overweight, BMI 33",
+              "icd10": "E66.9"
+            },
+            {
+              "description": "prediabetes, A1c 5.9"
+            }
+          ],
+          "plan": [
+            "start semaglutide 0.25 mg subcutaneously once weekly for 4 weeks, then titrate",
+            "counsel on common side effects: nausea and mild GI upset in first weeks",
+            "stop semaglutide and call if severe abdominal pain",
+            "calorie-reduced, high-protein diet",
+            "150 minutes moderate exercise weekly",
+            "keep food and activity logs",
+            "refer to dietitian"
+          ],
+          "follow_up": {
+            "interval_days": 28,
+            "reason": "check tolerability and determine dose increase; repeat A1c and metabolic panel in 3 months"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 740,
+          "output_tokens": 442,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4672
+        },
+        "duration_ms": 10977
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 740,
+      "output_tokens": 442,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4672
+    },
+    "total_duration_ms": 10978,
+    "cost_usd": 0.0034172000000000004,
+    "prompt_hash": "636a8518c08c5b9b",
+    "strategy": "cot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_044",
+    "per_field": {
+      "chief_complaint": {
+        "score": 1,
+        "detail": {
+          "token_set_sim": 1
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 0,
+        "detail": {
+          "precision": 0,
+          "recall": 0,
+          "matches": 0,
+          "icd10_correct": 0,
+          "icd10_attempts": 0
+        }
+      },
+      "plan": {
+        "score": 0.5714285714285714,
+        "detail": {
+          "precision": 0.5714285714285714,
+          "recall": 0.5714285714285714,
+          "matches": 4
+        }
+      },
+      "follow_up": {
+        "score": 0.6818181818181819,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.36363636363636365
+        }
+      }
+    },
+    "overall": 0.7088744588744588,
+    "schema_invalid": false,
+    "hallucinations": [
+      "diagnoses: \"prediabetes, A1c 5.9\" not grounded in transcript"
+    ]
+  }
+}

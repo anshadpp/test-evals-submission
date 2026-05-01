@@ -1,0 +1,182 @@
+{
+  "case_id": "case_002",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "facial pressure and nasal discharge for 10 days, suspected bacterial sinusitis",
+      "vitals": {
+        "bp": "118/76",
+        "hr": 82,
+        "temp_f": 101.2,
+        "spo2": 97
+      },
+      "medications": [
+        {
+          "name": "amoxicillin-clavulanate",
+          "dose": "875 mg",
+          "frequency": "twice daily for 7 days",
+          "route": "PO"
+        },
+        {
+          "name": "saline rinse",
+          "dose": null,
+          "frequency": "twice daily",
+          "route": "topical"
+        },
+        {
+          "name": "pseudoephedrine",
+          "dose": "30 mg",
+          "frequency": "every 6 hours as needed for congestion",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "acute bacterial sinusitis",
+          "icd10": "J01.90"
+        }
+      ],
+      "plan": [
+        "amoxicillin-clavulanate 875 mg twice daily for 7 days",
+        "saline rinse twice daily",
+        "pseudoephedrine 30 mg every 6 hours as needed for congestion",
+        "call if not significantly better in 5 days"
+      ],
+      "follow_up": {
+        "interval_days": null,
+        "reason": "call if not significantly better in 5 days; otherwise no routine follow-up needed"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "facial pressure and nasal discharge for 10 days, suspected bacterial sinusitis",
+          "vitals": {
+            "bp": "118/76",
+            "hr": 82,
+            "temp_f": 101.2,
+            "spo2": 97
+          },
+          "medications": [
+            {
+              "name": "amoxicillin-clavulanate",
+              "dose": "875 mg",
+              "frequency": "twice daily for 7 days",
+              "route": "PO"
+            },
+            {
+              "name": "saline rinse",
+              "dose": null,
+              "frequency": "twice daily",
+              "route": "topical"
+            },
+            {
+              "name": "pseudoephedrine",
+              "dose": "30 mg",
+              "frequency": "every 6 hours as needed for congestion",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "acute bacterial sinusitis",
+              "icd10": "J01.90"
+            }
+          ],
+          "plan": [
+            "amoxicillin-clavulanate 875 mg twice daily for 7 days",
+            "saline rinse twice daily",
+            "pseudoephedrine 30 mg every 6 hours as needed for congestion",
+            "call if not significantly better in 5 days"
+          ],
+          "follow_up": {
+            "interval_days": null,
+            "reason": "call if not significantly better in 5 days; otherwise no routine follow-up needed"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 711,
+          "output_tokens": 478,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4562
+        },
+        "duration_ms": 3669
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 711,
+      "output_tokens": 478,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4562
+    },
+    "total_duration_ms": 3669,
+    "cost_usd": 0.0035572000000000004,
+    "prompt_hash": "2bbf076d4e67dde8",
+    "strategy": "zero_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_002",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.5555555555555556,
+        "detail": {
+          "token_set_sim": 0.5555555555555556
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 0.8,
+        "detail": {
+          "precision": 0.6666666666666666,
+          "recall": 1,
+          "matches": 2,
+          "unmatched_pred": [
+            1
+          ],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "icd10_correct": 1,
+          "icd10_attempts": 1
+        }
+      },
+      "plan": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 4
+        }
+      },
+      "follow_up": {
+        "score": 0.7083333333333334,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.4166666666666667
+        }
+      }
+    },
+    "overall": 0.8439814814814816,
+    "schema_invalid": false,
+    "hallucinations": []
+  }
+}

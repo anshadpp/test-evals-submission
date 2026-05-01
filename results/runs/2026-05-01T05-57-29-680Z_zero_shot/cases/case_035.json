@@ -1,0 +1,174 @@
+{
+  "case_id": "case_035",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "right calf cellulitis with erythema, warmth, and swelling for two days",
+      "vitals": {
+        "bp": "130/82",
+        "hr": 96,
+        "temp_f": 100.8,
+        "spo2": 98
+      },
+      "medications": [
+        {
+          "name": "cephalexin",
+          "dose": "500 mg",
+          "frequency": "four times daily for 7 days",
+          "route": "PO"
+        },
+        {
+          "name": "acetaminophen",
+          "dose": "650 mg",
+          "frequency": "every 6 hours as needed",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "cellulitis of right calf",
+          "icd10": "L03.90"
+        }
+      ],
+      "plan": [
+        "cephalexin 500 mg four times daily for 7 days",
+        "acetaminophen 650 mg every 6 hours as needed for pain and fever",
+        "elevate right leg when possible",
+        "mark borders of erythema with pen and monitor for expansion",
+        "go to ER if erythema expands beyond marked line, fever worsens, vomiting develops, or streaking appears",
+        "recheck in 3 days"
+      ],
+      "follow_up": {
+        "interval_days": 3,
+        "reason": "cellulitis recheck"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "right calf cellulitis with erythema, warmth, and swelling for two days",
+          "vitals": {
+            "bp": "130/82",
+            "hr": 96,
+            "temp_f": 100.8,
+            "spo2": 98
+          },
+          "medications": [
+            {
+              "name": "cephalexin",
+              "dose": "500 mg",
+              "frequency": "four times daily for 7 days",
+              "route": "PO"
+            },
+            {
+              "name": "acetaminophen",
+              "dose": "650 mg",
+              "frequency": "every 6 hours as needed",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "cellulitis of right calf",
+              "icd10": "L03.90"
+            }
+          ],
+          "plan": [
+            "cephalexin 500 mg four times daily for 7 days",
+            "acetaminophen 650 mg every 6 hours as needed for pain and fever",
+            "elevate right leg when possible",
+            "mark borders of erythema with pen and monitor for expansion",
+            "go to ER if erythema expands beyond marked line, fever worsens, vomiting develops, or streaking appears",
+            "recheck in 3 days"
+          ],
+          "follow_up": {
+            "interval_days": 3,
+            "reason": "cellulitis recheck"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 716,
+          "output_tokens": 458,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4562
+        },
+        "duration_ms": 3424
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 716,
+      "output_tokens": 458,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4562
+    },
+    "total_duration_ms": 3424,
+    "cost_usd": 0.0034622,
+    "prompt_hash": "2bbf076d4e67dde8",
+    "strategy": "zero_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_035",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.75,
+        "detail": {
+          "token_set_sim": 0.75
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 2,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 0,
+        "detail": {
+          "precision": 0,
+          "recall": 0,
+          "matches": 0,
+          "icd10_correct": 0,
+          "icd10_attempts": 0
+        }
+      },
+      "plan": {
+        "score": 0.7272727272727272,
+        "detail": {
+          "precision": 0.6666666666666666,
+          "recall": 0.8,
+          "matches": 4
+        }
+      },
+      "follow_up": {
+        "score": 1,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 1
+        }
+      }
+    },
+    "overall": 0.7462121212121211,
+    "schema_invalid": false,
+    "hallucinations": [
+      "diagnoses: \"cellulitis of right calf\" not grounded in transcript"
+    ]
+  }
+}

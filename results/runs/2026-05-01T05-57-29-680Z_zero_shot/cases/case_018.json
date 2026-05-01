@@ -1,0 +1,204 @@
+{
+  "case_id": "case_018",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "CHF check-in, 2 pound weight gain this week with mild ankle swelling",
+      "vitals": {
+        "bp": "118/74",
+        "hr": 72,
+        "temp_f": 98,
+        "spo2": 96
+      },
+      "medications": [
+        {
+          "name": "furosemide",
+          "dose": "40 mg",
+          "frequency": "once daily for 1 week, then reduce to 20 mg once daily",
+          "route": "PO"
+        },
+        {
+          "name": "carvedilol",
+          "dose": "12.5 mg",
+          "frequency": "twice daily",
+          "route": "PO"
+        },
+        {
+          "name": "sacubitril-valsartan",
+          "dose": "49/51 mg",
+          "frequency": "twice daily",
+          "route": "PO"
+        },
+        {
+          "name": "spironolactone",
+          "dose": "25 mg",
+          "frequency": "once daily",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "congestive heart failure with mild volume overload",
+          "icd10": "I50.9"
+        }
+      ],
+      "plan": [
+        "increase furosemide to 40 mg once daily for 1 week, then reduce back to 20 mg once daily if weight improves",
+        "continue carvedilol 12.5 mg twice daily",
+        "continue sacubitril-valsartan 49/51 mg twice daily",
+        "continue spironolactone 25 mg once daily",
+        "restrict sodium intake to less than 2 grams daily",
+        "restrict fluid intake to 2 liters daily",
+        "daily morning weights",
+        "call if gain more than 3 pounds in a day or 5 pounds in a week",
+        "obtain basic metabolic panel in 2 weeks to check potassium and kidney function"
+      ],
+      "follow_up": {
+        "interval_days": 42,
+        "reason": "CHF follow-up visit"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "CHF check-in, 2 pound weight gain this week with mild ankle swelling",
+          "vitals": {
+            "bp": "118/74",
+            "hr": 72,
+            "temp_f": 98,
+            "spo2": 96
+          },
+          "medications": [
+            {
+              "name": "furosemide",
+              "dose": "40 mg",
+              "frequency": "once daily for 1 week, then reduce to 20 mg once daily",
+              "route": "PO"
+            },
+            {
+              "name": "carvedilol",
+              "dose": "12.5 mg",
+              "frequency": "twice daily",
+              "route": "PO"
+            },
+            {
+              "name": "sacubitril-valsartan",
+              "dose": "49/51 mg",
+              "frequency": "twice daily",
+              "route": "PO"
+            },
+            {
+              "name": "spironolactone",
+              "dose": "25 mg",
+              "frequency": "once daily",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "congestive heart failure with mild volume overload",
+              "icd10": "I50.9"
+            }
+          ],
+          "plan": [
+            "increase furosemide to 40 mg once daily for 1 week, then reduce back to 20 mg once daily if weight improves",
+            "continue carvedilol 12.5 mg twice daily",
+            "continue sacubitril-valsartan 49/51 mg twice daily",
+            "continue spironolactone 25 mg once daily",
+            "restrict sodium intake to less than 2 grams daily",
+            "restrict fluid intake to 2 liters daily",
+            "daily morning weights",
+            "call if gain more than 3 pounds in a day or 5 pounds in a week",
+            "obtain basic metabolic panel in 2 weeks to check potassium and kidney function"
+          ],
+          "follow_up": {
+            "interval_days": 42,
+            "reason": "CHF follow-up visit"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 722,
+          "output_tokens": 627,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4562
+        },
+        "duration_ms": 4202
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 722,
+      "output_tokens": 627,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4562
+    },
+    "total_duration_ms": 4202,
+    "cost_usd": 0.0043132000000000005,
+    "prompt_hash": "2bbf076d4e67dde8",
+    "strategy": "zero_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_018",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.1,
+        "detail": {
+          "token_set_sim": 0.1
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 4,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 0,
+        "detail": {
+          "precision": 0,
+          "recall": 0,
+          "matches": 0,
+          "icd10_correct": 0,
+          "icd10_attempts": 0
+        }
+      },
+      "plan": {
+        "score": 0.75,
+        "detail": {
+          "precision": 0.6666666666666666,
+          "recall": 0.8571428571428571,
+          "matches": 6
+        }
+      },
+      "follow_up": {
+        "score": 0.8333333333333333,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.6666666666666666
+        }
+      }
+    },
+    "overall": 0.6138888888888889,
+    "schema_invalid": false,
+    "hallucinations": [
+      "diagnoses: \"congestive heart failure with mild volume overload\" not grounded in transcript"
+    ]
+  }
+}

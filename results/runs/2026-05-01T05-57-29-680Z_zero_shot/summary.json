@@ -1,0 +1,29 @@
+{
+  "run_id": "2026-05-01T05-57-29-680Z_zero_shot",
+  "strategy": "zero_shot",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_hash": "2bbf076d4e67dde8",
+  "started_at": "2026-05-01T05:57:29.686Z",
+  "finished_at": "2026-05-01T05:58:41.238Z",
+  "total_cases": 50,
+  "completed_cases": 50,
+  "schema_failure_rate": 0,
+  "hallucination_rate": 0.82,
+  "per_field_avg": {
+    "chief_complaint": 0.6054285714285714,
+    "vitals": 1,
+    "medications": 0.8599999999999999,
+    "diagnoses": 0.5533333333333332,
+    "plan": 0.7515311681782267,
+    "follow_up": 0.6869382561882563
+  },
+  "overall_avg": 0.7428718881880646,
+  "total_tokens": {
+    "input_tokens": 34786,
+    "output_tokens": 21985,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 228100
+  },
+  "total_cost_usd": 0.16752099999999998,
+  "wall_time_ms": 71551
+}

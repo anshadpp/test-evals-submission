@@ -1,0 +1,171 @@
+{
+  "case_id": "case_031",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "fever for one day in 2-year-old with runny nose",
+      "vitals": {
+        "bp": null,
+        "hr": 132,
+        "temp_f": 103.4,
+        "spo2": 98
+      },
+      "medications": [
+        {
+          "name": "ibuprofen, children's",
+          "dose": "5 mL",
+          "frequency": "every 6 hours as needed",
+          "route": "PO"
+        },
+        {
+          "name": "acetaminophen, children's",
+          "dose": "5 mL",
+          "frequency": "every 4 to 6 hours as needed, not at the same time as ibuprofen",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "viral syndrome with fever",
+          "icd10": "R50.9"
+        }
+      ],
+      "plan": [
+        "alternate ibuprofen 5 mL every 6 hours and acetaminophen 5 mL every 4 to 6 hours as needed for discomfort",
+        "push fluids including popsicles, diluted juice, and electrolyte drinks",
+        "go to ER if child becomes lethargic, won't drink, develops stiff neck, persistent vomiting, non-blanching rash, or fever lasts more than 5 days",
+        "call with any concerns"
+      ],
+      "follow_up": {
+        "interval_days": null,
+        "reason": "as needed if concerns arise"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "fever for one day in 2-year-old with runny nose",
+          "vitals": {
+            "bp": null,
+            "hr": 132,
+            "temp_f": 103.4,
+            "spo2": 98
+          },
+          "medications": [
+            {
+              "name": "ibuprofen, children's",
+              "dose": "5 mL",
+              "frequency": "every 6 hours as needed",
+              "route": "PO"
+            },
+            {
+              "name": "acetaminophen, children's",
+              "dose": "5 mL",
+              "frequency": "every 4 to 6 hours as needed, not at the same time as ibuprofen",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "viral syndrome with fever",
+              "icd10": "R50.9"
+            }
+          ],
+          "plan": [
+            "alternate ibuprofen 5 mL every 6 hours and acetaminophen 5 mL every 4 to 6 hours as needed for discomfort",
+            "push fluids including popsicles, diluted juice, and electrolyte drinks",
+            "go to ER if child becomes lethargic, won't drink, develops stiff neck, persistent vomiting, non-blanching rash, or fever lasts more than 5 days",
+            "call with any concerns"
+          ],
+          "follow_up": {
+            "interval_days": null,
+            "reason": "as needed if concerns arise"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 746,
+          "output_tokens": 477,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4562
+        },
+        "duration_ms": 3592
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 746,
+      "output_tokens": 477,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4562
+    },
+    "total_duration_ms": 3592,
+    "cost_usd": 0.0035872,
+    "prompt_hash": "2bbf076d4e67dde8",
+    "strategy": "zero_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_031",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.3333333333333333,
+        "detail": {
+          "token_set_sim": 0.3333333333333333
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 2,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "icd10_correct": 0,
+          "icd10_attempts": 1
+        }
+      },
+      "plan": {
+        "score": 0.8571428571428571,
+        "detail": {
+          "precision": 0.75,
+          "recall": 1,
+          "matches": 3
+        }
+      },
+      "follow_up": {
+        "score": 0.5,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0
+        }
+      }
+    },
+    "overall": 0.7817460317460316,
+    "schema_invalid": false,
+    "hallucinations": [
+      "medications: \"ibuprofen, children's\" not grounded in transcript",
+      "medications: \"acetaminophen, children's\" not grounded in transcript"
+    ]
+  }
+}

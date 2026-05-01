@@ -1,0 +1,174 @@
+{
+  "case_id": "case_007",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "fever, body aches, headache, and dry cough for three days",
+      "vitals": {
+        "bp": "128/84",
+        "hr": 104,
+        "temp_f": 101.8,
+        "spo2": 94
+      },
+      "medications": [
+        {
+          "name": "oseltamivir",
+          "dose": "75 mg",
+          "frequency": "twice daily for 5 days",
+          "route": "PO"
+        },
+        {
+          "name": "acetaminophen",
+          "dose": "650 mg",
+          "frequency": "every 6 hours as needed",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "influenza A",
+          "icd10": "J10.00"
+        }
+      ],
+      "plan": [
+        "oseltamivir 75 mg twice daily for 5 days",
+        "acetaminophen 650 mg every 6 hours as needed for symptom relief",
+        "push fluids and rest",
+        "recheck home oxygen saturation if available",
+        "go to ER if oxygen saturation drops below 92 percent or shortness of breath worsens",
+        "message check-in in 3 days"
+      ],
+      "follow_up": {
+        "interval_days": 3,
+        "reason": "message check-in for influenza symptoms"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "fever, body aches, headache, and dry cough for three days",
+          "vitals": {
+            "bp": "128/84",
+            "hr": 104,
+            "temp_f": 101.8,
+            "spo2": 94
+          },
+          "medications": [
+            {
+              "name": "oseltamivir",
+              "dose": "75 mg",
+              "frequency": "twice daily for 5 days",
+              "route": "PO"
+            },
+            {
+              "name": "acetaminophen",
+              "dose": "650 mg",
+              "frequency": "every 6 hours as needed",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "influenza A",
+              "icd10": "J10.00"
+            }
+          ],
+          "plan": [
+            "oseltamivir 75 mg twice daily for 5 days",
+            "acetaminophen 650 mg every 6 hours as needed for symptom relief",
+            "push fluids and rest",
+            "recheck home oxygen saturation if available",
+            "go to ER if oxygen saturation drops below 92 percent or shortness of breath worsens",
+            "message check-in in 3 days"
+          ],
+          "follow_up": {
+            "interval_days": 3,
+            "reason": "message check-in for influenza symptoms"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 690,
+          "output_tokens": 444,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 5290
+        },
+        "duration_ms": 2811
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 690,
+      "output_tokens": 444,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 5290
+    },
+    "total_duration_ms": 2811,
+    "cost_usd": 0.003439,
+    "prompt_hash": "f9d95cb0ac0c15ff",
+    "strategy": "few_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_007",
+    "per_field": {
+      "chief_complaint": {
+        "score": 1,
+        "detail": {
+          "token_set_sim": 1
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 2,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "icd10_correct": 0,
+          "icd10_attempts": 1
+        }
+      },
+      "plan": {
+        "score": 0.7272727272727272,
+        "detail": {
+          "precision": 0.6666666666666666,
+          "recall": 0.8,
+          "matches": 4
+        }
+      },
+      "follow_up": {
+        "score": 0.875,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.75
+        }
+      }
+    },
+    "overall": 0.9337121212121212,
+    "schema_invalid": false,
+    "hallucinations": [
+      "diagnoses: \"influenza A\" not grounded in transcript"
+    ]
+  }
+}

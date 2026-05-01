@@ -1,0 +1,176 @@
+{
+  "case_id": "case_022",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "right knee pain worsening over the last year, worse with stair climbing and morning stiffness",
+      "vitals": {
+        "bp": null,
+        "hr": null,
+        "temp_f": null,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "acetaminophen",
+          "dose": "1000 mg",
+          "frequency": "three times daily as needed",
+          "route": "PO"
+        },
+        {
+          "name": "diclofenac",
+          "dose": "1%",
+          "frequency": "four times a day",
+          "route": "topical"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "osteoarthritis of right knee",
+          "icd10": "M17.11"
+        }
+      ],
+      "plan": [
+        "acetaminophen 1000 mg three times daily as needed",
+        "topical diclofenac 1% gel applied to knee four times a day",
+        "referral to physical therapy for quadriceps strengthening",
+        "low-impact exercise including swimming and stationary bike",
+        "weight loss of 5 to 10 pounds if possible",
+        "consider intra-articular steroid injection if not improved in 6 weeks"
+      ],
+      "follow_up": {
+        "interval_days": 42,
+        "reason": "reassess knee pain and consider intra-articular steroid injection if inadequate relief"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "right knee pain worsening over the last year, worse with stair climbing and morning stiffness",
+          "vitals": {
+            "bp": null,
+            "hr": null,
+            "temp_f": null,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "acetaminophen",
+              "dose": "1000 mg",
+              "frequency": "three times daily as needed",
+              "route": "PO"
+            },
+            {
+              "name": "diclofenac",
+              "dose": "1%",
+              "frequency": "four times a day",
+              "route": "topical"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "osteoarthritis of right knee",
+              "icd10": "M17.11"
+            }
+          ],
+          "plan": [
+            "acetaminophen 1000 mg three times daily as needed",
+            "topical diclofenac 1% gel applied to knee four times a day",
+            "referral to physical therapy for quadriceps strengthening",
+            "low-impact exercise including swimming and stationary bike",
+            "weight loss of 5 to 10 pounds if possible",
+            "consider intra-articular steroid injection if not improved in 6 weeks"
+          ],
+          "follow_up": {
+            "interval_days": 42,
+            "reason": "reassess knee pain and consider intra-articular steroid injection if inadequate relief"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 693,
+          "output_tokens": 454,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4562
+        },
+        "duration_ms": 3224
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 693,
+      "output_tokens": 454,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4562
+    },
+    "total_duration_ms": 3224,
+    "cost_usd": 0.0034192,
+    "prompt_hash": "2bbf076d4e67dde8",
+    "strategy": "zero_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_022",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.5833333333333334,
+        "detail": {
+          "token_set_sim": 0.5833333333333334
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 0.5,
+        "detail": {
+          "precision": 0.5,
+          "recall": 0.5,
+          "matches": 1,
+          "unmatched_pred": [
+            1
+          ],
+          "unmatched_gold": [
+            1
+          ]
+        }
+      },
+      "diagnoses": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "icd10_correct": 1,
+          "icd10_attempts": 1
+        }
+      },
+      "plan": {
+        "score": 0.8333333333333334,
+        "detail": {
+          "precision": 0.8333333333333334,
+          "recall": 0.8333333333333334,
+          "matches": 5
+        }
+      },
+      "follow_up": {
+        "score": 0.55,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.1
+        }
+      }
+    },
+    "overall": 0.7444444444444445,
+    "schema_invalid": false,
+    "hallucinations": []
+  }
+}

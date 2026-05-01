@@ -1,0 +1,243 @@
+{
+  "case_id": "case_030",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "well-child visit, 4-year-old",
+      "vitals": {
+        "bp": null,
+        "hr": 96,
+        "temp_f": 98.6,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "acetaminophen (Tylenol)",
+          "dose": "160 mg",
+          "frequency": "as needed for fever or soreness",
+          "route": "PO"
+        },
+        {
+          "name": "DTaP vaccine",
+          "dose": null,
+          "frequency": null,
+          "route": "IM"
+        },
+        {
+          "name": "IPV vaccine",
+          "dose": null,
+          "frequency": null,
+          "route": "IM"
+        },
+        {
+          "name": "MMR vaccine",
+          "dose": null,
+          "frequency": null,
+          "route": "IM"
+        },
+        {
+          "name": "varicella vaccine",
+          "dose": null,
+          "frequency": null,
+          "route": "IM"
+        },
+        {
+          "name": "influenza vaccine",
+          "dose": null,
+          "frequency": "annual",
+          "route": "IM"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "well child, age 4, normal growth and development"
+        }
+      ],
+      "plan": [
+        "administer DTaP booster vaccine IM in right thigh",
+        "administer IPV booster vaccine IM in right thigh",
+        "administer MMR booster vaccine IM in left thigh",
+        "administer varicella booster vaccine IM in left thigh",
+        "administer annual flu shot IM",
+        "acetaminophen 160 mg by mouth as needed for fever or vaccine soreness",
+        "limit screen time to under one hour per day",
+        "encourage family meals and outdoor play",
+        "continue brushing teeth twice daily",
+        "schedule dental visit every 6 months"
+      ],
+      "follow_up": {
+        "interval_days": 365,
+        "reason": "next well-child visit at age 5"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "well-child visit, 4-year-old",
+          "vitals": {
+            "bp": null,
+            "hr": 96,
+            "temp_f": 98.6,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "acetaminophen (Tylenol)",
+              "dose": "160 mg",
+              "frequency": "as needed for fever or soreness",
+              "route": "PO"
+            },
+            {
+              "name": "DTaP vaccine",
+              "dose": null,
+              "frequency": null,
+              "route": "IM"
+            },
+            {
+              "name": "IPV vaccine",
+              "dose": null,
+              "frequency": null,
+              "route": "IM"
+            },
+            {
+              "name": "MMR vaccine",
+              "dose": null,
+              "frequency": null,
+              "route": "IM"
+            },
+            {
+              "name": "varicella vaccine",
+              "dose": null,
+              "frequency": null,
+              "route": "IM"
+            },
+            {
+              "name": "influenza vaccine",
+              "dose": null,
+              "frequency": "annual",
+              "route": "IM"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "well child, age 4, normal growth and development"
+            }
+          ],
+          "plan": [
+            "administer DTaP booster vaccine IM in right thigh",
+            "administer IPV booster vaccine IM in right thigh",
+            "administer MMR booster vaccine IM in left thigh",
+            "administer varicella booster vaccine IM in left thigh",
+            "administer annual flu shot IM",
+            "acetaminophen 160 mg by mouth as needed for fever or vaccine soreness",
+            "limit screen time to under one hour per day",
+            "encourage family meals and outdoor play",
+            "continue brushing teeth twice daily",
+            "schedule dental visit every 6 months"
+          ],
+          "follow_up": {
+            "interval_days": 365,
+            "reason": "next well-child visit at age 5"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 707,
+          "output_tokens": 628,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4562
+        },
+        "duration_ms": 4174
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 707,
+      "output_tokens": 628,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4562
+    },
+    "total_duration_ms": 4174,
+    "cost_usd": 0.0043032,
+    "prompt_hash": "2bbf076d4e67dde8",
+    "strategy": "zero_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_030",
+    "per_field": {
+      "chief_complaint": {
+        "score": 1,
+        "detail": {
+          "token_set_sim": 1
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 0,
+        "detail": {
+          "precision": 0,
+          "recall": 0,
+          "matches": 0,
+          "unmatched_pred": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "unmatched_gold": [
+            0
+          ]
+        }
+      },
+      "diagnoses": {
+        "score": 0,
+        "detail": {
+          "precision": 0,
+          "recall": 0,
+          "matches": 0,
+          "icd10_correct": 0,
+          "icd10_attempts": 0
+        }
+      },
+      "plan": {
+        "score": 0.4,
+        "detail": {
+          "precision": 0.3,
+          "recall": 0.6,
+          "matches": 3
+        }
+      },
+      "follow_up": {
+        "score": 0.9,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.8
+        }
+      }
+    },
+    "overall": 0.5499999999999999,
+    "schema_invalid": false,
+    "hallucinations": [
+      "medications: \"acetaminophen (Tylenol)\" not grounded in transcript",
+      "medications: \"DTaP vaccine\" not grounded in transcript",
+      "medications: \"IPV vaccine\" not grounded in transcript",
+      "medications: \"MMR vaccine\" not grounded in transcript",
+      "medications: \"varicella vaccine\" not grounded in transcript",
+      "medications: \"influenza vaccine\" not grounded in transcript",
+      "diagnoses: \"well child, age 4, normal growth and development\" not grounded in transcript"
+    ]
+  }
+}

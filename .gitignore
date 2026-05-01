@@ -49,3 +49,7 @@ coverage
 .cache
 tmp
 temp
+
+# Eval harness output
+results/cache/
+*.run.local.json

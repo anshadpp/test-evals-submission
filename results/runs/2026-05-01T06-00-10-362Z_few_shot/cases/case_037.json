@@ -1,0 +1,158 @@
+{
+  "case_id": "case_037",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "severe menstrual cramps since high school",
+      "vitals": {
+        "bp": null,
+        "hr": null,
+        "temp_f": null,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "ibuprofen",
+          "dose": "600 mg",
+          "frequency": "every 6 hours with food, starting one day before period for 2 to 3 days",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "primary dysmenorrhea",
+          "icd10": "N94.6"
+        }
+      ],
+      "plan": [
+        "start ibuprofen 600 mg every 6 hours with food, beginning one day before period starts and continuing for first 2 to 3 days",
+        "use heat pad for pain relief",
+        "maintain regular exercise",
+        "consider combined oral contraceptives if ibuprofen insufficient",
+        "message provider after two cycles to report response"
+      ],
+      "follow_up": {
+        "interval_days": 60,
+        "reason": "follow-up after two cycles to assess response to ibuprofen"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "severe menstrual cramps since high school",
+          "vitals": {
+            "bp": null,
+            "hr": null,
+            "temp_f": null,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "ibuprofen",
+              "dose": "600 mg",
+              "frequency": "every 6 hours with food, starting one day before period for 2 to 3 days",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "primary dysmenorrhea",
+              "icd10": "N94.6"
+            }
+          ],
+          "plan": [
+            "start ibuprofen 600 mg every 6 hours with food, beginning one day before period starts and continuing for first 2 to 3 days",
+            "use heat pad for pain relief",
+            "maintain regular exercise",
+            "consider combined oral contraceptives if ibuprofen insufficient",
+            "message provider after two cycles to report response"
+          ],
+          "follow_up": {
+            "interval_days": 60,
+            "reason": "follow-up after two cycles to assess response to ibuprofen"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 656,
+          "output_tokens": 327,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 5290
+        },
+        "duration_ms": 7322
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 656,
+      "output_tokens": 327,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 5290
+    },
+    "total_duration_ms": 7322,
+    "cost_usd": 0.00282,
+    "prompt_hash": "f9d95cb0ac0c15ff",
+    "strategy": "few_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_037",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.5,
+        "detail": {
+          "token_set_sim": 0.5
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "icd10_correct": 0,
+          "icd10_attempts": 1
+        }
+      },
+      "plan": {
+        "score": 0.8000000000000002,
+        "detail": {
+          "precision": 0.8,
+          "recall": 0.8,
+          "matches": 4
+        }
+      },
+      "follow_up": {
+        "score": 0.21428571428571427,
+        "detail": {
+          "interval_match": false,
+          "reason_sim": 0.42857142857142855
+        }
+      }
+    },
+    "overall": 0.7523809523809524,
+    "schema_invalid": false,
+    "hallucinations": []
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "case_id": "case_010",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "follow-up for gastroesophageal reflux disease, improved on omeprazole",
+      "vitals": {
+        "bp": "132/86",
+        "hr": 78,
+        "temp_f": null,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "omeprazole",
+          "dose": "20 mg",
+          "frequency": "once daily 30 minutes before breakfast",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "gastroesophageal reflux disease, improved on therapy",
+          "icd10": "K21.9"
+        }
+      ],
+      "plan": [
+        "continue omeprazole 20 mg once daily 30 minutes before breakfast",
+        "finish dinner at least 3 hours before bed",
+        "elevate head of bed",
+        "avoid late-night snacks",
+        "continue reduced coffee intake",
+        "plan to taper omeprazole in 8 to 12 weeks if symptoms remain controlled",
+        "recheck in 3 months and discuss tapering"
+      ],
+      "follow_up": {
+        "interval_days": 90,
+        "reason": "GERD recheck and discuss medication tapering"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "follow-up for gastroesophageal reflux disease, improved on omeprazole",
+          "vitals": {
+            "bp": "132/86",
+            "hr": 78,
+            "temp_f": null,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "omeprazole",
+              "dose": "20 mg",
+              "frequency": "once daily 30 minutes before breakfast",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "gastroesophageal reflux disease, improved on therapy",
+              "icd10": "K21.9"
+            }
+          ],
+          "plan": [
+            "continue omeprazole 20 mg once daily 30 minutes before breakfast",
+            "finish dinner at least 3 hours before bed",
+            "elevate head of bed",
+            "avoid late-night snacks",
+            "continue reduced coffee intake",
+            "plan to taper omeprazole in 8 to 12 weeks if symptoms remain controlled",
+            "recheck in 3 months and discuss tapering"
+          ],
+          "follow_up": {
+            "interval_days": 90,
+            "reason": "GERD recheck and discuss medication tapering"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 654,
+          "output_tokens": 405,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4562
+        },
+        "duration_ms": 3334
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 654,
+      "output_tokens": 405,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4562
+    },
+    "total_duration_ms": 3334,
+    "cost_usd": 0.0031352,
+    "prompt_hash": "2bbf076d4e67dde8",
+    "strategy": "zero_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_010",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.16666666666666666,
+        "detail": {
+          "token_set_sim": 0.16666666666666666
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "icd10_correct": 1,
+          "icd10_attempts": 1
+        }
+      },
+      "plan": {
+        "score": 0.7272727272727273,
+        "detail": {
+          "precision": 0.5714285714285714,
+          "recall": 1,
+          "matches": 4
+        }
+      },
+      "follow_up": {
+        "score": 0.9,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.8
+        }
+      }
+    },
+    "overall": 0.7989898989898991,
+    "schema_invalid": false,
+    "hallucinations": [
+      "diagnoses: \"gastroesophageal reflux disease, improved on therapy\" not grounded in transcript"
+    ]
+  }
+}

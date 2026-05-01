@@ -32,7 +32,10 @@
     "db:push": "turbo -F @test-evals/db db:push",
     "db:studio": "turbo -F @test-evals/db db:studio",
     "db:generate": "turbo -F @test-evals/db db:generate",
-    "db:migrate": "turbo -F @test-evals/db db:migrate"
+    "db:migrate": "turbo -F @test-evals/db db:migrate",
+    "eval": "bun packages/eval/src/cli.ts",
+    "smoke": "bun packages/llm/src/smoke.ts",
+    "test": "bun test"
   },
   "dependencies": {
     "@test-evals/env": "workspace:*",

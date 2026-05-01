@@ -1,0 +1,168 @@
+{
+  "case_id": "case_005",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "right ear pain and pulling at ear overnight with fever",
+      "vitals": {
+        "bp": null,
+        "hr": 118,
+        "temp_f": 102.6,
+        "spo2": 99
+      },
+      "medications": [
+        {
+          "name": "amoxicillin",
+          "dose": "400 mg",
+          "frequency": "twice daily for 10 days",
+          "route": "PO"
+        },
+        {
+          "name": "ibuprofen, children's",
+          "dose": "5 mL",
+          "frequency": "every 6 hours as needed for pain and fever",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "acute otitis media, right ear",
+          "icd10": "H66.001"
+        }
+      ],
+      "plan": [
+        "amoxicillin 400 mg by mouth twice daily for 10 days",
+        "children's ibuprofen 5 mL every 6 hours as needed for pain and fever",
+        "return if not improved in 48 to 72 hours or if symptoms worsen"
+      ],
+      "follow_up": {
+        "interval_days": null,
+        "reason": "as needed if not improving in 48 to 72 hours or if symptoms worsen"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "right ear pain and pulling at ear overnight with fever",
+          "vitals": {
+            "bp": null,
+            "hr": 118,
+            "temp_f": 102.6,
+            "spo2": 99
+          },
+          "medications": [
+            {
+              "name": "amoxicillin",
+              "dose": "400 mg",
+              "frequency": "twice daily for 10 days",
+              "route": "PO"
+            },
+            {
+              "name": "ibuprofen, children's",
+              "dose": "5 mL",
+              "frequency": "every 6 hours as needed for pain and fever",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "acute otitis media, right ear",
+              "icd10": "H66.001"
+            }
+          ],
+          "plan": [
+            "amoxicillin 400 mg by mouth twice daily for 10 days",
+            "children's ibuprofen 5 mL every 6 hours as needed for pain and fever",
+            "return if not improved in 48 to 72 hours or if symptoms worsen"
+          ],
+          "follow_up": {
+            "interval_days": null,
+            "reason": "as needed if not improving in 48 to 72 hours or if symptoms worsen"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 686,
+          "output_tokens": 424,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4562
+        },
+        "duration_ms": 3155
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 686,
+      "output_tokens": 424,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4562
+    },
+    "total_duration_ms": 3155,
+    "cost_usd": 0.0032622,
+    "prompt_hash": "2bbf076d4e67dde8",
+    "strategy": "zero_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_005",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.6666666666666666,
+        "detail": {
+          "token_set_sim": 0.6666666666666666
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 2,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "icd10_correct": 0,
+          "icd10_attempts": 1
+        }
+      },
+      "plan": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 3
+        }
+      },
+      "follow_up": {
+        "score": 0.8333333333333333,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.6666666666666666
+        }
+      }
+    },
+    "overall": 0.9166666666666665,
+    "schema_invalid": false,
+    "hallucinations": [
+      "medications: \"ibuprofen, children's\" not grounded in transcript"
+    ]
+  }
+}

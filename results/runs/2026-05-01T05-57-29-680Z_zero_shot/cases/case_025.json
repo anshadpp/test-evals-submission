@@ -1,0 +1,160 @@
+{
+  "case_id": "case_025",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "right heel pain for six weeks, worse in morning and after prolonged sitting",
+      "vitals": {
+        "bp": null,
+        "hr": null,
+        "temp_f": null,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "naproxen",
+          "dose": "220 mg",
+          "frequency": "twice daily for 10 days",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "plantar fasciitis, right heel",
+          "icd10": "M72.22"
+        }
+      ],
+      "plan": [
+        "calf and plantar fascia stretching exercises",
+        "wear supportive shoes, avoid barefoot walking at home",
+        "over-the-counter heel cushions",
+        "naproxen 220 mg twice daily with food for 10 days",
+        "consider night splint if symptoms persist",
+        "return in 8 weeks if not improving for physical therapy referral or steroid injection consideration"
+      ],
+      "follow_up": {
+        "interval_days": 56,
+        "reason": "reassess plantar fasciitis and consider physical therapy or steroid injection if not improving"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "right heel pain for six weeks, worse in morning and after prolonged sitting",
+          "vitals": {
+            "bp": null,
+            "hr": null,
+            "temp_f": null,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "naproxen",
+              "dose": "220 mg",
+              "frequency": "twice daily for 10 days",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "plantar fasciitis, right heel",
+              "icd10": "M72.22"
+            }
+          ],
+          "plan": [
+            "calf and plantar fascia stretching exercises",
+            "wear supportive shoes, avoid barefoot walking at home",
+            "over-the-counter heel cushions",
+            "naproxen 220 mg twice daily with food for 10 days",
+            "consider night splint if symptoms persist",
+            "return in 8 weeks if not improving for physical therapy referral or steroid injection consideration"
+          ],
+          "follow_up": {
+            "interval_days": 56,
+            "reason": "reassess plantar fasciitis and consider physical therapy or steroid injection if not improving"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 675,
+          "output_tokens": 335,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4562
+        },
+        "duration_ms": 2947
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 675,
+      "output_tokens": 335,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4562
+    },
+    "total_duration_ms": 2947,
+    "cost_usd": 0.0028062,
+    "prompt_hash": "2bbf076d4e67dde8",
+    "strategy": "zero_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_025",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.6,
+        "detail": {
+          "token_set_sim": 0.6
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 0,
+        "detail": {
+          "precision": 0,
+          "recall": 0,
+          "matches": 0,
+          "icd10_correct": 0,
+          "icd10_attempts": 0
+        }
+      },
+      "plan": {
+        "score": 0.6666666666666666,
+        "detail": {
+          "precision": 0.6666666666666666,
+          "recall": 0.6666666666666666,
+          "matches": 4
+        }
+      },
+      "follow_up": {
+        "score": 0.045454545454545456,
+        "detail": {
+          "interval_match": false,
+          "reason_sim": 0.09090909090909091
+        }
+      }
+    },
+    "overall": 0.552020202020202,
+    "schema_invalid": false,
+    "hallucinations": []
+  }
+}

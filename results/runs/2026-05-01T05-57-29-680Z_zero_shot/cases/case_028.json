@@ -1,0 +1,162 @@
+{
+  "case_id": "case_028",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "insomnia for two months with difficulty falling and staying asleep",
+      "vitals": {
+        "bp": null,
+        "hr": null,
+        "temp_f": null,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "melatonin",
+          "dose": "3 mg",
+          "frequency": "about 30 minutes before bedtime for two weeks",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "insomnia, difficulty initiating and maintaining sleep",
+          "icd10": "G47.01"
+        }
+      ],
+      "plan": [
+        "melatonin 3 mg about 30 minutes before bedtime for two weeks",
+        "sleep hygiene: no caffeine after noon",
+        "no phone use in bed with one-hour wind-down routine before sleep",
+        "maintain consistent wake time including weekends",
+        "CBT-I app for long-term treatment",
+        "message provider in 4 weeks for reassessment"
+      ],
+      "follow_up": {
+        "interval_days": 28,
+        "reason": "reassess insomnia; consider trazodone if no improvement"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "insomnia for two months with difficulty falling and staying asleep",
+          "vitals": {
+            "bp": null,
+            "hr": null,
+            "temp_f": null,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "melatonin",
+              "dose": "3 mg",
+              "frequency": "about 30 minutes before bedtime for two weeks",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "insomnia, difficulty initiating and maintaining sleep",
+              "icd10": "G47.01"
+            }
+          ],
+          "plan": [
+            "melatonin 3 mg about 30 minutes before bedtime for two weeks",
+            "sleep hygiene: no caffeine after noon",
+            "no phone use in bed with one-hour wind-down routine before sleep",
+            "maintain consistent wake time including weekends",
+            "CBT-I app for long-term treatment",
+            "message provider in 4 weeks for reassessment"
+          ],
+          "follow_up": {
+            "interval_days": 28,
+            "reason": "reassess insomnia; consider trazodone if no improvement"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 678,
+          "output_tokens": 391,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4562
+        },
+        "duration_ms": 2909
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 678,
+      "output_tokens": 391,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4562
+    },
+    "total_duration_ms": 2909,
+    "cost_usd": 0.0030892,
+    "prompt_hash": "2bbf076d4e67dde8",
+    "strategy": "zero_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_028",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.42857142857142855,
+        "detail": {
+          "token_set_sim": 0.42857142857142855
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 0,
+        "detail": {
+          "precision": 0,
+          "recall": 0,
+          "matches": 0,
+          "icd10_correct": 0,
+          "icd10_attempts": 0
+        }
+      },
+      "plan": {
+        "score": 0.5,
+        "detail": {
+          "precision": 0.5,
+          "recall": 0.5,
+          "matches": 3
+        }
+      },
+      "follow_up": {
+        "score": 0.5714285714285714,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.14285714285714285
+        }
+      }
+    },
+    "overall": 0.5833333333333334,
+    "schema_invalid": false,
+    "hallucinations": [
+      "diagnoses: \"insomnia, difficulty initiating and maintaining sleep\" not grounded in transcript"
+    ]
+  }
+}

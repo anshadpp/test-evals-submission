@@ -1,0 +1,174 @@
+{
+  "case_id": "case_011",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "constipation for a couple of months",
+      "vitals": {
+        "bp": null,
+        "hr": null,
+        "temp_f": null,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "psyllium husk",
+          "dose": "1 tablespoon",
+          "frequency": "once daily to start, can increase to twice daily if needed",
+          "route": "PO"
+        },
+        {
+          "name": "polyethylene glycol",
+          "dose": "17 grams",
+          "frequency": "once daily in 8 ounces of water for two weeks, then wean",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "constipation"
+        }
+      ],
+      "plan": [
+        "psyllium husk fiber supplement one tablespoon mixed in water once daily, can increase to twice daily if needed",
+        "polyethylene glycol 17 grams in 8 ounces of water once daily for two weeks, then wean",
+        "increase water intake to at least 64 ounces per day",
+        "walk daily",
+        "return in 4 weeks for follow-up"
+      ],
+      "follow_up": {
+        "interval_days": 28,
+        "reason": "constipation management follow-up; return sooner if blood in stool, unintentional weight loss, or severe pain"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "constipation for a couple of months",
+          "vitals": {
+            "bp": null,
+            "hr": null,
+            "temp_f": null,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "psyllium husk",
+              "dose": "1 tablespoon",
+              "frequency": "once daily to start, can increase to twice daily if needed",
+              "route": "PO"
+            },
+            {
+              "name": "polyethylene glycol",
+              "dose": "17 grams",
+              "frequency": "once daily in 8 ounces of water for two weeks, then wean",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "constipation"
+            }
+          ],
+          "plan": [
+            "psyllium husk fiber supplement one tablespoon mixed in water once daily, can increase to twice daily if needed",
+            "polyethylene glycol 17 grams in 8 ounces of water once daily for two weeks, then wean",
+            "increase water intake to at least 64 ounces per day",
+            "walk daily",
+            "return in 4 weeks for follow-up"
+          ],
+          "follow_up": {
+            "interval_days": 28,
+            "reason": "constipation management follow-up; return sooner if blood in stool, unintentional weight loss, or severe pain"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 716,
+          "output_tokens": 449,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 5290
+        },
+        "duration_ms": 3131
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 716,
+      "output_tokens": 449,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 5290
+    },
+    "total_duration_ms": 3131,
+    "cost_usd": 0.00349,
+    "prompt_hash": "f9d95cb0ac0c15ff",
+    "strategy": "few_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_011",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.75,
+        "detail": {
+          "token_set_sim": 0.75
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 0.5,
+        "detail": {
+          "precision": 0.5,
+          "recall": 0.5,
+          "matches": 1,
+          "unmatched_pred": [
+            0
+          ],
+          "unmatched_gold": [
+            0
+          ]
+        }
+      },
+      "diagnoses": {
+        "score": 0,
+        "detail": {
+          "precision": 0,
+          "recall": 0,
+          "matches": 0,
+          "icd10_correct": 0,
+          "icd10_attempts": 0
+        }
+      },
+      "plan": {
+        "score": 0.6,
+        "detail": {
+          "precision": 0.6,
+          "recall": 0.6,
+          "matches": 3
+        }
+      },
+      "follow_up": {
+        "score": 0.5384615384615384,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.07692307692307693
+        }
+      }
+    },
+    "overall": 0.5647435897435897,
+    "schema_invalid": false,
+    "hallucinations": [
+      "diagnoses: \"constipation\" not grounded in transcript"
+    ]
+  }
+}

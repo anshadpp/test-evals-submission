@@ -1,0 +1,158 @@
+{
+  "case_id": "case_023",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "right shoulder pain with overhead reaching and at night, started after home painting project",
+      "vitals": {
+        "bp": "122/78",
+        "hr": 78,
+        "temp_f": null,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "naproxen",
+          "dose": "500 mg",
+          "frequency": "twice daily with food for two weeks",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "rotator cuff impingement, likely supraspinatus tendinopathy",
+          "icd10": "M75.41"
+        }
+      ],
+      "plan": [
+        "naproxen 500 mg twice daily with food for two weeks",
+        "rest from overhead activity",
+        "ice 15 to 20 minutes a few times daily",
+        "referral to physical therapy for rotator cuff strengthening and posture work",
+        "consider subacromial corticosteroid injection if not improving after 6 weeks of PT"
+      ],
+      "follow_up": {
+        "interval_days": 42,
+        "reason": "rotator cuff impingement follow-up and reassess after physical therapy"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "right shoulder pain with overhead reaching and at night, started after home painting project",
+          "vitals": {
+            "bp": "122/78",
+            "hr": 78,
+            "temp_f": null,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "naproxen",
+              "dose": "500 mg",
+              "frequency": "twice daily with food for two weeks",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "rotator cuff impingement, likely supraspinatus tendinopathy",
+              "icd10": "M75.41"
+            }
+          ],
+          "plan": [
+            "naproxen 500 mg twice daily with food for two weeks",
+            "rest from overhead activity",
+            "ice 15 to 20 minutes a few times daily",
+            "referral to physical therapy for rotator cuff strengthening and posture work",
+            "consider subacromial corticosteroid injection if not improving after 6 weeks of PT"
+          ],
+          "follow_up": {
+            "interval_days": 42,
+            "reason": "rotator cuff impingement follow-up and reassess after physical therapy"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 690,
+          "output_tokens": 396,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4672
+        },
+        "duration_ms": 2735
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 690,
+      "output_tokens": 396,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4672
+    },
+    "total_duration_ms": 2735,
+    "cost_usd": 0.0031372,
+    "prompt_hash": "636a8518c08c5b9b",
+    "strategy": "cot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_023",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.36363636363636365,
+        "detail": {
+          "token_set_sim": 0.36363636363636365
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "icd10_correct": 1,
+          "icd10_attempts": 1
+        }
+      },
+      "plan": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 5
+        }
+      },
+      "follow_up": {
+        "score": 0.5625,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.125
+        }
+      }
+    },
+    "overall": 0.8210227272727272,
+    "schema_invalid": false,
+    "hallucinations": []
+  }
+}

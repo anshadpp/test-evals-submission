@@ -1,0 +1,200 @@
+{
+  "case_id": "case_018",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "follow-up for congestive heart failure, weight gain 2 pounds this week",
+      "vitals": {
+        "bp": "118/74",
+        "hr": 72,
+        "temp_f": 98,
+        "spo2": 96
+      },
+      "medications": [
+        {
+          "name": "furosemide",
+          "dose": "40 mg",
+          "frequency": "once daily for 1 week, then back to 20 mg",
+          "route": "PO"
+        },
+        {
+          "name": "carvedilol",
+          "dose": "12.5 mg",
+          "frequency": "twice daily",
+          "route": "PO"
+        },
+        {
+          "name": "sacubitril-valsartan",
+          "dose": "49/51 mg",
+          "frequency": "twice daily",
+          "route": "PO"
+        },
+        {
+          "name": "spironolactone",
+          "dose": "25 mg",
+          "frequency": "once daily",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "congestive heart failure with mild bilateral pedal edema",
+          "icd10": "I50.9"
+        }
+      ],
+      "plan": [
+        "increase furosemide to 40 mg once daily for 1 week, then return to 20 mg if weight comes off",
+        "continue carvedilol 12.5 mg twice daily",
+        "continue sacubitril-valsartan 49/51 mg twice daily",
+        "continue spironolactone 25 mg once daily",
+        "restrict sodium to less than 2 grams per day",
+        "restrict fluid intake to 2 liters per day",
+        "daily morning weights; call if gain more than 3 pounds in 1 day or 5 pounds in 1 week",
+        "obtain basic metabolic panel in 2 weeks to check potassium and kidney function"
+      ],
+      "follow_up": {
+        "interval_days": 42,
+        "reason": "CHF follow-up and potassium/renal function recheck"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "follow-up for congestive heart failure, weight gain 2 pounds this week",
+          "vitals": {
+            "bp": "118/74",
+            "hr": 72,
+            "temp_f": 98,
+            "spo2": 96
+          },
+          "medications": [
+            {
+              "name": "furosemide",
+              "dose": "40 mg",
+              "frequency": "once daily for 1 week, then back to 20 mg",
+              "route": "PO"
+            },
+            {
+              "name": "carvedilol",
+              "dose": "12.5 mg",
+              "frequency": "twice daily",
+              "route": "PO"
+            },
+            {
+              "name": "sacubitril-valsartan",
+              "dose": "49/51 mg",
+              "frequency": "twice daily",
+              "route": "PO"
+            },
+            {
+              "name": "spironolactone",
+              "dose": "25 mg",
+              "frequency": "once daily",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "congestive heart failure with mild bilateral pedal edema",
+              "icd10": "I50.9"
+            }
+          ],
+          "plan": [
+            "increase furosemide to 40 mg once daily for 1 week, then return to 20 mg if weight comes off",
+            "continue carvedilol 12.5 mg twice daily",
+            "continue sacubitril-valsartan 49/51 mg twice daily",
+            "continue spironolactone 25 mg once daily",
+            "restrict sodium to less than 2 grams per day",
+            "restrict fluid intake to 2 liters per day",
+            "daily morning weights; call if gain more than 3 pounds in 1 day or 5 pounds in 1 week",
+            "obtain basic metabolic panel in 2 weeks to check potassium and kidney function"
+          ],
+          "follow_up": {
+            "interval_days": 42,
+            "reason": "CHF follow-up and potassium/renal function recheck"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 722,
+          "output_tokens": 634,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4672
+        },
+        "duration_ms": 3983
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 722,
+      "output_tokens": 634,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4672
+    },
+    "total_duration_ms": 3983,
+    "cost_usd": 0.0043592,
+    "prompt_hash": "636a8518c08c5b9b",
+    "strategy": "cot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_018",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.3333333333333333,
+        "detail": {
+          "token_set_sim": 0.3333333333333333
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 4,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 0,
+        "detail": {
+          "precision": 0,
+          "recall": 0,
+          "matches": 0,
+          "icd10_correct": 0,
+          "icd10_attempts": 0
+        }
+      },
+      "plan": {
+        "score": 0.7999999999999999,
+        "detail": {
+          "precision": 0.75,
+          "recall": 0.8571428571428571,
+          "matches": 6
+        }
+      },
+      "follow_up": {
+        "score": 0.7,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.4
+        }
+      }
+    },
+    "overall": 0.6388888888888888,
+    "schema_invalid": false,
+    "hallucinations": []
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "case_id": "case_004",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "persistent cough for three weeks after upper respiratory infection",
+      "vitals": {
+        "bp": "124/80",
+        "hr": 92,
+        "temp_f": 99.8,
+        "spo2": 95
+      },
+      "medications": [
+        {
+          "name": "albuterol inhaler",
+          "dose": "2 puffs",
+          "frequency": "every 4 to 6 hours as needed",
+          "route": "inhaled"
+        },
+        {
+          "name": "benzonatate",
+          "dose": "100 mg",
+          "frequency": "three times daily",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "post-viral acute bronchitis with bronchospasm",
+          "icd10": "J20.9"
+        }
+      ],
+      "plan": [
+        "albuterol inhaler two puffs every 4 to 6 hours as needed for wheeze and cough",
+        "benzonatate 100 mg three times daily for cough suppression",
+        "return if cough persists beyond four weeks total or if fevers develop for chest X-ray"
+      ],
+      "follow_up": {
+        "interval_days": null,
+        "reason": "return if cough persists beyond four weeks or fevers develop"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "persistent cough for three weeks after upper respiratory infection",
+          "vitals": {
+            "bp": "124/80",
+            "hr": 92,
+            "temp_f": 99.8,
+            "spo2": 95
+          },
+          "medications": [
+            {
+              "name": "albuterol inhaler",
+              "dose": "2 puffs",
+              "frequency": "every 4 to 6 hours as needed",
+              "route": "inhaled"
+            },
+            {
+              "name": "benzonatate",
+              "dose": "100 mg",
+              "frequency": "three times daily",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "post-viral acute bronchitis with bronchospasm",
+              "icd10": "J20.9"
+            }
+          ],
+          "plan": [
+            "albuterol inhaler two puffs every 4 to 6 hours as needed for wheeze and cough",
+            "benzonatate 100 mg three times daily for cough suppression",
+            "return if cough persists beyond four weeks total or if fevers develop for chest X-ray"
+          ],
+          "follow_up": {
+            "interval_days": null,
+            "reason": "return if cough persists beyond four weeks or fevers develop"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 706,
+          "output_tokens": 426,
+          "cache_creation_input_tokens": 4672,
+          "cache_read_input_tokens": 0
+        },
+        "duration_ms": 3116
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 706,
+      "output_tokens": 426,
+      "cache_creation_input_tokens": 4672,
+      "cache_read_input_tokens": 0
+    },
+    "total_duration_ms": 3116,
+    "cost_usd": 0.008676,
+    "prompt_hash": "636a8518c08c5b9b",
+    "strategy": "cot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_004",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.625,
+        "detail": {
+          "token_set_sim": 0.625
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 0.5,
+        "detail": {
+          "precision": 0.5,
+          "recall": 0.5,
+          "matches": 1,
+          "unmatched_pred": [
+            0
+          ],
+          "unmatched_gold": [
+            0
+          ]
+        }
+      },
+      "diagnoses": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "icd10_correct": 1,
+          "icd10_attempts": 1
+        }
+      },
+      "plan": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 3
+        }
+      },
+      "follow_up": {
+        "score": 0.9444444444444444,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.8888888888888888
+        }
+      }
+    },
+    "overall": 0.8449074074074074,
+    "schema_invalid": false,
+    "hallucinations": []
+  }
+}

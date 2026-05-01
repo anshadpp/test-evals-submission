@@ -1,0 +1,160 @@
+{
+  "case_id": "case_008",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "positive COVID test two days ago with runny nose, mild cough, low fever, and fatigue",
+      "vitals": {
+        "bp": null,
+        "hr": null,
+        "temp_f": null,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "acetaminophen",
+          "dose": "500 mg",
+          "frequency": "every 6 hours as needed",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "COVID-19, mild symptomatic",
+          "icd10": "U09.9"
+        }
+      ],
+      "plan": [
+        "supportive care with rest and fluids",
+        "acetaminophen 500 mg every 6 hours as needed for aches",
+        "isolate per CDC guidance",
+        "return to work when fever-free for 24 hours without medication and symptoms improving, generally around day 5 with mask through day 10",
+        "call if develops shortness of breath or worsening symptoms"
+      ],
+      "follow_up": {
+        "interval_days": null,
+        "reason": "call only if develops shortness of breath or worsening symptoms"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "positive COVID test two days ago with runny nose, mild cough, low fever, and fatigue",
+          "vitals": {
+            "bp": null,
+            "hr": null,
+            "temp_f": null,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "acetaminophen",
+              "dose": "500 mg",
+              "frequency": "every 6 hours as needed",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "COVID-19, mild symptomatic",
+              "icd10": "U09.9"
+            }
+          ],
+          "plan": [
+            "supportive care with rest and fluids",
+            "acetaminophen 500 mg every 6 hours as needed for aches",
+            "isolate per CDC guidance",
+            "return to work when fever-free for 24 hours without medication and symptoms improving, generally around day 5 with mask through day 10",
+            "call if develops shortness of breath or worsening symptoms"
+          ],
+          "follow_up": {
+            "interval_days": null,
+            "reason": "call only if develops shortness of breath or worsening symptoms"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 669,
+          "output_tokens": 334,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4672
+        },
+        "duration_ms": 2653
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 669,
+      "output_tokens": 334,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4672
+    },
+    "total_duration_ms": 2653,
+    "cost_usd": 0.0028062,
+    "prompt_hash": "636a8518c08c5b9b",
+    "strategy": "cot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_008",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.3076923076923077,
+        "detail": {
+          "token_set_sim": 0.3076923076923077
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 0,
+        "detail": {
+          "precision": 0,
+          "recall": 0,
+          "matches": 0,
+          "icd10_correct": 0,
+          "icd10_attempts": 0
+        }
+      },
+      "plan": {
+        "score": 0.888888888888889,
+        "detail": {
+          "precision": 0.8,
+          "recall": 1,
+          "matches": 4
+        }
+      },
+      "follow_up": {
+        "score": 0.5,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0
+        }
+      }
+    },
+    "overall": 0.6160968660968661,
+    "schema_invalid": false,
+    "hallucinations": [
+      "diagnoses: \"COVID-19, mild symptomatic\" not grounded in transcript"
+    ]
+  }
+}

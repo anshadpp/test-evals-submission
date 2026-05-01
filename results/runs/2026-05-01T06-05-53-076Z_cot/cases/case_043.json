@@ -1,0 +1,166 @@
+{
+  "case_id": "case_043",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "smoking cessation counseling, patient motivated to quit",
+      "vitals": {
+        "bp": "130/82",
+        "hr": 80,
+        "temp_f": null,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "varenicline",
+          "dose": "0.5 mg",
+          "frequency": "once daily for days 1-3, then 0.5 mg twice daily for days 4-7, then 1 mg twice daily starting day 8 for a total of 12 weeks",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "tobacco use disorder, patient motivated to quit",
+          "icd10": "F17.210"
+        }
+      ],
+      "plan": [
+        "Start varenicline 0.5 mg once daily on day 1-3, then increase to 0.5 mg twice daily on day 4-7, then 1 mg twice daily starting day 8 for a total of 12 weeks",
+        "Begin varenicline 1 week before chosen quit date",
+        "Take varenicline with food and a full glass of water to minimize nausea",
+        "Monitor for mood changes and report unusual symptoms",
+        "Enroll in quit-line counseling program",
+        "Choose a specific quit date within the next 2 weeks",
+        "Identify and plan to avoid usual smoking triggers",
+        "Use substitutes such as gum, walking, or deep breathing exercises when cravings occur"
+      ],
+      "follow_up": {
+        "interval_days": 28,
+        "reason": "smoking cessation follow-up; sooner if experiencing side effects"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "smoking cessation counseling, patient motivated to quit",
+          "vitals": {
+            "bp": "130/82",
+            "hr": 80,
+            "temp_f": null,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "varenicline",
+              "dose": "0.5 mg",
+              "frequency": "once daily for days 1-3, then 0.5 mg twice daily for days 4-7, then 1 mg twice daily starting day 8 for a total of 12 weeks",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "tobacco use disorder, patient motivated to quit",
+              "icd10": "F17.210"
+            }
+          ],
+          "plan": [
+            "Start varenicline 0.5 mg once daily on day 1-3, then increase to 0.5 mg twice daily on day 4-7, then 1 mg twice daily starting day 8 for a total of 12 weeks",
+            "Begin varenicline 1 week before chosen quit date",
+            "Take varenicline with food and a full glass of water to minimize nausea",
+            "Monitor for mood changes and report unusual symptoms",
+            "Enroll in quit-line counseling program",
+            "Choose a specific quit date within the next 2 weeks",
+            "Identify and plan to avoid usual smoking triggers",
+            "Use substitutes such as gum, walking, or deep breathing exercises when cravings occur"
+          ],
+          "follow_up": {
+            "interval_days": 28,
+            "reason": "smoking cessation follow-up; sooner if experiencing side effects"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 719,
+          "output_tokens": 505,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4672
+        },
+        "duration_ms": 12681
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 719,
+      "output_tokens": 505,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4672
+    },
+    "total_duration_ms": 12681,
+    "cost_usd": 0.0037112,
+    "prompt_hash": "636a8518c08c5b9b",
+    "strategy": "cot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_043",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.5,
+        "detail": {
+          "token_set_sim": 0.5
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 0,
+        "detail": {
+          "precision": 0,
+          "recall": 0,
+          "matches": 0,
+          "icd10_correct": 0,
+          "icd10_attempts": 0
+        }
+      },
+      "plan": {
+        "score": 0.4615384615384615,
+        "detail": {
+          "precision": 0.375,
+          "recall": 0.6,
+          "matches": 3
+        }
+      },
+      "follow_up": {
+        "score": 0.6875,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.375
+        }
+      }
+    },
+    "overall": 0.608173076923077,
+    "schema_invalid": false,
+    "hallucinations": [
+      "diagnoses: \"tobacco use disorder, patient motivated to quit\" not grounded in transcript"
+    ]
+  }
+}

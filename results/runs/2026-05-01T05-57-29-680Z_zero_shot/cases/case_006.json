@@ -1,0 +1,198 @@
+{
+  "case_id": "case_006",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "seasonal allergies with eye itching, sneezing, and rhinitis for two weeks",
+      "vitals": {
+        "bp": null,
+        "hr": null,
+        "temp_f": null,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "loratadine",
+          "dose": null,
+          "frequency": null,
+          "route": null
+        },
+        {
+          "name": "fluticasone nasal spray",
+          "dose": null,
+          "frequency": "once daily",
+          "route": "topical"
+        },
+        {
+          "name": "cetirizine",
+          "dose": "10 mg",
+          "frequency": "at bedtime",
+          "route": "PO"
+        },
+        {
+          "name": "ketotifen ophthalmic drops",
+          "dose": "one drop in each eye",
+          "frequency": "twice daily as needed",
+          "route": "topical"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "allergic rhinitis, seasonal",
+          "icd10": "J30.9"
+        }
+      ],
+      "plan": [
+        "stop loratadine",
+        "start fluticasone nasal spray two sprays in each nostril once daily",
+        "start cetirizine 10 mg at bedtime",
+        "start ketotifen ophthalmic drops one drop in each eye twice daily as needed",
+        "give medications two weeks of consistent use before assessing full effect",
+        "message doctor if symptoms not improving in three weeks to discuss allergy testing or referral"
+      ],
+      "follow_up": {
+        "interval_days": null,
+        "reason": "as needed if symptoms not improving in three weeks"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "seasonal allergies with eye itching, sneezing, and rhinitis for two weeks",
+          "vitals": {
+            "bp": null,
+            "hr": null,
+            "temp_f": null,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "loratadine",
+              "dose": null,
+              "frequency": null,
+              "route": null
+            },
+            {
+              "name": "fluticasone nasal spray",
+              "dose": null,
+              "frequency": "once daily",
+              "route": "topical"
+            },
+            {
+              "name": "cetirizine",
+              "dose": "10 mg",
+              "frequency": "at bedtime",
+              "route": "PO"
+            },
+            {
+              "name": "ketotifen ophthalmic drops",
+              "dose": "one drop in each eye",
+              "frequency": "twice daily as needed",
+              "route": "topical"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "allergic rhinitis, seasonal",
+              "icd10": "J30.9"
+            }
+          ],
+          "plan": [
+            "stop loratadine",
+            "start fluticasone nasal spray two sprays in each nostril once daily",
+            "start cetirizine 10 mg at bedtime",
+            "start ketotifen ophthalmic drops one drop in each eye twice daily as needed",
+            "give medications two weeks of consistent use before assessing full effect",
+            "message doctor if symptoms not improving in three weeks to discuss allergy testing or referral"
+          ],
+          "follow_up": {
+            "interval_days": null,
+            "reason": "as needed if symptoms not improving in three weeks"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 669,
+          "output_tokens": 507,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4562
+        },
+        "duration_ms": 3738
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 669,
+      "output_tokens": 507,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4562
+    },
+    "total_duration_ms": 3738,
+    "cost_usd": 0.0036601999999999997,
+    "prompt_hash": "2bbf076d4e67dde8",
+    "strategy": "zero_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_006",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.375,
+        "detail": {
+          "token_set_sim": 0.375
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 0.8571428571428571,
+        "detail": {
+          "precision": 0.75,
+          "recall": 1,
+          "matches": 3,
+          "unmatched_pred": [
+            0
+          ],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "icd10_correct": 1,
+          "icd10_attempts": 1
+        }
+      },
+      "plan": {
+        "score": 0.9090909090909091,
+        "detail": {
+          "precision": 0.8333333333333334,
+          "recall": 1,
+          "matches": 5
+        }
+      },
+      "follow_up": {
+        "score": 0.7857142857142857,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.5714285714285714
+        }
+      }
+    },
+    "overall": 0.8211580086580086,
+    "schema_invalid": false,
+    "hallucinations": []
+  }
+}

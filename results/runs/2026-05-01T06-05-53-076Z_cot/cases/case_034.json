@@ -1,0 +1,203 @@
+{
+  "case_id": "case_034",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "moderate inflammatory acne on forehead, cheeks, and jawline for a couple of years",
+      "vitals": {
+        "bp": null,
+        "hr": null,
+        "temp_f": null,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "benzoyl peroxide",
+          "dose": "5%",
+          "frequency": "daily in shower",
+          "route": "topical"
+        },
+        {
+          "name": "adapalene",
+          "dose": "0.1%",
+          "frequency": "once nightly, pea-sized amount",
+          "route": "topical"
+        },
+        {
+          "name": "doxycycline",
+          "dose": "100 mg",
+          "frequency": "once daily for 12 weeks",
+          "route": "PO"
+        },
+        {
+          "name": "sunscreen",
+          "dose": null,
+          "frequency": "daily",
+          "route": "topical"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "moderate inflammatory acne",
+          "icd10": "L70.0"
+        }
+      ],
+      "plan": [
+        "continue benzoyl peroxide 5% wash daily in shower",
+        "add adapalene 0.1% gel, pea-sized amount to entire face once nightly",
+        "start doxycycline 100 mg once daily for 12 weeks",
+        "use sunscreen daily due to doxycycline photosensitivity risk",
+        "take doxycycline with full glass of water and remain upright for 30 minutes after",
+        "return in 12 weeks for reassessment; consider tapering doxycycline if good response"
+      ],
+      "follow_up": {
+        "interval_days": 84,
+        "reason": "reassessment of acne response to treatment and potential tapering of doxycycline"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "moderate inflammatory acne on forehead, cheeks, and jawline for a couple of years",
+          "vitals": {
+            "bp": null,
+            "hr": null,
+            "temp_f": null,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "benzoyl peroxide",
+              "dose": "5%",
+              "frequency": "daily in shower",
+              "route": "topical"
+            },
+            {
+              "name": "adapalene",
+              "dose": "0.1%",
+              "frequency": "once nightly, pea-sized amount",
+              "route": "topical"
+            },
+            {
+              "name": "doxycycline",
+              "dose": "100 mg",
+              "frequency": "once daily for 12 weeks",
+              "route": "PO"
+            },
+            {
+              "name": "sunscreen",
+              "dose": null,
+              "frequency": "daily",
+              "route": "topical"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "moderate inflammatory acne",
+              "icd10": "L70.0"
+            }
+          ],
+          "plan": [
+            "continue benzoyl peroxide 5% wash daily in shower",
+            "add adapalene 0.1% gel, pea-sized amount to entire face once nightly",
+            "start doxycycline 100 mg once daily for 12 weeks",
+            "use sunscreen daily due to doxycycline photosensitivity risk",
+            "take doxycycline with full glass of water and remain upright for 30 minutes after",
+            "return in 12 weeks for reassessment; consider tapering doxycycline if good response"
+          ],
+          "follow_up": {
+            "interval_days": 84,
+            "reason": "reassessment of acne response to treatment and potential tapering of doxycycline"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 707,
+          "output_tokens": 571,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4672
+        },
+        "duration_ms": 3698
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 707,
+      "output_tokens": 571,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4672
+    },
+    "total_duration_ms": 3698,
+    "cost_usd": 0.0040292,
+    "prompt_hash": "636a8518c08c5b9b",
+    "strategy": "cot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_034",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.5,
+        "detail": {
+          "token_set_sim": 0.5
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 0.28571428571428575,
+        "detail": {
+          "precision": 0.25,
+          "recall": 0.3333333333333333,
+          "matches": 1,
+          "unmatched_pred": [
+            0,
+            1,
+            3
+          ],
+          "unmatched_gold": [
+            0,
+            1
+          ]
+        }
+      },
+      "diagnoses": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "icd10_correct": 1,
+          "icd10_attempts": 1
+        }
+      },
+      "plan": {
+        "score": 0.7272727272727272,
+        "detail": {
+          "precision": 0.6666666666666666,
+          "recall": 0.8,
+          "matches": 4
+        }
+      },
+      "follow_up": {
+        "score": 0.7142857142857143,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.42857142857142855
+        }
+      }
+    },
+    "overall": 0.7045454545454545,
+    "schema_invalid": false,
+    "hallucinations": []
+  }
+}

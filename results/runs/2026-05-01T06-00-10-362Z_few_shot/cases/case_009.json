@@ -1,0 +1,158 @@
+{
+  "case_id": "case_009",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "nausea, vomiting, and diarrhea since yesterday, suspected food-borne illness",
+      "vitals": {
+        "bp": "110/68",
+        "hr": 96,
+        "temp_f": 100.2,
+        "spo2": 99
+      },
+      "medications": [
+        {
+          "name": "ondansetron",
+          "dose": "4 mg",
+          "frequency": "every 8 hours as needed for nausea",
+          "route": "SL"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "acute viral or food-borne gastroenteritis",
+          "icd10": "A09"
+        }
+      ],
+      "plan": [
+        "ondansetron 4 mg sublingual every 8 hours as needed for nausea",
+        "oral rehydration solution, sip slowly",
+        "BRAT diet as tolerated",
+        "avoid dairy for 48 hours",
+        "go to urgent care if unable to keep fluids down for more than 12 hours, develop bloody stools, or develop severe abdominal pain"
+      ],
+      "follow_up": {
+        "interval_days": null,
+        "reason": "return to urgent care if unable to tolerate fluids beyond 12 hours, bloody stools, or severe abdominal pain develops"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "nausea, vomiting, and diarrhea since yesterday, suspected food-borne illness",
+          "vitals": {
+            "bp": "110/68",
+            "hr": 96,
+            "temp_f": 100.2,
+            "spo2": 99
+          },
+          "medications": [
+            {
+              "name": "ondansetron",
+              "dose": "4 mg",
+              "frequency": "every 8 hours as needed for nausea",
+              "route": "SL"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "acute viral or food-borne gastroenteritis",
+              "icd10": "A09"
+            }
+          ],
+          "plan": [
+            "ondansetron 4 mg sublingual every 8 hours as needed for nausea",
+            "oral rehydration solution, sip slowly",
+            "BRAT diet as tolerated",
+            "avoid dairy for 48 hours",
+            "go to urgent care if unable to keep fluids down for more than 12 hours, develop bloody stools, or develop severe abdominal pain"
+          ],
+          "follow_up": {
+            "interval_days": null,
+            "reason": "return to urgent care if unable to tolerate fluids beyond 12 hours, bloody stools, or severe abdominal pain develops"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 725,
+          "output_tokens": 420,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 5290
+        },
+        "duration_ms": 2601
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 725,
+      "output_tokens": 420,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 5290
+    },
+    "total_duration_ms": 2601,
+    "cost_usd": 0.0033539999999999998,
+    "prompt_hash": "f9d95cb0ac0c15ff",
+    "strategy": "few_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_009",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.625,
+        "detail": {
+          "token_set_sim": 0.625
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 0,
+        "detail": {
+          "precision": 0,
+          "recall": 0,
+          "matches": 0,
+          "icd10_correct": 0,
+          "icd10_attempts": 0
+        }
+      },
+      "plan": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 5
+        }
+      },
+      "follow_up": {
+        "score": 0.59375,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.1875
+        }
+      }
+    },
+    "overall": 0.703125,
+    "schema_invalid": false,
+    "hallucinations": []
+  }
+}

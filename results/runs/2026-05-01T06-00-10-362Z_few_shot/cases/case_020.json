@@ -1,0 +1,148 @@
+{
+  "case_id": "case_020",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "metabolic syndrome evaluation and lifestyle intervention",
+      "vitals": {
+        "bp": "138/88",
+        "hr": 78,
+        "temp_f": 98.4,
+        "spo2": 98
+      },
+      "medications": [],
+      "diagnoses": [
+        {
+          "description": "metabolic syndrome",
+          "icd10": "Z13.220"
+        }
+      ],
+      "plan": [
+        "structured lifestyle modification for 6 months with goal of 7-10% weight loss",
+        "plate method: half vegetables, quarter lean protein, quarter complex carbohydrates",
+        "eliminate sugary drinks",
+        "150 minutes of moderate cardio per week",
+        "strength training 2 days per week",
+        "referral to dietitian",
+        "repeat fasting glucose, lipid panel, and A1c in 3 months"
+      ],
+      "follow_up": {
+        "interval_days": 90,
+        "reason": "repeat metabolic panel and glucose labs; consider starting metformin if insufficient improvement with lifestyle changes"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "metabolic syndrome evaluation and lifestyle intervention",
+          "vitals": {
+            "bp": "138/88",
+            "hr": 78,
+            "temp_f": 98.4,
+            "spo2": 98
+          },
+          "medications": [],
+          "diagnoses": [
+            {
+              "description": "metabolic syndrome",
+              "icd10": "Z13.220"
+            }
+          ],
+          "plan": [
+            "structured lifestyle modification for 6 months with goal of 7-10% weight loss",
+            "plate method: half vegetables, quarter lean protein, quarter complex carbohydrates",
+            "eliminate sugary drinks",
+            "150 minutes of moderate cardio per week",
+            "strength training 2 days per week",
+            "referral to dietitian",
+            "repeat fasting glucose, lipid panel, and A1c in 3 months"
+          ],
+          "follow_up": {
+            "interval_days": 90,
+            "reason": "repeat metabolic panel and glucose labs; consider starting metformin if insufficient improvement with lifestyle changes"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 683,
+          "output_tokens": 346,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 5290
+        },
+        "duration_ms": 3681
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 683,
+      "output_tokens": 346,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 5290
+    },
+    "total_duration_ms": 3681,
+    "cost_usd": 0.002942,
+    "prompt_hash": "f9d95cb0ac0c15ff",
+    "strategy": "few_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_020",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.4,
+        "detail": {
+          "token_set_sim": 0.4
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 0,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "icd10_correct": 0,
+          "icd10_attempts": 1
+        }
+      },
+      "plan": {
+        "score": 0.6153846153846153,
+        "detail": {
+          "precision": 0.5714285714285714,
+          "recall": 0.6666666666666666,
+          "matches": 4
+        }
+      },
+      "follow_up": {
+        "score": 0.5769230769230769,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.15384615384615385
+        }
+      }
+    },
+    "overall": 0.7653846153846153,
+    "schema_invalid": false,
+    "hallucinations": []
+  }
+}

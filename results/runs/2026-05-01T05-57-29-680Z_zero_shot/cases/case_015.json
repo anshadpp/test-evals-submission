@@ -1,0 +1,222 @@
+{
+  "case_id": "case_015",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "type 2 diabetes follow-up with elevated A1c",
+      "vitals": {
+        "bp": "134/82",
+        "hr": 76,
+        "temp_f": 98.2,
+        "spo2": 99
+      },
+      "medications": [
+        {
+          "name": "metformin",
+          "dose": "1000 mg increased to maximum effective dose",
+          "frequency": "twice daily",
+          "route": "PO"
+        },
+        {
+          "name": "empagliflozin",
+          "dose": "10 mg",
+          "frequency": "once daily",
+          "route": "PO"
+        },
+        {
+          "name": "atorvastatin",
+          "dose": "40 mg",
+          "frequency": "at bedtime",
+          "route": "PO"
+        },
+        {
+          "name": "lisinopril",
+          "dose": "10 mg",
+          "frequency": "once daily",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "type 2 diabetes mellitus with suboptimal glycemic control",
+          "icd10": "E11.9"
+        },
+        {
+          "description": "hyperlipidemia on therapy",
+          "icd10": "E78.5"
+        },
+        {
+          "description": "hypertension on therapy",
+          "icd10": "I10"
+        }
+      ],
+      "plan": [
+        "increase metformin to maximum effective dose twice daily",
+        "start empagliflozin 10 mg once daily",
+        "continue atorvastatin 40 mg at bedtime",
+        "continue lisinopril 10 mg once daily",
+        "monitor for genital yeast infection with empagliflozin use",
+        "ensure adequate fluid intake",
+        "obtain basic metabolic panel before next visit",
+        "schedule annual eye exam",
+        "recheck A1c in 3 months"
+      ],
+      "follow_up": {
+        "interval_days": 90,
+        "reason": "A1c recheck and diabetes management reassessment"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "type 2 diabetes follow-up with elevated A1c",
+          "vitals": {
+            "bp": "134/82",
+            "hr": 76,
+            "temp_f": 98.2,
+            "spo2": 99
+          },
+          "medications": [
+            {
+              "name": "metformin",
+              "dose": "1000 mg increased to maximum effective dose",
+              "frequency": "twice daily",
+              "route": "PO"
+            },
+            {
+              "name": "empagliflozin",
+              "dose": "10 mg",
+              "frequency": "once daily",
+              "route": "PO"
+            },
+            {
+              "name": "atorvastatin",
+              "dose": "40 mg",
+              "frequency": "at bedtime",
+              "route": "PO"
+            },
+            {
+              "name": "lisinopril",
+              "dose": "10 mg",
+              "frequency": "once daily",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "type 2 diabetes mellitus with suboptimal glycemic control",
+              "icd10": "E11.9"
+            },
+            {
+              "description": "hyperlipidemia on therapy",
+              "icd10": "E78.5"
+            },
+            {
+              "description": "hypertension on therapy",
+              "icd10": "I10"
+            }
+          ],
+          "plan": [
+            "increase metformin to maximum effective dose twice daily",
+            "start empagliflozin 10 mg once daily",
+            "continue atorvastatin 40 mg at bedtime",
+            "continue lisinopril 10 mg once daily",
+            "monitor for genital yeast infection with empagliflozin use",
+            "ensure adequate fluid intake",
+            "obtain basic metabolic panel before next visit",
+            "schedule annual eye exam",
+            "recheck A1c in 3 months"
+          ],
+          "follow_up": {
+            "interval_days": 90,
+            "reason": "A1c recheck and diabetes management reassessment"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 714,
+          "output_tokens": 626,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4562
+        },
+        "duration_ms": 3917
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 714,
+      "output_tokens": 626,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4562
+    },
+    "total_duration_ms": 3917,
+    "cost_usd": 0.0043002000000000005,
+    "prompt_hash": "2bbf076d4e67dde8",
+    "strategy": "zero_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_015",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.8333333333333334,
+        "detail": {
+          "token_set_sim": 0.8333333333333334
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 4,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 0,
+        "detail": {
+          "precision": 0,
+          "recall": 0,
+          "matches": 0,
+          "icd10_correct": 0,
+          "icd10_attempts": 0
+        }
+      },
+      "plan": {
+        "score": 0.6666666666666667,
+        "detail": {
+          "precision": 0.5555555555555556,
+          "recall": 0.8333333333333334,
+          "matches": 5
+        }
+      },
+      "follow_up": {
+        "score": 0.7,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.4
+        }
+      }
+    },
+    "overall": 0.7000000000000001,
+    "schema_invalid": false,
+    "hallucinations": [
+      "diagnoses: \"type 2 diabetes mellitus with suboptimal glycemic control\" not grounded in transcript",
+      "diagnoses: \"hyperlipidemia on therapy\" not grounded in transcript",
+      "diagnoses: \"hypertension on therapy\" not grounded in transcript"
+    ]
+  }
+}

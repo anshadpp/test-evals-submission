@@ -1,0 +1,202 @@
+{
+  "case_id": "case_018",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "CHF check-in, weight gain and mild ankle swelling",
+      "vitals": {
+        "bp": "118/74",
+        "hr": 72,
+        "temp_f": 98,
+        "spo2": 96
+      },
+      "medications": [
+        {
+          "name": "furosemide",
+          "dose": "40 mg",
+          "frequency": "once daily for one week, then back to 20 mg",
+          "route": "PO"
+        },
+        {
+          "name": "carvedilol",
+          "dose": "12.5 mg",
+          "frequency": "twice daily",
+          "route": "PO"
+        },
+        {
+          "name": "sacubitril-valsartan",
+          "dose": "49/51 mg",
+          "frequency": "twice daily",
+          "route": "PO"
+        },
+        {
+          "name": "spironolactone",
+          "dose": "25 mg",
+          "frequency": "once daily",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "congestive heart failure, stable on current regimen with mild fluid retention",
+          "icd10": "I50.9"
+        }
+      ],
+      "plan": [
+        "increase furosemide to 40 mg once daily for one week, then return to 20 mg if weight improves",
+        "continue carvedilol 12.5 mg twice daily",
+        "continue sacubitril-valsartan 49/51 mg twice daily",
+        "continue spironolactone 25 mg once daily",
+        "daily morning weights; call if gain more than 3 pounds in a day or 5 pounds in a week",
+        "sodium restriction to less than 2 grams per day",
+        "fluid restriction to 2 liters per day",
+        "basic metabolic panel in 2 weeks to check potassium and kidney function"
+      ],
+      "follow_up": {
+        "interval_days": 42,
+        "reason": "CHF follow-up, reassess diuretic response and labs"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "CHF check-in, weight gain and mild ankle swelling",
+          "vitals": {
+            "bp": "118/74",
+            "hr": 72,
+            "temp_f": 98,
+            "spo2": 96
+          },
+          "medications": [
+            {
+              "name": "furosemide",
+              "dose": "40 mg",
+              "frequency": "once daily for one week, then back to 20 mg",
+              "route": "PO"
+            },
+            {
+              "name": "carvedilol",
+              "dose": "12.5 mg",
+              "frequency": "twice daily",
+              "route": "PO"
+            },
+            {
+              "name": "sacubitril-valsartan",
+              "dose": "49/51 mg",
+              "frequency": "twice daily",
+              "route": "PO"
+            },
+            {
+              "name": "spironolactone",
+              "dose": "25 mg",
+              "frequency": "once daily",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "congestive heart failure, stable on current regimen with mild fluid retention",
+              "icd10": "I50.9"
+            }
+          ],
+          "plan": [
+            "increase furosemide to 40 mg once daily for one week, then return to 20 mg if weight improves",
+            "continue carvedilol 12.5 mg twice daily",
+            "continue sacubitril-valsartan 49/51 mg twice daily",
+            "continue spironolactone 25 mg once daily",
+            "daily morning weights; call if gain more than 3 pounds in a day or 5 pounds in a week",
+            "sodium restriction to less than 2 grams per day",
+            "fluid restriction to 2 liters per day",
+            "basic metabolic panel in 2 weeks to check potassium and kidney function"
+          ],
+          "follow_up": {
+            "interval_days": 42,
+            "reason": "CHF follow-up, reassess diuretic response and labs"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 722,
+          "output_tokens": 621,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 5290
+        },
+        "duration_ms": 3736
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 722,
+      "output_tokens": 621,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 5290
+    },
+    "total_duration_ms": 3736,
+    "cost_usd": 0.0043560000000000005,
+    "prompt_hash": "f9d95cb0ac0c15ff",
+    "strategy": "few_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_018",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.14285714285714285,
+        "detail": {
+          "token_set_sim": 0.14285714285714285
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 4,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 0,
+        "detail": {
+          "precision": 0,
+          "recall": 0,
+          "matches": 0,
+          "icd10_correct": 0,
+          "icd10_attempts": 0
+        }
+      },
+      "plan": {
+        "score": 0.7999999999999999,
+        "detail": {
+          "precision": 0.75,
+          "recall": 0.8571428571428571,
+          "matches": 6
+        }
+      },
+      "follow_up": {
+        "score": 0.6666666666666666,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.3333333333333333
+        }
+      }
+    },
+    "overall": 0.6015873015873016,
+    "schema_invalid": false,
+    "hallucinations": [
+      "diagnoses: \"congestive heart failure, stable on current regimen with mild fluid retention\" not grounded in transcript"
+    ]
+  }
+}

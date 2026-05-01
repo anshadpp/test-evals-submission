@@ -1,0 +1,162 @@
+{
+  "case_id": "case_024",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "left ankle injury from basketball, heard pop and immediate swelling",
+      "vitals": {
+        "bp": null,
+        "hr": null,
+        "temp_f": null,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "ibuprofen",
+          "dose": "400 mg",
+          "frequency": "every 6 hours as needed",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "grade 2 lateral ankle sprain",
+          "icd10": "S93.421A"
+        }
+      ],
+      "plan": [
+        "rest, ice for 20 minutes every 2 to 3 hours for first 48 hours",
+        "compression with ACE wrap",
+        "elevation",
+        "ibuprofen 400 mg every 6 hours as needed for pain and swelling",
+        "use crutches if needed but weight-bear as tolerated",
+        "start ankle range-of-motion exercises in a few days",
+        "return in 7 to 10 days if pain or swelling not improving for imaging"
+      ],
+      "follow_up": {
+        "interval_days": null,
+        "reason": "as needed if pain or swelling not improving in 7 to 10 days"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "left ankle injury from basketball, heard pop and immediate swelling",
+          "vitals": {
+            "bp": null,
+            "hr": null,
+            "temp_f": null,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "ibuprofen",
+              "dose": "400 mg",
+              "frequency": "every 6 hours as needed",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "grade 2 lateral ankle sprain",
+              "icd10": "S93.421A"
+            }
+          ],
+          "plan": [
+            "rest, ice for 20 minutes every 2 to 3 hours for first 48 hours",
+            "compression with ACE wrap",
+            "elevation",
+            "ibuprofen 400 mg every 6 hours as needed for pain and swelling",
+            "use crutches if needed but weight-bear as tolerated",
+            "start ankle range-of-motion exercises in a few days",
+            "return in 7 to 10 days if pain or swelling not improving for imaging"
+          ],
+          "follow_up": {
+            "interval_days": null,
+            "reason": "as needed if pain or swelling not improving in 7 to 10 days"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 706,
+          "output_tokens": 414,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 4562
+        },
+        "duration_ms": 3198
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 706,
+      "output_tokens": 414,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 4562
+    },
+    "total_duration_ms": 3198,
+    "cost_usd": 0.0032321999999999997,
+    "prompt_hash": "2bbf076d4e67dde8",
+    "strategy": "zero_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_024",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.4444444444444444,
+        "detail": {
+          "token_set_sim": 0.4444444444444444
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 1,
+          "icd10_correct": 0,
+          "icd10_attempts": 1
+        }
+      },
+      "plan": {
+        "score": 0.8333333333333333,
+        "detail": {
+          "precision": 0.7142857142857143,
+          "recall": 1,
+          "matches": 5
+        }
+      },
+      "follow_up": {
+        "score": 0.5,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0
+        }
+      }
+    },
+    "overall": 0.7962962962962963,
+    "schema_invalid": false,
+    "hallucinations": []
+  }
+}

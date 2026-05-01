@@ -1,0 +1,168 @@
+{
+  "case_id": "case_019",
+  "extract": {
+    "prediction": {
+      "chief_complaint": "follow-up for atrial fibrillation on apixaban and metoprolol",
+      "vitals": {
+        "bp": null,
+        "hr": null,
+        "temp_f": null,
+        "spo2": null
+      },
+      "medications": [
+        {
+          "name": "apixaban",
+          "dose": "5 mg",
+          "frequency": "twice daily",
+          "route": "PO"
+        },
+        {
+          "name": "metoprolol succinate",
+          "dose": "50 mg",
+          "frequency": "once daily",
+          "route": "PO"
+        }
+      ],
+      "diagnoses": [
+        {
+          "description": "atrial fibrillation, controlled at rate around 70",
+          "icd10": "I48.91"
+        }
+      ],
+      "plan": [
+        "continue apixaban 5 mg twice daily",
+        "continue metoprolol succinate 50 mg once daily",
+        "basic metabolic panel and CBC in 2 months"
+      ],
+      "follow_up": {
+        "interval_days": 180,
+        "reason": "AFib management follow-up; sooner if anything changes"
+      }
+    },
+    "schema_valid": true,
+    "attempts": [
+      {
+        "attempt_number": 1,
+        "raw_tool_input": {
+          "chief_complaint": "follow-up for atrial fibrillation on apixaban and metoprolol",
+          "vitals": {
+            "bp": null,
+            "hr": null,
+            "temp_f": null,
+            "spo2": null
+          },
+          "medications": [
+            {
+              "name": "apixaban",
+              "dose": "5 mg",
+              "frequency": "twice daily",
+              "route": "PO"
+            },
+            {
+              "name": "metoprolol succinate",
+              "dose": "50 mg",
+              "frequency": "once daily",
+              "route": "PO"
+            }
+          ],
+          "diagnoses": [
+            {
+              "description": "atrial fibrillation, controlled at rate around 70",
+              "icd10": "I48.91"
+            }
+          ],
+          "plan": [
+            "continue apixaban 5 mg twice daily",
+            "continue metoprolol succinate 50 mg once daily",
+            "basic metabolic panel and CBC in 2 months"
+          ],
+          "follow_up": {
+            "interval_days": 180,
+            "reason": "AFib management follow-up; sooner if anything changes"
+          }
+        },
+        "validation_errors": [],
+        "tokens": {
+          "input_tokens": 616,
+          "output_tokens": 386,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 5290
+        },
+        "duration_ms": 2441
+      }
+    ],
+    "total_tokens": {
+      "input_tokens": 616,
+      "output_tokens": 386,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 5290
+    },
+    "total_duration_ms": 2441,
+    "cost_usd": 0.003075,
+    "prompt_hash": "f9d95cb0ac0c15ff",
+    "strategy": "few_shot",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "score": {
+    "case_id": "case_019",
+    "per_field": {
+      "chief_complaint": {
+        "score": 0.6,
+        "detail": {
+          "token_set_sim": 0.6
+        }
+      },
+      "vitals": {
+        "score": 1,
+        "detail": {
+          "sub_field": {
+            "bp": 1,
+            "hr": 1,
+            "spo2": 1,
+            "temp_f": 1
+          }
+        }
+      },
+      "medications": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 2,
+          "unmatched_pred": [],
+          "unmatched_gold": []
+        }
+      },
+      "diagnoses": {
+        "score": 0,
+        "detail": {
+          "precision": 0,
+          "recall": 0,
+          "matches": 0,
+          "icd10_correct": 0,
+          "icd10_attempts": 0
+        }
+      },
+      "plan": {
+        "score": 1,
+        "detail": {
+          "precision": 1,
+          "recall": 1,
+          "matches": 3
+        }
+      },
+      "follow_up": {
+        "score": 0.6428571428571428,
+        "detail": {
+          "interval_match": true,
+          "reason_sim": 0.2857142857142857
+        }
+      }
+    },
+    "overall": 0.7071428571428572,
+    "schema_invalid": false,
+    "hallucinations": [
+      "diagnoses: \"atrial fibrillation, controlled at rate around 70\" not grounded in transcript"
+    ]
+  }
+}
