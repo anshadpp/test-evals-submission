@@ -1,0 +1,22 @@
+{
+  "name": "@test-evals/eval",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {
+    "check-types": "tsc -b"
+  },
+  "dependencies": {
+    "@test-evals/llm": "workspace:*"
+  },
+  "devDependencies": {
+    "@test-evals/config": "workspace:*",
+    "typescript": "catalog:"
+  }
+}
